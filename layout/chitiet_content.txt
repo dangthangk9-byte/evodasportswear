@@ -17,6 +17,13 @@
       <span class="font-caption text-secondary uppercase tracking-[0.2em] mb-2">[ SIGNATURE COLLECTION ]</span>
       <h1 class="font-headline-lg text-[32px] text-primary mb-4">Set áo polo & chân váy xếp ly</h1>
       
+      <!-- Metadata row (Mã & Tình trạng) -->
+      <div class="flex items-center gap-4 mb-4 font-body-sm text-secondary">
+        <span>Mã: <strong class="text-primary">EV01</strong></span>
+        <span>|</span>
+        <span>Tình trạng: <strong class="text-green-600">Còn hàng</strong></span>
+      </div>
+
       <div class="flex items-center gap-4 mb-6">
         <span class="text-[24px] font-medium text-primary">850.000đ</span>
         <span class="text-[14px] text-secondary line-through">1.050.000đ</span>
@@ -35,7 +42,7 @@
       <div class="mb-8">
         <div class="flex justify-between mb-3">
           <span class="font-label-uppercase text-[12px] text-secondary">KÍCH CỠ</span>
-          <a href="#" class="font-caption text-[11px] underline">Hướng dẫn chọn size</a>
+          <a href="#size-guide" class="font-caption text-[11px] underline hover:text-primary">Hướng dẫn chọn size</a>
         </div>
         <div class="grid grid-cols-4 gap-2">
           <button class="border border-primary bg-primary text-white py-2 text-[13px] font-label-uppercase">S</button>
@@ -46,12 +53,12 @@
       </div>
 
       <div class="flex flex-col gap-3 mb-8">
-        <button class="w-full bg-primary text-on-primary font-label-uppercase py-4 flex items-center justify-center gap-2 hover:bg-neutral-800 transition-colors">
+        <a href="https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1" target="_blank" rel="noopener noreferrer" class="w-full bg-primary text-on-primary font-label-uppercase py-4 flex items-center justify-center gap-2 hover:bg-neutral-800 transition-colors">
           MUA TRÊN TIKTOK SHOP <span class="material-symbols-outlined text-[18px]">open_in_new</span>
-        </button>
-        <button class="w-full bg-white text-primary border border-primary font-label-uppercase py-4 hover:bg-surface-container-low transition-colors">
-          THÊM VÀO GIỎ HÀNG
-        </button>
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61574619090811" target="_blank" rel="noopener noreferrer" class="w-full bg-white text-primary border border-primary font-label-uppercase py-4 flex items-center justify-center gap-2 hover:bg-surface-container-low transition-colors">
+          NHẮN TIN ĐẶT HÀNG <span class="material-symbols-outlined text-[18px]">chat</span>
+        </a>
       </div>
       
       <div class="bg-surface-container-high p-4 text-[13px] font-body-sm text-secondary flex items-start gap-3">
@@ -80,7 +87,156 @@
         <div class="bg-surface-container-lowest border border-[#E5E0DA]">
           <div class="flex border-b border-[#E5E0DA] p-4"><span class="w-1/3 font-label-uppercase text-[12px] text-secondary">CHẤT LIỆU</span><span class="w-2/3 font-body-md">80% Polyester, 20% Spandex (320GSM)</span></div>
           <div class="flex border-b border-[#E5E0DA] p-4"><span class="w-1/3 font-label-uppercase text-[12px] text-secondary">FORM DÁNG</span><span class="w-2/3 font-body-md">Ôm sát vừa vặn, hỗ trợ chuyển động tối đa</span></div>
+          <div class="flex p-4"><span class="w-1/3 font-label-uppercase text-[12px] text-secondary">XUẤT XỨ</span><span class="w-2/3 font-body-md">Việt Nam</span></div>
         </div>
+      </div>
+
+      <!-- Size Guide -->
+      <div id="size-guide" class="scroll-mt-24">
+        <h3 class="font-headline-sm text-[24px] mb-4">Hướng dẫn chọn size</h3>
+        
+        <div class="bg-[#F5E6D3] p-8 rounded-sm">
+          <div class="text-center mb-6">
+             <h4 class="font-display-hero text-[32px] text-primary">Evoda</h4>
+             <p class="font-body-sm italic text-secondary">soft in every movement</p>
+             <h5 class="font-headline-lg text-[28px] mt-4 uppercase">Size Guide</h5>
+          </div>
+
+          <div class="overflow-x-auto mb-8">
+            <table class="w-full border-collapse text-center">
+              <thead>
+                <tr class="border-b-2 border-primary/20">
+                  <th class="p-3 font-label-uppercase">SIZE</th>
+                  <th class="p-3 font-label-uppercase">LENGTH</th>
+                  <th class="p-3 font-label-uppercase">BUST</th>
+                  <th class="p-3 font-label-uppercase">SHOULDER WIDTH</th>
+                  <th class="p-3 font-label-uppercase">SLEEVE</th>
+                </tr>
+              </thead>
+              <tbody class="font-body-md text-primary">
+                <tr class="border-b border-primary/10">
+                  <td class="p-3 font-medium">S</td><td class="p-3">43</td><td class="p-3">96</td><td class="p-3">48</td><td class="p-3">14.5</td>
+                </tr>
+                <tr class="border-b border-primary/10 bg-white/30">
+                  <td class="p-3 font-medium">M</td><td class="p-3">44.5</td><td class="p-3">100</td><td class="p-3">49.5</td><td class="p-3">15</td>
+                </tr>
+                <tr class="border-b border-primary/10">
+                  <td class="p-3 font-medium">L</td><td class="p-3">46</td><td class="p-3">104</td><td class="p-3">51</td><td class="p-3">15.5</td>
+                </tr>
+                <tr class="border-b border-primary/10 bg-white/30">
+                  <td class="p-3 font-medium">XL</td><td class="p-3">47.5</td><td class="p-3">108</td><td class="p-3">52.5</td><td class="p-3">16</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="text-center mb-4">
+             <h5 class="font-headline-sm text-[22px] italic">chiều cao / cân nặng</h5>
+          </div>
+          <div class="overflow-x-auto">
+            <table class="w-full border-collapse text-center">
+              <thead>
+                <tr class="border-b-2 border-primary/20 bg-white/30">
+                  <th class="p-3 font-body-sm italic font-normal text-left">chiều cao<br>cân nặng</th>
+                  <th class="p-3 font-body-md">40-45</th>
+                  <th class="p-3 font-body-md">45-50</th>
+                  <th class="p-3 font-body-md">50-55</th>
+                  <th class="p-3 font-body-md">55-60</th>
+                  <th class="p-3 font-body-md">60-65</th>
+                </tr>
+              </thead>
+              <tbody class="font-body-md text-primary">
+                <tr class="border-b border-primary/10">
+                  <td class="p-3 italic text-left">150-155</td>
+                  <td class="p-3">S</td><td class="p-3">S</td><td class="p-3">S</td><td class="p-3">M</td><td class="p-3 bg-[#E5D7C5]">L</td>
+                </tr>
+                <tr class="border-b border-primary/10 bg-white/30">
+                  <td class="p-3 italic text-left">155-160</td>
+                  <td class="p-3">S</td><td class="p-3">S</td><td class="p-3 bg-[#E5D7C5]">M</td><td class="p-3">L</td><td class="p-3 bg-[#E5D7C5]">L</td>
+                </tr>
+                <tr class="border-b border-primary/10">
+                  <td class="p-3 italic text-left">160-165</td>
+                  <td class="p-3">S</td><td class="p-3 bg-[#E5D7C5]">M</td><td class="p-3 bg-[#E5D7C5]">M</td><td class="p-3">L</td><td class="p-3 bg-[#E5D7C5]">XL</td>
+                </tr>
+                <tr class="border-b border-primary/10 bg-white/30">
+                  <td class="p-3 italic text-left">165-170</td>
+                  <td class="p-3 bg-[#E5D7C5]">M</td><td class="p-3 bg-[#E5D7C5]">M</td><td class="p-3 bg-[#E5D7C5]">L</td><td class="p-3 bg-[#E5D7C5]">L</td><td class="p-3 bg-[#E5D7C5]">XL</td>
+                </tr>
+                <tr class="border-b border-primary/10">
+                  <td class="p-3 italic text-left">170-175</td>
+                  <td class="p-3 bg-[#E5D7C5]">L</td><td class="p-3 bg-[#E5D7C5]">L</td><td class="p-3 bg-[#E5D7C5]">L</td><td class="p-3 bg-[#E5D7C5]">XL</td><td class="p-3 bg-[#E5D7C5]">XL</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <!-- Care Instructions -->
+      <div>
+        <h3 class="font-headline-sm text-[24px] mb-4">Hướng dẫn bảo quản</h3>
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div class="bg-surface-container-low p-4 flex flex-col items-center text-center gap-2 border border-[#E5E0DA]">
+            <span class="material-symbols-outlined text-[24px]">local_laundry_service</span>
+            <span class="font-body-sm text-secondary">Giặt máy lạnh với túi giặt</span>
+          </div>
+          <div class="bg-surface-container-low p-4 flex flex-col items-center text-center gap-2 border border-[#E5E0DA]">
+            <span class="material-symbols-outlined text-[24px]">do_not_bleach</span>
+            <span class="font-body-sm text-secondary">Không sử dụng chất tẩy</span>
+          </div>
+          <div class="bg-surface-container-low p-4 flex flex-col items-center text-center gap-2 border border-[#E5E0DA]">
+            <span class="material-symbols-outlined text-[24px]">iron</span>
+            <span class="font-body-sm text-secondary">Ủi nhẹ ở nhiệt độ thấp</span>
+          </div>
+          <div class="bg-surface-container-low p-4 flex flex-col items-center text-center gap-2 border border-[#E5E0DA]">
+            <span class="material-symbols-outlined text-[24px]">wb_sunny</span>
+            <span class="font-body-sm text-secondary">Phơi trong bóng râm</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Related Products -->
+  <div class="border-t border-[#E5E0DA] pt-16">
+    <h3 class="font-headline-lg text-[28px] mb-8 text-center">Sản phẩm liên quan</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-12">
+      <!-- Product 1 -->
+      <div class="group flex flex-col cursor-pointer transition-transform hover:-translate-y-1">
+        <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-4">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl9CbaYP3YlKyGk5SvSeiC3xuLKREIIOj45tzUcAyfIrX_T9GZnkZTQlPaCEVzV6vk8t1PUZ390bliIWTairA89Ocg_I3-2pdZHtJvizFcQYp9jg3axMykxwGXB_uzg2QO7uHPhhYbMlOsD5yIb2JXQftkfskEjOYDIl6YF81XO2F-2VEyTtXsdP4-aBAJkbhtuxG4oBeBy75lD3dJRj9fZIWtGsIfwgym4y2wEple9x-KI8-X8sat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <span class="font-caption text-secondary uppercase mb-1">BODYSUIT</span>
+        <a href="/san-pham/chi-tiet.html" class="font-headline-sm text-[16px] text-primary hover:text-secondary mb-1">Bodysuit liền thân Contour</a>
+        <span class="font-body-md font-medium">920.000đ</span>
+      </div>
+      <!-- Product 2 -->
+      <div class="group flex flex-col cursor-pointer transition-transform hover:-translate-y-1">
+        <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-4">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrOtFBjaOn1YMFGejqhk0742socLo5pEaS8lhtecXcYI62hpuEm3A6e41zQgF_eZEhDmkStVDR-zyACXIYDMcnTeJVm-MNsL4vsjV3D6QhyDUmh4oLJl8pxJC3bEbwQUOlC-ueWbC6l7XBXIvMZ984Qq1XAOFSTYXpdxwO3qmng6fik73ImX0rKc9Iwtg1_0QHSW67W_jGBCiFWrEwBocP5A_rQssbnsyaagkX5GWxCqIN7LMdcGWm" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <span class="font-caption text-secondary uppercase mb-1">CHÂN VÁY</span>
+        <a href="/san-pham/chi-tiet.html" class="font-headline-sm text-[16px] text-primary hover:text-secondary mb-1">Chân váy xếp ly Tennis Ivory</a>
+        <span class="font-body-md font-medium">620.000đ</span>
+      </div>
+      <!-- Product 3 -->
+      <div class="group flex flex-col cursor-pointer transition-transform hover:-translate-y-1">
+        <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-4">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSQcuf7DOfaUh1RSdXdNO8_QTuHXhBd2ZWQaaNKaRP7OpXfll_R05z96ImybBrRmfCLRIOFQdyiLdUrCDuwlvEZg_LLwocVWe4rh7_M9mJl60_t53DwRpgiNOvAhpTaqTtgB74G8nOk_63dRAs2f6UKYniUhHmne8unP23vGmkyvzXCf1OV3wODEYZKRzj4osTDdaZOVXIdj8DiLr2TBym5D2WLO8jyY2xchOhio_V2NVrjkG93tMK" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <span class="font-caption text-secondary uppercase mb-1">OUTERWEAR</span>
+        <a href="/san-pham/chi-tiet.html" class="font-headline-sm text-[16px] text-primary hover:text-secondary mb-1">Áo khoác lửng Zip Active</a>
+        <span class="font-body-md font-medium text-red-700"><span class="line-through text-secondary mr-2 text-sm">789.000đ</span>599.000đ</span>
+      </div>
+      <!-- Product 4 -->
+      <div class="group flex flex-col cursor-pointer transition-transform hover:-translate-y-1">
+        <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-4">
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGR5G-PLAQQZbb7WQY5Jd2ZC-wWp3kF3IBQrYVJ-0ubqTewAhpXPVrdDb0ueoH2trxVWukN1NZ5PA4FegzQxWA9wWKlpAiPZBUhBRl-NiHlKR4_7PXkLYVHftOQ5u2Gpm6XbfRb17SOvqjPBJs5ntg1sc86inPnqHycIKm5J-v3m34zdCwUVwIDHbVQnLoG7xhuaKptXq01Si0cI0biZjgFV5fI0eDg-HAMcnkuOTg7-7fUHAnrngM" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <span class="font-caption text-secondary uppercase mb-1">POLO TOPS</span>
+        <a href="/san-pham/chi-tiet.html" class="font-headline-sm text-[16px] text-primary hover:text-secondary mb-1">Áo polo thể thao Sculpted</a>
+        <span class="font-body-md font-medium">499.000đ</span>
       </div>
     </div>
   </div>
