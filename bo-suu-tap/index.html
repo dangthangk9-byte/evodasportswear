@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html class="scroll-smooth" lang="vi">
+<head>
+<title>EVODA SPORTSWEAR</title>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.94; transform: scale(1.03); }
+}
+.animate-fade-in-up { animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-fade-in { animation: fadeIn 0.9s ease-out forwards; }
+.animate-float-slow { animation: floatSlow 4s ease-in-out infinite; }
+.animate-pulse-subtle { animation: pulseSubtle 3.5s ease-in-out infinite; }
+.reveal-on-scroll { opacity: 0; transform: translateY(24px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; }
+.reveal-on-scroll.is-revealed { opacity: 1; transform: translateY(0); }
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-low":"#f3f3f4","on-secondary-fixed":"#1b1c1c","on-background":"#1a1c1c","surface-container":"#eeeeee","on-tertiary":"#ffffff","primary-container":"#1b1b1b","surface-variant":"#e2e2e2","surface-container-highest":"#e2e2e2","surface-container-high":"#e8e8e8","primary":"#000000","surface-dim":"#dadada","surface-bright":"#f9f9f9","on-secondary":"#ffffff","secondary":"#5e5e5e","background":"#f9f9f9","outline-variant":"#cfc4c5","on-surface":"#1a1c1c","on-primary":"#ffffff","surface":"#f9f9f9","surface-container-lowest":"#ffffff","outline":"#7e7576"},"spacing":{"gutter":"1.5rem","margin-mobile":"1.25rem","space-xl":"4rem","margin":"4rem","space-lg":"2rem","space-2xl":"6rem"},"fontFamily":{"display-hero":["EB Garamond"],"editorial-quote":["EB Garamond"],"label-nav":["Manrope"],"label-uppercase":["Manrope"],"headline-lg":["EB Garamond"],"headline-sm":["EB Garamond"],"body-md":["Manrope"],"caption":["Manrope"],"body-sm":["Manrope"]}}}}</script>
+
+</head>
+<body class="bg-surface text-on-surface antialiased">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant transition-all duration-300" id="main-header">
+<div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between">
+<div class="flex items-center gap-3">
+<a href="/" class="flex items-center">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkdSwV0Rb7ogIHkVlnM531BoQDQtw_wjOUgUvb134gaJV2t1rhk2IkF0SCugjgLEwMQkCqxRQa-HboO9sWVMfnB8o3XXnz_etEOP8HYr8-f5pwi5Qs7rG5kI1AR29qeCoMAwlsPsYrUNhQai2DQWvFGPxM9XAeW5KkdXzCA8cXRUOpe6SUUd6xOZDY9W6AGqIraYolAlWVV8HHPHwlnAmZv4SJ7ENWdv3zV4fYLEP4zOTGeZ-WXlwFq91rwMHJJSsXvw" alt="EVODA SPORTSWEAR" class="w-[95px] sm:w-[110px] md:w-[125px] h-auto object-contain">
+</a>
+</div>
+<nav class="hidden xl:flex items-center gap-8">
+<a class="font-label-nav text-label-nav tracking-wider pb-1 hover:text-black transition-colors" data-path="trang-chu" href="/">TRANG CHỦ</a>
+<a class="font-label-nav text-label-nav text-[#595959] font-medium hover:text-[#000000] tracking-wider transition-colors pb-1" data-path="san-pham" href="/san-pham/">SẢN PHẨM</a>
+<a class="font-label-nav text-label-nav text-[#595959] font-medium hover:text-[#000000] tracking-wider transition-colors pb-1" data-path="bo-suu-tap" href="/bo-suu-tap/">BỘ SƯU TẬP</a>
+<a class="font-label-nav text-label-nav text-[#595959] font-medium hover:text-[#000000] tracking-wider transition-colors pb-1" data-path="ve-chung-toi" href="/ve-chung-toi/">VỀ CHÚNG TÔI</a>
+<a class="font-label-nav text-label-nav text-[#595959] font-medium hover:text-[#000000] tracking-wider transition-colors pb-1" data-path="tin-tuc" href="/tin-tuc/">TIN TỨC</a>
+</nav>
+<div class="flex items-center gap-4 lg:gap-6">
+<button aria-label="Search" class="text-on-surface hover:text-primary flex items-center justify-center p-1.5 transition-all duration-300 hover:scale-110"><span class="material-symbols-outlined">search</span></button>
+<a class="hidden sm:inline-flex items-center justify-center bg-primary text-on-primary font-label-uppercase text-label-uppercase tracking-wider px-6 py-3.5 hover:bg-white hover:text-primary border border-primary transition-all duration-300" href="/san-pham/">MUA NGAY</a>
+</div>
+</div>
+</header>
+
+<main class="w-full pt-20 bg-surface">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-12">
+  
+  <div class="text-center max-w-2xl mx-auto mb-16">
+    <h1 class="font-display-hero text-[40px] lg:text-[56px] text-primary mb-6 uppercase">Bộ Sưu Tập</h1>
+    <p class="font-body-md text-secondary italic">"Mỗi chuyển động là một cách để thể hiện cá tính, sự tự tin và tinh thần sống chủ động của người phụ nữ hiện đại."</p>
+  </div>
+
+  <div class="flex flex-col gap-24 mb-20">
+    
+    <!-- Collection 1 -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="relative w-full aspect-[3/4] bg-surface-container-low overflow-hidden">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl9CbaYP3YlKyGk5SvSeiC3xuLKREIIOj45tzUcAyfIrX_T9GZnkZTQlPaCEVzV6vk8t1PUZ390bliIWTairA89Ocg_I3-2pdZHtJvizFcQYp9jg3axMykxwGXB_uzg2QO7uHPhhYbMlOsD5yIb2JXQftkfskEjOYDIl6YF81XO2F-2VEyTtXsdP4-aBAJkbhtuxG4oBeBy75lD3dJRj9fZIWtGsIfwgym4y2wEple9x-KI8-X8sat" class="w-full h-full object-cover">
+      </div>
+      <div class="flex flex-col pl-0 lg:pl-12">
+        <span class="font-caption text-secondary uppercase tracking-[0.2em] mb-4">SPRING 2025</span>
+        <h2 class="font-headline-lg text-[40px] mb-6">ESSENTIAL SCULPT 2025</h2>
+        <p class="font-body-md text-secondary leading-relaxed mb-8">Định hình phom dáng tối ưu với chất liệu Microfiber 320GSM độc quyền. Thiết kế tối giản, loại bỏ mọi chi tiết thừa, tập trung vào khả năng nâng đỡ và tôn vinh đường cong tự nhiên của cơ thể.</p>
+        <a href="/san-pham/" class="inline-flex items-center justify-center bg-primary text-on-primary font-label-uppercase text-[12px] px-8 py-4 w-max hover:bg-neutral-800 transition-colors">KHÁM PHÁ BỘ SƯU TẬP</a>
+      </div>
+    </div>
+
+    <!-- Collection 2 -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="flex flex-col pr-0 lg:pr-12 order-2 lg:order-1">
+        <span class="font-caption text-secondary uppercase tracking-[0.2em] mb-4">SUMMER 2025</span>
+        <h2 class="font-headline-lg text-[40px] mb-6">MIRO TENNIS & RESORT</h2>
+        <p class="font-body-md text-secondary leading-relaxed mb-8">Sự giao thoa hoàn hảo giữa thể thao và thời trang nghỉ dưỡng. Các thiết kế chân váy xếp ly, áo polo thanh lịch trên sân đấu và tỏa sáng ngay cả trong những buổi trà chiều.</p>
+        <a href="/san-pham/" class="inline-flex items-center justify-center bg-white text-primary border border-primary font-label-uppercase text-[12px] px-8 py-4 w-max hover:bg-surface-container-low transition-colors">KHÁM PHÁ BỘ SƯU TẬP</a>
+      </div>
+      <div class="relative w-full aspect-[3/4] bg-surface-container-low overflow-hidden order-1 lg:order-2">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrOtFBjaOn1YMFGejqhk0742socLo5pEaS8lhtecXcYI62hpuEm3A6e41zQgF_eZEhDmkStVDR-zyACXIYDMcnTeJVm-MNsL4vsjV3D6QhyDUmh4oLJl8pxJC3bEbwQUOlC-ueWbC6l7XBXIvMZ984Qq1XAOFSTYXpdxwO3qmng6fik73ImX0rKc9Iwtg1_0QHSW67W_jGBCiFWrEwBocP5A_rQssbnsyaagkX5GWxCqIN7LMdcGWm" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- Collection 3 -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="relative w-full aspect-[4/3] lg:aspect-[3/4] bg-surface-container-low overflow-hidden">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBckRu33EaMhhlIlZOdbE--ceZibw07yWpQLu8AQMlRgSEsaJbV4bEIaRwgjcnta8Ds8gGeAezxWvXC8VEBGbehTmZQrreLalHXlymWfRb4Dys-kfVVFeu2obe5WwpjX8tKzLzYLzSDlxcLVONwaxWXI_VMbTqEt2cP7sTolOlX7rx-p0OpGdrpCXx8-AObJfpd13NaGJVCeOjLZUvR_iJJONohG_FL3nKUwAG_gYrmX-BA10pb78HK" class="w-full h-full object-cover">
+      </div>
+      <div class="flex flex-col pl-0 lg:pl-12">
+        <span class="font-caption text-secondary uppercase tracking-[0.2em] mb-4">THE TRANSITION EDIT</span>
+        <h2 class="font-headline-lg text-[40px] mb-6">PURE LINE CONTOUR</h2>
+        <p class="font-body-md text-secondary leading-relaxed mb-8">Những mảng màu Nude và Earth tone chủ đạo. Thiết kế seamless (không đường may) loại bỏ hoàn toàn cảm giác ma sát, mang lại trải nghiệm như lớp da thứ hai mềm mại.</p>
+        <a href="/san-pham/" class="inline-flex items-center justify-center bg-white text-primary border border-primary font-label-uppercase text-[12px] px-8 py-4 w-max hover:bg-surface-container-low transition-colors">KHÁM PHÁ BỘ SƯU TẬP</a>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+</main>
+<!-- FLOATING SOCIAL BUTTONS -->
+<div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3 items-end">
+<a aria-label="Messenger" class="w-12 h-12 rounded-full bg-surface-container-lowest text-primary border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:bg-surface-container-high transition-all flex items-center justify-center animate-pulse-subtle" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.43 3.14 7.15.16.15.27.35.29.57l.17 1.78c.05.51.52.88 1.02.8l1.73-.29c.19-.03.39 0 .56.09 1 .53 2.13.83 3.09.83 5.64 0 10-4.13 10-9.7S17.64 2 12 2zm1.22 13.06-2.7-2.88-5.26 2.88 5.79-6.14 2.77 2.88 5.18-2.88-5.78 6.14z"></path></svg>
+</a>
+</div>
+<footer class="w-full bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-gutter">
+<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">VỀ THƯƠNG HIỆU</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="/ve-chung-toi/">Câu chuyện thương hiệu</a></li></ul></div>
+<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">HỖ TRỢ</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="#">Hướng dẫn chọn size</a></li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="#">Chính sách đổi trả</a></li></ul></div>
+<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">LIÊN HỆ</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant">Hotline: 099xxxxxxx</li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="#">Messenger</a></li></ul></div>
+<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">ĐĂNG KÝ NHẬN TIN</h4><form class="flex flex-col gap-2.5"><input class="w-full bg-surface-container-lowest border border-outline-variant px-3.5 py-2.5 font-body-sm" placeholder="Email của bạn" type="email"><button class="w-full bg-primary text-on-primary font-label-uppercase py-2.5 border border-primary" type="submit">ĐĂNG KÝ</button></form></div>
+</div>
+<div class="mt-space-lg pt-6 border-t border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-caption text-secondary">Copyright © EVODA SPORTSWEAR. All rights reserved.</p></div>
+</div>
+</footer>
+<script>
+  (function() {
+    const reveals = document.querySelectorAll('.reveal-on-scroll');
+    if ('IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-revealed'); observer.unobserve(entry.target); } });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      reveals.forEach(el => revealObserver.observe(el));
+    } else { reveals.forEach(el => el.classList.add('is-revealed')); }
+
+    const header = document.getElementById('main-header');
+    if (header) {
+      const handleScroll = () => { if (window.scrollY > 20) { header.classList.add('shadow-sm'); } else { header.classList.remove('shadow-sm'); } };
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+    }
+    
+    // setActiveNav
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('nav a').forEach(a => {
+        if(currentPath.includes(a.getAttribute('href')) && a.getAttribute('href') !== '/') {
+            a.classList.replace('text-[#595959]', 'text-[#000000]');
+            a.classList.add('border-b-2', 'border-primary');
+        } else if (currentPath === '/' && a.getAttribute('href') === '/') {
+            a.classList.replace('text-[#595959]', 'text-[#000000]');
+            a.classList.add('border-b-2', 'border-primary');
+        }
+    });
+  })();
+</script>
+
+</body>
+</html>
+

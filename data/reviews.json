@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "customerName": "Nguyễn Hoàng Mai",
+    "verified": true,
+    "content": "Chất liệu lụa mây mặc cực kì thích, mát mẻ và thấm mồ hôi tốt. Điểm 10 cho form dáng tôn vòng eo.",
+    "productPurchased": "Evoda Summer Crop",
+    "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80"
+  },
+  {
+    "id": 2,
+    "customerName": "Trần Ngọc Linh",
+    "verified": true,
+    "content": "Lần đầu mua đồ thể thao mà ưng ý đến vậy. Mặc đi đánh Pickleball ai cũng khen sang. Giao hàng nhanh, đóng gói đẹp.",
+    "productPurchased": "Pickleball Pleated Dress",
+    "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=150&q=80"
+  },
+  {
+    "id": 3,
+    "customerName": "Lê Phương Thảo",
+    "verified": true,
+    "content": "Đồ tập không có đường may nên mặc rất êm, không bị hằn. Giặt máy xong không bị mất form. Sẽ ủng hộ shop dài dài.",
+    "productPurchased": "Bloom Leggings",
+    "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80"
+  }
+]

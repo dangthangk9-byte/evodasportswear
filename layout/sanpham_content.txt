@@ -1,0 +1,87 @@
+﻿<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-8">
+  <!-- Categories Filter -->
+  <div class="flex flex-wrap items-center justify-center gap-6 mb-8 border-b border-[#E5E0DA] pb-4">
+    <a href="#" class="font-label-uppercase text-[13px] tracking-wider text-black border-b border-black pb-1">TẤT CẢ</a>
+    <a href="#" class="font-label-uppercase text-[13px] tracking-wider text-secondary hover:text-black pb-1 transition-colors">SET ĐỒ TẬP</a>
+    <a href="#" class="font-label-uppercase text-[13px] tracking-wider text-secondary hover:text-black pb-1 transition-colors">SET ĐỒ LIỀN</a>
+    <a href="#" class="font-label-uppercase text-[13px] tracking-wider text-secondary hover:text-black pb-1 transition-colors">ÁO POLO</a>
+    <a href="#" class="font-label-uppercase text-[13px] tracking-wider text-secondary hover:text-black pb-1 transition-colors">CHÂN VÁY</a>
+    <a href="#" class="font-label-uppercase text-[13px] tracking-wider text-secondary hover:text-black pb-1 transition-colors">ÁO KHOÁC & LAYER</a>
+    <a href="#" class="font-label-uppercase text-[13px] tracking-wider text-secondary hover:text-black pb-1 transition-colors">PHỤ KIỆN</a>
+  </div>
+
+  <!-- Sub Filters -->
+  <div class="flex flex-wrap items-center justify-between mb-8 pb-4 border-b border-[#E5E0DA]">
+    <div class="flex items-center gap-4">
+      <span class="flex items-center gap-1 font-label-uppercase text-[12px]"><span class="material-symbols-outlined text-[18px]">tune</span> BỘ LỌC</span>
+      <select class="text-[12px] border-[#E5E0DA] py-1 px-2 font-label-uppercase bg-transparent focus:ring-0 focus:border-black"><option>MÀU SẮC</option></select>
+      <select class="text-[12px] border-[#E5E0DA] py-1 px-2 font-label-uppercase bg-transparent focus:ring-0 focus:border-black"><option>KÍCH CỠ</option></select>
+      <select class="text-[12px] border-[#E5E0DA] py-1 px-2 font-label-uppercase bg-transparent focus:ring-0 focus:border-black"><option>KHOẢNG GIÁ</option></select>
+      <a href="#" class="text-[12px] text-secondary underline">Xóa lọc</a>
+    </div>
+    <div class="flex items-center gap-4">
+      <span class="font-body-sm text-secondary">Hiển thị 16 sản phẩm</span>
+      <div class="flex items-center gap-2">
+        <span class="font-label-uppercase text-[12px]">SẮP XẾP THEO:</span>
+        <select class="text-[12px] border-[#E5E0DA] py-1 px-2 font-label-uppercase bg-transparent focus:ring-0 focus:border-black"><option>MỚI NHẤT</option></select>
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Grid (4 columns) -->
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter mb-12">
+    
+    <!-- Item 1 -->
+    <div class="group flex flex-col cursor-pointer transition-transform hover:-translate-y-1">
+      <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-4">
+        <span class="absolute top-3 left-3 z-10 bg-primary text-on-primary font-caption text-[10px] tracking-widest uppercase px-2.5 py-1">NEW</span>
+        <a href="/san-pham/chi-tiet.html" class="block w-full h-full"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl9CbaYP3YlKyGk5SvSeiC3xuLKREIIOj45tzUcAyfIrX_T9GZnkZTQlPaCEVzV6vk8t1PUZ390bliIWTairA89Ocg_I3-2pdZHtJvizFcQYp9jg3axMykxwGXB_uzg2QO7uHPhhYbMlOsD5yIb2JXQftkfskEjOYDIl6YF81XO2F-2VEyTtXsdP4-aBAJkbhtuxG4oBeBy75lD3dJRj9fZIWtGsIfwgym4y2wEple9x-KI8-X8sat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></a>
+      </div>
+      <span class="font-caption text-secondary uppercase mb-1">BODYSUIT</span>
+      <a href="/san-pham/chi-tiet.html" class="font-headline-sm text-[16px] text-primary hover:text-secondary mb-1">Bodysuit liền thân Contour</a>
+      <span class="font-body-md font-medium">920.000đ</span>
+    </div>
+
+    <!-- Item 2 -->
+    <div class="group flex flex-col cursor-pointer transition-transform hover:-translate-y-1">
+      <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-4">
+        <span class="absolute top-3 left-3 z-10 bg-primary text-on-primary font-caption text-[10px] tracking-widest uppercase px-2.5 py-1">SIGNATURE</span>
+        <a href="/san-pham/chi-tiet.html" class="block w-full h-full"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrOtFBjaOn1YMFGejqhk0742socLo5pEaS8lhtecXcYI62hpuEm3A6e41zQgF_eZEhDmkStVDR-zyACXIYDMcnTeJVm-MNsL4vsjV3D6QhyDUmh4oLJl8pxJC3bEbwQUOlC-ueWbC6l7XBXIvMZ984Qq1XAOFSTYXpdxwO3qmng6fik73ImX0rKc9Iwtg1_0QHSW67W_jGBCiFWrEwBocP5A_rQssbnsyaagkX5GWxCqIN7LMdcGWm" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></a>
+      </div>
+      <span class="font-caption text-secondary uppercase mb-1">CHÂN VÁY</span>
+      <a href="/san-pham/chi-tiet.html" class="font-headline-sm text-[16px] text-primary hover:text-secondary mb-1">Chân váy xếp ly Tennis Ivory</a>
+      <span class="font-body-md font-medium">620.000đ</span>
+    </div>
+
+    <!-- Item 3 -->
+    <div class="group flex flex-col cursor-pointer transition-transform hover:-translate-y-1">
+      <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-4">
+        <span class="absolute top-3 left-3 z-10 bg-primary text-on-primary font-caption text-[10px] tracking-widest uppercase px-2.5 py-1">SALE</span>
+        <a href="/san-pham/chi-tiet.html" class="block w-full h-full"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSQcuf7DOfaUh1RSdXdNO8_QTuHXhBd2ZWQaaNKaRP7OpXfll_R05z96ImybBrRmfCLRIOFQdyiLdUrCDuwlvEZg_LLwocVWe4rh7_M9mJl60_t53DwRpgiNOvAhpTaqTtgB74G8nOk_63dRAs2f6UKYniUhHmne8unP23vGmkyvzXCf1OV3wODEYZKRzj4osTDdaZOVXIdj8DiLr2TBym5D2WLO8jyY2xchOhio_V2NVrjkG93tMK" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></a>
+      </div>
+      <span class="font-caption text-secondary uppercase mb-1">OUTERWEAR</span>
+      <a href="/san-pham/chi-tiet.html" class="font-headline-sm text-[16px] text-primary hover:text-secondary mb-1">Áo khoác lửng Zip Active</a>
+      <span class="font-body-md font-medium text-red-700"><span class="line-through text-secondary mr-2 text-sm">789.000đ</span>599.000đ</span>
+    </div>
+
+    <!-- Item 4 -->
+    <div class="group flex flex-col cursor-pointer transition-transform hover:-translate-y-1">
+      <div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-4">
+        <a href="/san-pham/chi-tiet.html" class="block w-full h-full"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGR5G-PLAQQZbb7WQY5Jd2ZC-wWp3kF3IBQrYVJ-0ubqTewAhpXPVrdDb0ueoH2trxVWukN1NZ5PA4FegzQxWA9wWKlpAiPZBUhBRl-NiHlKR4_7PXkLYVHftOQ5u2Gpm6XbfRb17SOvqjPBJs5ntg1sc86inPnqHycIKm5J-v3m34zdCwUVwIDHbVQnLoG7xhuaKptXq01Si0cI0biZjgFV5fI0eDg-HAMcnkuOTg7-7fUHAnrngM" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"></a>
+      </div>
+      <span class="font-caption text-secondary uppercase mb-1">POLO TOPS</span>
+      <a href="/san-pham/chi-tiet.html" class="font-headline-sm text-[16px] text-primary hover:text-secondary mb-1">Áo polo thể thao Sculpted</a>
+      <span class="font-body-md font-medium">499.000đ</span>
+    </div>
+
+  </div>
+
+  <!-- Pagination -->
+  <div class="flex justify-center mt-12">
+    <div class="flex items-center border border-[#E5E0DA]">
+      <a href="#" class="px-4 py-2 border-r border-[#E5E0DA] bg-primary text-white">01</a>
+      <a href="#" class="px-4 py-2 border-r border-[#E5E0DA] hover:bg-surface-container-low">02</a>
+      <a href="#" class="px-4 py-2 hover:bg-surface-container-low">03</a>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,44 @@
+[
+  {
+    "id": "c1",
+    "name": "Summer Set",
+    "slug": "summer-set",
+    "description": "Thoải mái vươn mình đón nắng hè với chất liệu lụa mây siêu nhẹ, thấm hút tối đa.",
+    "image": "assets/images/bo-suu-tap/summer-set.jpg"
+  },
+  {
+    "id": "c2",
+    "name": "Polo Set",
+    "slug": "polo-set",
+    "description": "Thanh lịch và năng động. Thiết kế cổ điển pha trộn đường nét hiện đại, phù hợp từ phòng tập đến dạo phố.",
+    "image": "assets/images/bo-suu-tap/polo-set.jpg"
+  },
+  {
+    "id": "c3",
+    "name": "Bloom Set",
+    "slug": "bloom-set",
+    "description": "Nét nữ tính ngọt ngào nhưng không kém phần mạnh mẽ. Form dáng tôn đường cong hoàn hảo.",
+    "image": "assets/images/bo-suu-tap/bloom-set.jpg"
+  },
+  {
+    "id": "c4",
+    "name": "Cler Set",
+    "slug": "cler-set",
+    "description": "Sự tối giản lên ngôi. Tone màu trung tính, dễ dàng phối hợp, vượt thời gian.",
+    "image": "assets/images/bo-suu-tap/cler-set.jpg"
+  },
+  {
+    "id": "c5",
+    "name": "Sporty Set",
+    "slug": "sporty-set",
+    "description": "Dành cho những bài tập cường độ cao. Cố định tuyệt đối, hỗ trợ mọi chuyển động linh hoạt nhất.",
+    "image": "assets/images/bo-suu-tap/sporty-set.jpg"
+  },
+  {
+    "id": "c6",
+    "name": "Pickleball Set",
+    "slug": "pickleball-set",
+    "description": "Chiếm lĩnh sân đấu với chân váy xếp ly điệu đà và áo dáng croptop thể thao.",
+    "image": "assets/images/bo-suu-tap/pickleball-set.jpg"
+  }
+]

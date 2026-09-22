@@ -1,0 +1,77 @@
+﻿<div class="flex flex-col w-full font-body-md text-on-surface bg-surface">
+<!-- SECTION 1 -->
+<section class="relative w-full h-[75vh] min-h-[580px] max-h-[820px] lg:h-[82vh] overflow-hidden border-b border-[#E5E0DA] bg-[#F5E6D3]">
+  <div class="absolute inset-0 w-full h-full pointer-events-none">
+    <img class="w-full h-full object-cover object-right lg:object-center" alt="EVODA" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8eY21q-Oo9Nqu6iVIIKovoTdfuNXWC4GMHfsW8JrQCh4P_29HJjsIEaoweY5tVpoEjrW2G4idu_9f-thTKzUp7V3LQ4-EgGVczqwhgu_IBn9kXwdG9o9N0wtgubmzgjMnpOmv4HuJlchc3D6cPkOUkY8W7BtkbcNedY_DmLO5T0m4MgEIMEhD23HqsWuJ6wE2COvFF7CatbfhkvlT0FDKqBIJJAyXp_sktGmY85N9U8OBDq3VnuCp">
+    <div class="absolute inset-0 bg-gradient-to-r from-[#f9f9f9]/95 via-[#f9f9f9]/75 to-transparent sm:w-3/4 lg:w-1/2"></div>
+  </div>
+  <div class="relative z-10 w-full h-full max-w-7xl mx-auto px-margin-mobile lg:px-margin flex flex-col justify-center">
+    <div class="max-w-lg lg:max-w-xl flex flex-col items-start">
+      <div class="flex items-center gap-2 mb-6 animate-fade-in-up" style="animation-delay: 0.1s;">
+        <span class="w-2 h-2 bg-primary"></span>
+        <span class="font-label-uppercase text-label-uppercase tracking-[0.2em] text-secondary uppercase">Bộ sưu tập 01</span>
+      </div>
+      <h1 class="font-display-hero text-[38px] sm:text-[48px] lg:text-[58px] leading-[1.15] text-[#000000] font-semibold tracking-wide uppercase mb-6 animate-fade-in-up" style="animation-delay: 0.2s;">
+        KHÁM PHÁ&nbsp;<div class="">PHONG CÁCH EVODA</div>
+      </h1>
+      <p class="italic leading-relaxed mb-8 max-w-lg animate-fade-in-up font-body-md text-[16px] text-[#000000]" style="animation-delay: 0.3s;">EVODA không chỉ tạo ra trang phục thể thao, mà còn là nguồn cảm hứng bất tận để mỗi phụ nữ chinh phục bản thân qua vận động</p>
+      <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto animate-fade-in-up" style="animation-delay: 0.4s;">
+        <a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-uppercase text-label-uppercase font-medium px-8 py-4 tracking-wider border border-primary hover:bg-white hover:text-primary transition-all duration-300 hover:shadow-sm text-center uppercase" href="/bo-suu-tap">KHÁM PHÁ BỘ SƯU TẬP</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- SECTION 2 -->
+<section class="w-full bg-surface py-space-xl lg:py-space-2xl border-b border-[#E5E0DA] reveal-on-scroll">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-[#E5E0DA] gap-4">
+<div><h2 class="font-headline-lg text-[32px] lg:text-headline-lg text-primary tracking-tight font-normal">KHÁM PHÁ DÒNG SẢN PHẨM</h2></div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<div class="group flex flex-col cursor-pointer">
+<a class="block relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-5" href="/san-pham/"><img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBHBId_NLGYLb29m7qsHeRETBWYjrY9olU_tirRDVU73yH9l8Zswu7i4cZpjte8SOM2-Kwhyh68xsa76JiE-TZeB346wvzLklN9H4VZW0wQanAuPKCG2F9oQptOemPSdyp4ti3lf5dsxW_jvKn_HB9bErQLNHNbz_M1mNB_F4_WD655re_DuX3a5tqootPR2lxNWZtGt7KDg5PLG0hyrO0_yqLmXqIG7ZSINikyEKefxuQTTOSQRuao"></a>
+<span class="font-caption text-caption text-secondary uppercase tracking-widest mb-1">01 / COMBO SET</span>
+<h3 class="font-headline-sm text-[18px] text-primary mb-3 font-medium transition-colors duration-300 group-hover:text-black">SET ĐỒ TẬP ÁO POLO & CHÂN VÁY</h3>
+<a class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-primary hover:text-secondary transition-colors" href="/san-pham/">KHÁM PHÁ <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1.5">arrow_forward</span></a>
+</div>
+<div class="group flex flex-col cursor-pointer">
+<a class="block relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-5" href="/san-pham/"><img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl9CbaYP3YlKyGk5SvSeiC3xuLKREIIOj45tzUcAyfIrX_T9GZnkZTQlPaCEVzV6vk8t1PUZ390bliIWTairA89Ocg_I3-2pdZHtJvizFcQYp9jg3axMykxwGXB_uzg2QO7uHPhhYbMlOsD5yIb2JXQftkfskEjOYDIl6YF81XO2F-2VEyTtXsdP4-aBAJkbhtuxG4oBeBy75lD3dJRj9fZIWtGsIfwgym4y2wEple9x-KI8-X8sat"></a>
+<span class="font-caption text-caption text-secondary uppercase tracking-widest mb-1">02 / ONE-PIECE</span>
+<h3 class="font-headline-sm text-[18px] text-primary mb-3 font-medium transition-colors duration-300 group-hover:text-black">SET ĐỒ TẬP LIỀN</h3>
+<a class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-primary hover:text-secondary transition-colors" href="/san-pham/">KHÁM PHÁ <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1.5">arrow_forward</span></a>
+</div>
+<div class="group flex flex-col cursor-pointer">
+<a class="block relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-5" href="/san-pham/"><img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGR5G-PLAQQZbb7WQY5Jd2ZC-wWp3kF3IBQrYVJ-0ubqTewAhpXPVrdDb0ueoH2trxVWukN1NZ5PA4FegzQxWA9wWKlpAiPZBUhBRl-NiHlKR4_7PXkLYVHftOQ5u2Gpm6XbfRb17SOvqjPBJs5ntg1sc86inPnqHycIKm5J-v3m34zdCwUVwIDHbVQnLoG7xhuaKptXq01Si0cI0biZjgFV5fI0eDg-HAMcnkuOTg7-7fUHAnrngM"></a>
+<span class="font-caption text-caption text-secondary uppercase tracking-widest mb-1">03 / TOPS</span>
+<h3 class="font-headline-sm text-[18px] text-primary mb-3 font-medium transition-colors duration-300 group-hover:text-black">ÁO POLO THỂ THAO NỮ</h3>
+<a class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-primary hover:text-secondary transition-colors" href="/san-pham/">KHÁM PHÁ <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1.5">arrow_forward</span></a>
+</div>
+<div class="group flex flex-col cursor-pointer">
+<a class="block relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-5" href="/san-pham/"><img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrOtFBjaOn1YMFGejqhk0742socLo5pEaS8lhtecXcYI62hpuEm3A6e41zQgF_eZEhDmkStVDR-zyACXIYDMcnTeJVm-MNsL4vsjV3D6QhyDUmh4oLJl8pxJC3bEbwQUOlC-ueWbC6l7XBXIvMZ984Qq1XAOFSTYXpdxwO3qmng6fik73ImX0rKc9Iwtg1_0QHSW67W_jGBCiFWrEwBocP5A_rQssbnsyaagkX5GWxCqIN7LMdcGWm"></a>
+<span class="font-caption text-caption text-secondary uppercase tracking-widest mb-1">04 / BOTTOMS</span>
+<h3 class="font-headline-sm text-[18px] text-primary mb-3 font-medium transition-colors duration-300 group-hover:text-black">CHÂN VÁY THỂ THAO</h3>
+<a class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-primary hover:text-secondary transition-colors" href="/san-pham/">KHÁM PHÁ <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1.5">arrow_forward</span></a>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION 4 -->
+<section class="w-full bg-[#F5E6D3] text-primary py-space-xl lg:py-space-2xl border-b border-[#E5E0DA] reveal-on-scroll">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-gutter items-center">
+<div class="lg:col-span-6 order-2 lg:order-1">
+<div class="relative aspect-[4/5] bg-surface-container-low overflow-hidden border border-[#E5E0DA] group cursor-pointer">
+<img class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-105" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaZSG3LxWUAx-ijpzuh8gq3PJkxoGjUyhfPfAKWOTt9XrD_3_9QmoShm-yJ6sT2KZ4pyLoBTUdlyoNSxWpxYKZUFyiWTY98YUbTSFDciHu99uc0xs9ViglebX33GH31E9w7FM05PyGUMLE1V2iS9O9JGsnsGRyYaLuAlmmjhhPJp-L-O82uqSjdYGyRSKC2Uf7jYX1oLWd5QWJ4phgzjJ1pbBi0TiBPO40DByK_DdVDPiDBhtGWRl-">
+</div>
+</div>
+<div class="lg:col-span-6 order-1 lg:order-2 flex flex-col items-start lg:pl-8">
+<span class="font-caption text-caption text-[#4f4538] uppercase tracking-[0.25em] block mb-4">TRIẾT LÝ THIẾT KẾ</span>
+<h2 class="font-headline-lg text-[32px] lg:text-headline-lg text-primary tracking-tight uppercase mb-6 font-normal">THỂ THAO KHÔNG CHỈ LÀ VẬN ĐỘNG.</h2>
+<blockquote class="text-editorial-quote italic text-primary leading-relaxed mb-6 border-l-2 border-primary pl-5 font-body-md">“Với EVODA, thể thao là sức mạnh tinh thần – thời trang là làn sóng cảm hứng, giúp mỗi phụ nữ vươn tới những giới hạn mới.”</blockquote>
+<p class="font-body-md text-body-md text-[#4f4538] leading-relaxed mb-8">[ câu chuyện thương hiệu và định hướng thiết kế tối giản dành riêng cho phái đẹp Việt ]</p>
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-uppercase px-8 py-3.5 tracking-wider border border-primary hover:bg-[#F5E6D3] hover:text-primary transition-all duration-300 uppercase" href="/ve-chung-toi/">TÌM HIỂU THƯƠNG HIỆU</a>
+</div>
+</div>
+</div>
+</section>
+</div>

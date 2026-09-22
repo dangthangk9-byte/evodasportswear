@@ -1,0 +1,50 @@
+﻿<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-12">
+  
+  <div class="text-center max-w-2xl mx-auto mb-16">
+    <h1 class="font-display-hero text-[40px] lg:text-[56px] text-primary mb-6 uppercase">Bộ Sưu Tập</h1>
+    <p class="font-body-md text-secondary italic">"Mỗi chuyển động là một cách để thể hiện cá tính, sự tự tin và tinh thần sống chủ động của người phụ nữ hiện đại."</p>
+  </div>
+
+  <div class="flex flex-col gap-24 mb-20">
+    
+    <!-- Collection 1 -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="relative w-full aspect-[3/4] bg-surface-container-low overflow-hidden">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl9CbaYP3YlKyGk5SvSeiC3xuLKREIIOj45tzUcAyfIrX_T9GZnkZTQlPaCEVzV6vk8t1PUZ390bliIWTairA89Ocg_I3-2pdZHtJvizFcQYp9jg3axMykxwGXB_uzg2QO7uHPhhYbMlOsD5yIb2JXQftkfskEjOYDIl6YF81XO2F-2VEyTtXsdP4-aBAJkbhtuxG4oBeBy75lD3dJRj9fZIWtGsIfwgym4y2wEple9x-KI8-X8sat" class="w-full h-full object-cover">
+      </div>
+      <div class="flex flex-col pl-0 lg:pl-12">
+        <span class="font-caption text-secondary uppercase tracking-[0.2em] mb-4">SPRING 2025</span>
+        <h2 class="font-headline-lg text-[40px] mb-6">ESSENTIAL SCULPT 2025</h2>
+        <p class="font-body-md text-secondary leading-relaxed mb-8">Định hình phom dáng tối ưu với chất liệu Microfiber 320GSM độc quyền. Thiết kế tối giản, loại bỏ mọi chi tiết thừa, tập trung vào khả năng nâng đỡ và tôn vinh đường cong tự nhiên của cơ thể.</p>
+        <a href="/san-pham/" class="inline-flex items-center justify-center bg-primary text-on-primary font-label-uppercase text-[12px] px-8 py-4 w-max hover:bg-neutral-800 transition-colors">KHÁM PHÁ BỘ SƯU TẬP</a>
+      </div>
+    </div>
+
+    <!-- Collection 2 -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="flex flex-col pr-0 lg:pr-12 order-2 lg:order-1">
+        <span class="font-caption text-secondary uppercase tracking-[0.2em] mb-4">SUMMER 2025</span>
+        <h2 class="font-headline-lg text-[40px] mb-6">MIRO TENNIS & RESORT</h2>
+        <p class="font-body-md text-secondary leading-relaxed mb-8">Sự giao thoa hoàn hảo giữa thể thao và thời trang nghỉ dưỡng. Các thiết kế chân váy xếp ly, áo polo thanh lịch trên sân đấu và tỏa sáng ngay cả trong những buổi trà chiều.</p>
+        <a href="/san-pham/" class="inline-flex items-center justify-center bg-white text-primary border border-primary font-label-uppercase text-[12px] px-8 py-4 w-max hover:bg-surface-container-low transition-colors">KHÁM PHÁ BỘ SƯU TẬP</a>
+      </div>
+      <div class="relative w-full aspect-[3/4] bg-surface-container-low overflow-hidden order-1 lg:order-2">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDrOtFBjaOn1YMFGejqhk0742socLo5pEaS8lhtecXcYI62hpuEm3A6e41zQgF_eZEhDmkStVDR-zyACXIYDMcnTeJVm-MNsL4vsjV3D6QhyDUmh4oLJl8pxJC3bEbwQUOlC-ueWbC6l7XBXIvMZ984Qq1XAOFSTYXpdxwO3qmng6fik73ImX0rKc9Iwtg1_0QHSW67W_jGBCiFWrEwBocP5A_rQssbnsyaagkX5GWxCqIN7LMdcGWm" class="w-full h-full object-cover">
+      </div>
+    </div>
+
+    <!-- Collection 3 -->
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div class="relative w-full aspect-[4/3] lg:aspect-[3/4] bg-surface-container-low overflow-hidden">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBckRu33EaMhhlIlZOdbE--ceZibw07yWpQLu8AQMlRgSEsaJbV4bEIaRwgjcnta8Ds8gGeAezxWvXC8VEBGbehTmZQrreLalHXlymWfRb4Dys-kfVVFeu2obe5WwpjX8tKzLzYLzSDlxcLVONwaxWXI_VMbTqEt2cP7sTolOlX7rx-p0OpGdrpCXx8-AObJfpd13NaGJVCeOjLZUvR_iJJONohG_FL3nKUwAG_gYrmX-BA10pb78HK" class="w-full h-full object-cover">
+      </div>
+      <div class="flex flex-col pl-0 lg:pl-12">
+        <span class="font-caption text-secondary uppercase tracking-[0.2em] mb-4">THE TRANSITION EDIT</span>
+        <h2 class="font-headline-lg text-[40px] mb-6">PURE LINE CONTOUR</h2>
+        <p class="font-body-md text-secondary leading-relaxed mb-8">Những mảng màu Nude và Earth tone chủ đạo. Thiết kế seamless (không đường may) loại bỏ hoàn toàn cảm giác ma sát, mang lại trải nghiệm như lớp da thứ hai mềm mại.</p>
+        <a href="/san-pham/" class="inline-flex items-center justify-center bg-white text-primary border border-primary font-label-uppercase text-[12px] px-8 py-4 w-max hover:bg-surface-container-low transition-colors">KHÁM PHÁ BỘ SƯU TẬP</a>
+      </div>
+    </div>
+
+  </div>
+</div>

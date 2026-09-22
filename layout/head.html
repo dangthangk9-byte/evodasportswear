@@ -1,0 +1,32 @@
+﻿<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+@keyframes floatSlow {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
+@keyframes pulseSubtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.94; transform: scale(1.03); }
+}
+.animate-fade-in-up { animation: fadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+.animate-fade-in { animation: fadeIn 0.9s ease-out forwards; }
+.animate-float-slow { animation: floatSlow 4s ease-in-out infinite; }
+.animate-pulse-subtle { animation: pulseSubtle 3.5s ease-in-out infinite; }
+.reveal-on-scroll { opacity: 0; transform: translateY(24px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; }
+.reveal-on-scroll.is-revealed { opacity: 1; transform: translateY(0); }
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-low":"#f3f3f4","on-secondary-fixed":"#1b1c1c","on-background":"#1a1c1c","surface-container":"#eeeeee","on-tertiary":"#ffffff","primary-container":"#1b1b1b","surface-variant":"#e2e2e2","surface-container-highest":"#e2e2e2","surface-container-high":"#e8e8e8","primary":"#000000","surface-dim":"#dadada","surface-bright":"#f9f9f9","on-secondary":"#ffffff","secondary":"#5e5e5e","background":"#f9f9f9","outline-variant":"#cfc4c5","on-surface":"#1a1c1c","on-primary":"#ffffff","surface":"#f9f9f9","surface-container-lowest":"#ffffff","outline":"#7e7576"},"spacing":{"gutter":"1.5rem","margin-mobile":"1.25rem","space-xl":"4rem","margin":"4rem","space-lg":"2rem","space-2xl":"6rem"},"fontFamily":{"display-hero":["EB Garamond"],"editorial-quote":["EB Garamond"],"label-nav":["Manrope"],"label-uppercase":["Manrope"],"headline-lg":["EB Garamond"],"headline-sm":["EB Garamond"],"body-md":["Manrope"],"caption":["Manrope"],"body-sm":["Manrope"]}}}}</script>

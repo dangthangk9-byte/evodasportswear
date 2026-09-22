@@ -1,0 +1,54 @@
+﻿<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-12">
+  
+  <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 border-b border-[#E5E0DA] pb-8">
+    <div class="max-w-2xl">
+      <span class="font-label-uppercase text-[12px] tracking-wider text-secondary mb-4 block">CÂU CHUYỆN THƯƠNG HIỆU</span>
+      <h1 class="font-display-hero text-[40px] lg:text-[48px] leading-tight text-primary">Câu chuyện của Evoda Sportwear</h1>
+    </div>
+    <div class="max-w-sm mt-6 md:mt-0 pl-0 md:pl-8 border-l-0 md:border-l border-[#E5E0DA]">
+      <p class="font-body-md text-secondary italic">"Giao thoa giữa kỹ thuật dệt công nghệ cao và ngôn ngữ mỹ thuật tối giản dành riêng cho phái đẹp Á Đông."</p>
+      <span class="font-caption text-secondary uppercase tracking-widest mt-4 block">EVODA CREATIVE DIRECTOR</span>
+    </div>
+  </div>
+
+  <!-- Hero Image -->
+  <div class="w-full aspect-[21/9] bg-surface-container-low overflow-hidden mb-20">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8eY21q-Oo9Nqu6iVIIKovoTdfuNXWC4GMHfsW8JrQCh4P_29HJjsIEaoweY5tVpoEjrW2G4idu_9f-thTKzUp7V3LQ4-EgGVczqwhgu_IBn9kXwdG9o9N0wtgubmzgjMnpOmv4HuJlchc3D6cPkOUkY8W7BtkbcNedY_DmLO5T0m4MgEIMEhD23HqsWuJ6wE2COvFF7CatbfhkvlT0FDKqBIJJAyXp_sktGmY85N9U8OBDq3VnuCp" class="w-full h-full object-cover">
+  </div>
+
+  <!-- Story Section -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 mb-24 items-center">
+    <div class="relative w-full aspect-[3/4] bg-surface-container-low overflow-hidden">
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBaZSG3LxWUAx-ijpzuh8gq3PJkxoGjUyhfPfAKWOTt9XrD_3_9QmoShm-yJ6sT2KZ4pyLoBTUdlyoNSxWpxYKZUFyiWTY98YUbTSFDciHu99uc0xs9ViglebX33GH31E9w7FM05PyGUMLE1V2iS9O9JGsnsGRyYaLuAlmmjhhPJp-L-O82uqSjdYGyRSKC2Uf7jYX1oLWd5QWJ4phgzjJ1pbBi0TiBPO40DByK_DdVDPiDBhtGWRl-" class="w-full h-full object-cover grayscale opacity-90">
+    </div>
+    <div class="flex flex-col">
+      <h2 class="font-headline-lg text-[32px] mb-8 leading-snug">Khởi sinh từ khao khát tôn vinh vẻ đẹp hình thể tự nhiên — không gò ép, không phô trương.</h2>
+      <p class="font-body-md text-secondary leading-relaxed mb-6">Evoda Sportswear được thành lập không chỉ để đáp ứng nhu cầu tập luyện, mà bắt nguồn từ một trăn trở căn bản: Phần lớn trang phục thể thao trên thị trường quốc tế đều áp dụng hệ số nhân trắc học phương Tây, dẫn đến những đường cắt thiếu tương thích với đường cong mềm mại và thể trạng đặc thù của phụ nữ Việt Nam.</p>
+      <p class="font-body-md text-secondary leading-relaxed mb-8">Chúng tôi tin rằng trang phục không định hình con người, mà chính sự chuyển động tự do sẽ định hình vóc dáng thực sự của bạn.</p>
+      
+      <div class="grid grid-cols-3 gap-6 pt-8 border-t border-[#E5E0DA]">
+        <div><h4 class="font-headline-sm text-[24px] text-primary">320<span class="text-[14px]">GSM</span></h4><p class="font-caption text-secondary">ĐỘ DÀY VẢI TỐI ƯU</p></div>
+        <div><h4 class="font-headline-sm text-[24px] text-primary">4 WAY</h4><p class="font-caption text-secondary">CO GIÃN ĐA CHIỀU</p></div>
+        <div><h4 class="font-headline-sm text-[24px] text-primary">100%</h4><p class="font-caption text-secondary">THIẾT KẾ DÀNH CHO NGƯỜI VIỆT</p></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Vision & Mission -->
+  <div class="mb-24">
+    <h2 class="font-headline-lg text-[32px] mb-12 text-center">Tầm nhìn & Sứ mệnh</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-px bg-[#E5E0DA] border border-[#E5E0DA]">
+      <div class="bg-surface-container-lowest p-12">
+        <span class="font-label-uppercase text-secondary tracking-widest block mb-4">01. TẦM NHÌN</span>
+        <h3 class="font-headline-sm text-[24px] mb-6">Trở thành biểu tượng thời trang thể thao tối giản hàng đầu tại Việt Nam.</h3>
+        <p class="font-body-md text-secondary leading-relaxed">Định nghĩa lại trang phục tập luyện như một tuyên ngôn phong cách sống, thay vì chỉ là công cụ vận động.</p>
+      </div>
+      <div class="bg-surface-container-lowest p-12">
+        <span class="font-label-uppercase text-secondary tracking-widest block mb-4">02. SỨ MỆNH</span>
+        <h3 class="font-headline-sm text-[24px] mb-6">Giải phóng chuyển động cơ thể, trao gửi sự tự tin nguyên bản cho phụ nữ qua từng đường cắt may.</h3>
+        <p class="font-body-md text-secondary leading-relaxed">Cung cấp giải pháp tối ưu cho phái đẹp qua những sản phẩm cân bằng giữa công năng và thẩm mỹ, dựa trên sự am hiểu sâu sắc về vóc dáng Á Đông.</p>
+      </div>
+    </div>
+  </div>
+
+</div>

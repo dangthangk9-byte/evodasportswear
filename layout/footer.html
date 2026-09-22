@@ -1,0 +1,47 @@
+﻿<!-- FLOATING SOCIAL BUTTONS -->
+<div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3 items-end">
+<a aria-label="Messenger" class="w-12 h-12 rounded-full bg-surface-container-lowest text-primary border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:bg-surface-container-high transition-all flex items-center justify-center animate-pulse-subtle" href="#">
+<svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.43 3.14 7.15.16.15.27.35.29.57l.17 1.78c.05.51.52.88 1.02.8l1.73-.29c.19-.03.39 0 .56.09 1 .53 2.13.83 3.09.83 5.64 0 10-4.13 10-9.7S17.64 2 12 2zm1.22 13.06-2.7-2.88-5.26 2.88 5.79-6.14 2.77 2.88 5.18-2.88-5.78 6.14z"></path></svg>
+</a>
+</div>
+<footer class="w-full bg-surface-container-lowest border-t border-outline-variant">
+<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-gutter">
+<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">VỀ THƯƠNG HIỆU</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="/ve-chung-toi/">Câu chuyện thương hiệu</a></li></ul></div>
+<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">HỖ TRỢ</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="#">Hướng dẫn chọn size</a></li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="#">Chính sách đổi trả</a></li></ul></div>
+<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">LIÊN HỆ</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant">Hotline: 099xxxxxxx</li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="#">Messenger</a></li></ul></div>
+<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">ĐĂNG KÝ NHẬN TIN</h4><form class="flex flex-col gap-2.5"><input class="w-full bg-surface-container-lowest border border-outline-variant px-3.5 py-2.5 font-body-sm" placeholder="Email của bạn" type="email"><button class="w-full bg-primary text-on-primary font-label-uppercase py-2.5 border border-primary" type="submit">ĐĂNG KÝ</button></form></div>
+</div>
+<div class="mt-space-lg pt-6 border-t border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-caption text-secondary">Copyright © EVODA SPORTSWEAR. All rights reserved.</p></div>
+</div>
+</footer>
+<script>
+  (function() {
+    const reveals = document.querySelectorAll('.reveal-on-scroll');
+    if ('IntersectionObserver' in window) {
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => { if (entry.isIntersecting) { entry.target.classList.add('is-revealed'); observer.unobserve(entry.target); } });
+      }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+      reveals.forEach(el => revealObserver.observe(el));
+    } else { reveals.forEach(el => el.classList.add('is-revealed')); }
+
+    const header = document.getElementById('main-header');
+    if (header) {
+      const handleScroll = () => { if (window.scrollY > 20) { header.classList.add('shadow-sm'); } else { header.classList.remove('shadow-sm'); } };
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+    }
+    
+    // setActiveNav
+    const currentPath = window.location.pathname;
+    document.querySelectorAll('nav a').forEach(a => {
+        if(currentPath.includes(a.getAttribute('href')) && a.getAttribute('href') !== '/') {
+            a.classList.replace('text-[#595959]', 'text-[#000000]');
+            a.classList.add('border-b-2', 'border-primary');
+        } else if (currentPath === '/' && a.getAttribute('href') === '/') {
+            a.classList.replace('text-[#595959]', 'text-[#000000]');
+            a.classList.add('border-b-2', 'border-primary');
+        }
+    });
+  })();
+</script>

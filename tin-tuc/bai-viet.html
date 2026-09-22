@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài viết | Evoda Sportswear</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .article-header {
+            text-align: center;
+            margin-bottom: var(--spacing-md);
+        }
+        .article-image {
+            width: 100%;
+            aspect-ratio: 16/9;
+            object-fit: cover;
+            margin-bottom: var(--spacing-md);
+        }
+        .article-content {
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #333;
+        }
+        .article-content p {
+            margin-bottom: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main class="section-padding">
+        <div class="container article-container" id="article-detail-container">
+            <p>Đang tải bài viết...</p>
+        </div>
+    </main>
+
+    <div id="footer-placeholder"></div>
+    <div id="floating-buttons-placeholder"></div>
+
+    <script src="../js/components.js"></script>
+    <script>
+        async function loadArticle() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const slug = urlParams.get('slug');
+            
+            if (!slug) {
+                document.getElementById('article-detail-container').innerHTML = '<p>Không tìm thấy bài viết.</p>';
+                return;
+            }
+
+            try {
+                const response = await fetch('../data/news.json');
+                const newsList = await response.json();
+                const article = newsList.find(n => n.slug === slug);
+
+                if (!article) {
+                    document.getElementById('article-detail-container').innerHTML = '<p>Không tìm thấy bài viết.</p>';
+                    return;
+                }
+
+                document.title = `${article.title} | Evoda Sportswear`;
+
+                const container = document.getElementById('article-detail-container');
+                container.innerHTML = `
+                    <div class="fade-in">
+                        <div class="article-header">
+                            <span class="label-small">${article.date}</span>
+                            <h1 style="font-size: 2.5rem; margin-top: 1rem;">${article.title}</h1>
+                        </div>
+                        <img src="${article.image}" alt="${article.title}" class="article-image">
+                        <div class="article-content">
+                            <p style="font-style: italic; color: var(--text-secondary); font-size: 1.1rem; border-left: 3px solid var(--accent); padding-left: 1rem;">${article.excerpt}</p>
+                            ${article.content}
+                        </div>
+                    </div>
+                `;
+            } catch (error) {
+                console.error('Lỗi:', error);
+            }
+        }
+        document.addEventListener('DOMContentLoaded', loadArticle);
+    </script>
+</body>
+</html>

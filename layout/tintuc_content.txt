@@ -1,0 +1,77 @@
+﻿<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-12">
+  
+  <div class="flex items-center justify-between border-b border-[#E5E0DA] pb-4 mb-12">
+    <span class="font-label-uppercase text-[12px] tracking-wider text-secondary">TRANG CHỦ / TIN TỨC</span>
+    <span class="font-label-uppercase text-[12px] tracking-[0.2em] text-black">THE JOURNAL - ATELIER CHRONICLES - VOL 05</span>
+  </div>
+
+  <!-- Featured Story -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20 items-center">
+    <div class="relative w-full aspect-[4/3] bg-surface-container-low overflow-hidden group">
+      <span class="absolute top-4 left-4 z-10 bg-black text-white px-3 py-1 font-label-uppercase text-[10px] tracking-widest">FEATURED STORY</span>
+      <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl9CbaYP3YlKyGk5SvSeiC3xuLKREIIOj45tzUcAyfIrX_T9GZnkZTQlPaCEVzV6vk8t1PUZ390bliIWTairA89Ocg_I3-2pdZHtJvizFcQYp9jg3axMykxwGXB_uzg2QO7uHPhhYbMlOsD5yIb2JXQftkfskEjOYDIl6YF81XO2F-2VEyTtXsdP4-aBAJkbhtuxG4oBeBy75lD3dJRj9fZIWtGsIfwgym4y2wEple9x-KI8-X8sat" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+    </div>
+    <div class="flex flex-col">
+      <span class="font-caption text-secondary uppercase tracking-[0.2em] mb-4">RA MẮT BỘ SƯU TẬP MỚI - NEW COLLECTION</span>
+      <h2 class="font-display-hero text-[36px] lg:text-[44px] leading-tight mb-6">Ra mắt bộ sưu tập 'The Fluid Motion 2026': tuyên ngôn tối giản cùng kỹ thuật may đo chuyển động</h2>
+      <div class="font-caption text-secondary mb-6">20.03.2025 <span class="mx-2">|</span> BỞI: ĐỘI NGŨ EVODA</div>
+      <p class="font-body-md text-secondary leading-relaxed mb-8">Khơi nguồn cảm hứng từ những chuyển động tự do của cơ thể, bộ sưu tập mang đến những thiết kế tinh tế, kết hợp chất liệu Microfiber 320GSM độc quyền...</p>
+      <a href="#" class="inline-flex items-center gap-2 font-label-uppercase text-primary hover:text-secondary border-b border-primary pb-1 w-max transition-colors">ĐỌC BÀI VIẾT <span class="material-symbols-outlined text-[16px]">arrow_forward</span></a>
+    </div>
+  </div>
+
+  <!-- Quote -->
+  <div class="w-full bg-[#F5E6D3] py-16 px-8 text-center mb-20 border border-[#E5E0DA]">
+    <span class="material-symbols-outlined text-primary text-[32px] mb-4 opacity-50">format_quote</span>
+    <blockquote class="font-editorial-quote text-[24px] lg:text-[28px] text-primary max-w-3xl mx-auto leading-relaxed mb-6">
+      "Mỗi sợi chỉ không đơn thuần là chi tiết may mặc, mà là lời cam kết về sự tôn trọng tuyệt đối dành cho tự do chuyển động của cơ thể."
+    </blockquote>
+    <span class="font-caption text-secondary uppercase tracking-[0.2em]">-- BAN GIÁM ĐỐC SÁNG TẠO EVODA</span>
+  </div>
+
+  <!-- Latest Articles -->
+  <div class="mb-12">
+    <h3 class="font-headline-lg text-[28px] mb-8">Các bài viết mới nhất</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+      <!-- Article 1 -->
+      <div class="group cursor-pointer">
+        <div class="relative aspect-[4/3] overflow-hidden bg-surface-container-low mb-4">
+          <span class="absolute top-3 left-3 z-10 bg-white text-primary border border-[#E5E0DA] font-caption text-[10px] uppercase px-2 py-1 tracking-widest">KHUYẾN MÃI</span>
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVDUyPCriHfmh8QnJ14Yx9OPH0sQ1D7aM8gfsMGBJasrC_aCx0QQS62xCFkHEu7PY5SybiDSF2ttLFwZnK5C3MQ_MU3zx2lF5D3CZBTAZ3TLkrSn3gpHwFl6IzdpPRi9LIfmV0Zvim88VwuprpITjMESg9LxbmDyWSt_C_749yfxRo9BPFthQTzvU6sD08_9vOvJ_HxIuFQvRbIkEKsTDj24exu3oWT7L2iU6muihbdad4E24b9wl3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <div class="flex justify-between items-center mb-3">
+          <span class="font-caption text-secondary">15.03.2025</span>
+        </div>
+        <h4 class="font-headline-sm text-[20px] mb-3 group-hover:text-secondary transition-colors">Đặc Quyền Mùa Mới: Trải Nghiệm Công Nghệ Sợi Microfiber 320GSM</h4>
+        <p class="font-body-sm text-secondary line-clamp-2 mb-4">Chương trình tri ân đặc biệt mang đến ưu đãi độc quyền cho các tín đồ yêu thể thao...</p>
+        <a href="#" class="font-label-uppercase text-[11px] underline">ĐỌC THÊM</a>
+      </div>
+      <!-- Article 2 -->
+      <div class="group cursor-pointer">
+        <div class="relative aspect-[4/3] overflow-hidden bg-surface-container-low mb-4">
+          <span class="absolute top-3 left-3 z-10 bg-white text-primary border border-[#E5E0DA] font-caption text-[10px] uppercase px-2 py-1 tracking-widest">SẢN PHẨM MỚI</span>
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAeSHvppFX3_3mko7eawKJZs9ma0mDRKBDrAwYmeOeIxmxhsmwwUV-_5boU3WpbZQxCqD60Cl_dtp6waI_dJrY8uP3B7WcttAFt13w093WXbZEJ_JOr1e19w7vPR0ONFhMCChrzlwKmt9ru5QhSlYy-kQ8swC1mj0LmuY9-WHq-Mk48S9I7GLLSPTUTf2XmT6dwajAU0KSUhv1Xts9e8Y1urKtxcsi86vqt1FT_OQjrqS5tKpbGsOKj" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <div class="flex justify-between items-center mb-3">
+          <span class="font-caption text-secondary">12.03.2025</span>
+        </div>
+        <h4 class="font-headline-sm text-[20px] mb-3 group-hover:text-secondary transition-colors">Ra Mắt Set Đồ Tập Activewear Mới: Định Hình Phom Dáng Phụ Nữ Việt</h4>
+        <p class="font-body-sm text-secondary line-clamp-2 mb-4">Tôn vinh vẻ đẹp tự nhiên và những đường cong khỏe khoắn qua thiết kế mới nhất...</p>
+        <a href="#" class="font-label-uppercase text-[11px] underline">ĐỌC THÊM</a>
+      </div>
+      <!-- Article 3 -->
+      <div class="group cursor-pointer">
+        <div class="relative aspect-[4/3] overflow-hidden bg-surface-container-low mb-4">
+          <span class="absolute top-3 left-3 z-10 bg-white text-primary border border-[#E5E0DA] font-caption text-[10px] uppercase px-2 py-1 tracking-widest">BỘ SƯU TẬP MỚI</span>
+          <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGR5G-PLAQQZbb7WQY5Jd2ZC-wWp3kF3IBQrYVJ-0ubqTewAhpXPVrdDb0ueoH2trxVWukN1NZ5PA4FegzQxWA9wWKlpAiPZBUhBRl-NiHlKR4_7PXkLYVHftOQ5u2Gpm6XbfRb17SOvqjPBJs5ntg1sc86inPnqHycIKm5J-v3m34zdCwUVwIDHbVQnLoG7xhuaKptXq01Si0cI0biZjgFV5fI0eDg-HAMcnkuOTg7-7fUHAnrngM" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+        </div>
+        <div class="flex justify-between items-center mb-3">
+          <span class="font-caption text-secondary">05.03.2025</span>
+        </div>
+        <h4 class="font-headline-sm text-[20px] mb-3 group-hover:text-secondary transition-colors">Aero Tennis & Pickleball 2025: Tự Do Chuyển Động Trên Mọi Bề Mặt Sân</h4>
+        <p class="font-body-sm text-secondary line-clamp-2 mb-4">Khám phá bộ sưu tập chuyên dụng cho các bộ môn thể thao với bóng, tối ưu hóa hiệu suất...</p>
+        <a href="#" class="font-label-uppercase text-[11px] underline">ĐỌC THÊM</a>
+      </div>
+    </div>
+  </div>
+</div>

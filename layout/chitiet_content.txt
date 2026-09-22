@@ -1,0 +1,88 @@
+﻿<div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin py-12">
+  
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-20">
+    <!-- Left: Gallery -->
+    <div class="flex flex-col gap-4">
+      <div class="relative w-full aspect-[3/4] bg-surface-container-low border border-[#E5E0DA] overflow-hidden">
+        <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGR5G-PLAQQZbb7WQY5Jd2ZC-wWp3kF3IBQrYVJ-0ubqTewAhpXPVrdDb0ueoH2trxVWukN1NZ5PA4FegzQxWA9wWKlpAiPZBUhBRl-NiHlKR4_7PXkLYVHftOQ5u2Gpm6XbfRb17SOvqjPBJs5ntg1sc86inPnqHycIKm5J-v3m34zdCwUVwIDHbVQnLoG7xhuaKptXq01Si0cI0biZjgFV5fI0eDg-HAMcnkuOTg7-7fUHAnrngM" class="w-full h-full object-cover">
+      </div>
+      <div class="grid grid-cols-5 gap-2">
+        <div class="aspect-square border-2 border-primary cursor-pointer"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCGR5G-PLAQQZbb7WQY5Jd2ZC-wWp3kF3IBQrYVJ-0ubqTewAhpXPVrdDb0ueoH2trxVWukN1NZ5PA4FegzQxWA9wWKlpAiPZBUhBRl-NiHlKR4_7PXkLYVHftOQ5u2Gpm6XbfRb17SOvqjPBJs5ntg1sc86inPnqHycIKm5J-v3m34zdCwUVwIDHbVQnLoG7xhuaKptXq01Si0cI0biZjgFV5fI0eDg-HAMcnkuOTg7-7fUHAnrngM" class="w-full h-full object-cover"></div>
+        <div class="aspect-square border border-[#E5E0DA] opacity-60 hover:opacity-100 cursor-pointer"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCl9CbaYP3YlKyGk5SvSeiC3xuLKREIIOj45tzUcAyfIrX_T9GZnkZTQlPaCEVzV6vk8t1PUZ390bliIWTairA89Ocg_I3-2pdZHtJvizFcQYp9jg3axMykxwGXB_uzg2QO7uHPhhYbMlOsD5yIb2JXQftkfskEjOYDIl6YF81XO2F-2VEyTtXsdP4-aBAJkbhtuxG4oBeBy75lD3dJRj9fZIWtGsIfwgym4y2wEple9x-KI8-X8sat" class="w-full h-full object-cover"></div>
+      </div>
+    </div>
+    
+    <!-- Right: Info -->
+    <div class="flex flex-col pt-4">
+      <span class="font-caption text-secondary uppercase tracking-[0.2em] mb-2">[ SIGNATURE COLLECTION ]</span>
+      <h1 class="font-headline-lg text-[32px] text-primary mb-4">Set áo polo & chân váy xếp ly</h1>
+      
+      <div class="flex items-center gap-4 mb-6">
+        <span class="text-[24px] font-medium text-primary">850.000đ</span>
+        <span class="text-[14px] text-secondary line-through">1.050.000đ</span>
+        <span class="bg-primary text-white text-[10px] px-2 py-1 font-label-uppercase">TIẾT KIỆM 20%</span>
+      </div>
+
+      <div class="mb-6">
+        <span class="block font-label-uppercase text-[12px] text-secondary mb-3">MÀU SẮC: BEIGE</span>
+        <div class="flex gap-3">
+          <button class="w-8 h-8 rounded-full bg-[#E5D7C5] ring-2 ring-offset-2 ring-primary"></button>
+          <button class="w-8 h-8 rounded-full bg-black border border-gray-300"></button>
+          <button class="w-8 h-8 rounded-full bg-white border border-gray-300"></button>
+        </div>
+      </div>
+
+      <div class="mb-8">
+        <div class="flex justify-between mb-3">
+          <span class="font-label-uppercase text-[12px] text-secondary">KÍCH CỠ</span>
+          <a href="#" class="font-caption text-[11px] underline">Hướng dẫn chọn size</a>
+        </div>
+        <div class="grid grid-cols-4 gap-2">
+          <button class="border border-primary bg-primary text-white py-2 text-[13px] font-label-uppercase">S</button>
+          <button class="border border-[#E5E0DA] hover:border-black py-2 text-[13px] font-label-uppercase">M</button>
+          <button class="border border-[#E5E0DA] hover:border-black py-2 text-[13px] font-label-uppercase">L</button>
+          <button class="border border-[#E5E0DA] hover:border-black py-2 text-[13px] font-label-uppercase">XL</button>
+        </div>
+      </div>
+
+      <div class="flex flex-col gap-3 mb-8">
+        <button class="w-full bg-primary text-on-primary font-label-uppercase py-4 flex items-center justify-center gap-2 hover:bg-neutral-800 transition-colors">
+          MUA TRÊN TIKTOK SHOP <span class="material-symbols-outlined text-[18px]">open_in_new</span>
+        </button>
+        <button class="w-full bg-white text-primary border border-primary font-label-uppercase py-4 hover:bg-surface-container-low transition-colors">
+          THÊM VÀO GIỎ HÀNG
+        </button>
+      </div>
+      
+      <div class="bg-surface-container-high p-4 text-[13px] font-body-sm text-secondary flex items-start gap-3">
+        <span class="material-symbols-outlined text-[16px]">local_shipping</span>
+        <p>Miễn phí giao hàng toàn quốc cho đơn hàng từ 500k. Đổi trả dễ dàng trong vòng 7 ngày.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Details Sections -->
+  <div class="border-t border-[#E5E0DA] pt-12 pb-16">
+    <div class="max-w-3xl mx-auto flex flex-col gap-12">
+      <!-- Description -->
+      <div>
+        <h3 class="font-headline-sm text-[24px] mb-4">Mô tả sản phẩm</h3>
+        <p class="font-body-md text-secondary leading-relaxed mb-4">Set đồ tập áo polo và chân váy xếp ly với thiết kế thanh lịch, mang lại vẻ ngoài hoàn hảo cho các hoạt động thể thao ngoài trời như tennis, golf, pickleball.</p>
+        <ul class="list-disc list-inside font-body-md text-secondary space-y-2">
+          <li>Chất liệu mềm mại, thấm hút mồ hôi tốt.</li>
+          <li>Đường may chắc chắn, tỉ mỉ.</li>
+          <li>Chân váy có quần bảo hộ bên trong.</li>
+        </ul>
+      </div>
+      <!-- Specs -->
+      <div>
+        <h3 class="font-headline-sm text-[24px] mb-4">Thông số kỹ thuật</h3>
+        <div class="bg-surface-container-lowest border border-[#E5E0DA]">
+          <div class="flex border-b border-[#E5E0DA] p-4"><span class="w-1/3 font-label-uppercase text-[12px] text-secondary">CHẤT LIỆU</span><span class="w-2/3 font-body-md">80% Polyester, 20% Spandex (320GSM)</span></div>
+          <div class="flex border-b border-[#E5E0DA] p-4"><span class="w-1/3 font-label-uppercase text-[12px] text-secondary">FORM DÁNG</span><span class="w-2/3 font-body-md">Ôm sát vừa vặn, hỗ trợ chuyển động tối đa</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
