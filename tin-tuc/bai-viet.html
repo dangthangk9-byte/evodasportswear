@@ -1,89 +1,428 @@
-<!DOCTYPE html>
-<html lang="vi">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bài viết | Evoda Sportswear</title>
-    <link rel="stylesheet" href="../css/style.css">
-    <style>
-        .article-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .article-header {
-            text-align: center;
-            margin-bottom: var(--spacing-md);
-        }
-        .article-image {
-            width: 100%;
-            aspect-ratio: 16/9;
-            object-fit: cover;
-            margin-bottom: var(--spacing-md);
-        }
-        .article-content {
-            font-size: 1.05rem;
-            line-height: 1.8;
-            color: #333;
-        }
-        .article-content p {
-            margin-bottom: 1.5rem;
-        }
-    </style>
-</head>
-<body>
-    <div id="header-placeholder"></div>
+﻿<!DOCTYPE html><html lang="vi" ><head><meta charset="utf-8"><meta content="width=device-width, initial-scale=1.0" name="viewport"><link href="https://fonts.googleapis.com" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Manrope:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-low":"#f3f3f4","on-tertiary-fixed":"#221a0f","inverse-on-surface":"#f0f1f1","on-secondary-fixed":"#1b1c1c","on-background":"#1a1c1c","surface-container":"#eeeeee","on-tertiary":"#ffffff","on-primary-fixed":"#1b1b1b","primary-fixed-dim":"#c6c6c6","on-secondary-fixed-variant":"#464747","primary-container":"#1b1b1b","inverse-surface":"#2f3131","tertiary":"#000000","surface-variant":"#e2e2e2","surface-container-highest":"#e2e2e2","on-tertiary-fixed-variant":"#4f4538","on-error-container":"#93000a","on-primary-container":"#848484","secondary-container":"#e1dfdf","error-container":"#ffdad6","surface-container-high":"#e8e8e8","on-surface-variant":"#4c4546","primary":"#000000","surface-dim":"#dadada","surface-bright":"#f9f9f9","inverse-primary":"#c6c6c6","on-secondary":"#ffffff","secondary":"#5e5e5e","on-error":"#ffffff","primary-fixed":"#e2e2e2","secondary-fixed":"#e4e2e2","error":"#ba1a1a","background":"#f9f9f9","surface-tint":"#5e5e5e","outline-variant":"#cfc4c5","secondary-fixed-dim":"#c7c6c6","on-surface":"#1a1c1c","on-tertiary-container":"#8e8272","on-secondary-container":"#636262","tertiary-container":"#221a0f","on-primary":"#ffffff","tertiary-fixed":"#efe0cd","on-primary-fixed-variant":"#474747","surface":"#f9f9f9","surface-container-lowest":"#ffffff","outline":"#7e7576","tertiary-fixed-dim":"#d2c4b2"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter":"1.5rem","space-sm":"0.5rem","margin-mobile":"1.25rem","space-xl":"4rem","space-md":"1rem","space-xs":"0.25rem","space-2xl":"6rem","margin":"4rem","space-lg":"2rem","gutter-mobile":"0.75rem"},"fontFamily":{"display-hero-mobile":["EB Garamond"],"display-hero":["EB Garamond"],"headline-md":["EB Garamond"],"editorial-quote":["EB Garamond"],"body-sm":["Manrope"],"label-nav":["Manrope"],"label-uppercase":["Manrope"],"headline-lg":["EB Garamond"],"headline-lg-mobile":["EB Garamond"],"headline-sm":["EB Garamond"],"body-md":["Manrope"],"caption":["Manrope"],"body-lg":["Manrope"]},"fontSize":{"display-hero-mobile":["36px",{"lineHeight":"44px","letterSpacing":"0.03em","fontWeight":"400"}],"display-hero":["56px",{"lineHeight":"64px","letterSpacing":"0.03em","fontWeight":"400"}],"headline-md":["28px",{"lineHeight":"36px","letterSpacing":"0.03em","fontWeight":"600"}],"editorial-quote":["24px",{"lineHeight":"36px","letterSpacing":"0.02em","fontWeight":"400"}],"body-sm":["13px",{"lineHeight":"21px","fontWeight":"400"}],"label-nav":["13px",{"lineHeight":"16px","letterSpacing":"0.06em","fontWeight":"500"}],"label-uppercase":["12px",{"lineHeight":"16px","letterSpacing":"0.05em","fontWeight":"500"}],"headline-lg":["40px",{"lineHeight":"48px","letterSpacing":"0.03em","fontWeight":"400"}],"headline-lg-mobile":["28px",{"lineHeight":"36px","letterSpacing":"0.03em","fontWeight":"400"}],"headline-sm":["22px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"600"}],"body-md":["15px",{"lineHeight":"24px","fontWeight":"400"}],"caption":["11px",{"lineHeight":"16px","letterSpacing":"0.04em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"29px","fontWeight":"300"}]}}}}</script></head><body class="bg-surface text-on-surface antialiased"><header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant transition-all duration-300" id="main-header">
+<div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between">
+<div class="flex items-center gap-3">
+<a href="/" class="flex items-center">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkdSwV0Rb7ogIHkVlnM531BoQDQtw_wjOUgUvb134gaJV2t1rhk2IkF0SCugjgLEwMQkCqxRQa-HboO9sWVMfnB8o3XXnz_etEOP8HYr8-f5pwi5Qs7rG5kI1AR29qeCoMAwlsPsYrUNhQai2DQWvFGPxM9XAeW5KkdXzCA8cXRUOpe6SUUd6xOZDY9W6AGqIraYolAlWVV8HHPHwlnAmZv4SJ7ENWdv3zV4fYLEP4zOTGeZ-WXlwFq91rwMHJJSsXvw" alt="EVODA SPORTSWEAR" class="w-[95px] sm:w-[110px] md:w-[125px] h-auto object-contain">
+</a>
+</div>
+<nav class="hidden xl:flex items-center gap-8">
+<a class="font-label-nav text-label-nav tracking-wider pb-1 hover:text-black transition-colors" data-path="trang-chu" href="/">TRANG CHỦ</a>
+<a class="font-label-nav text-label-nav text-[#595959] font-medium hover:text-[#000000] tracking-wider transition-colors pb-1" data-path="san-pham" href="/san-pham/">SẢN PHẨM</a>
+<a class="font-label-nav text-label-nav text-[#595959] font-medium hover:text-[#000000] tracking-wider transition-colors pb-1" data-path="bo-suu-tap" href="/bo-suu-tap/">BỘ SƯU TẬP</a>
+<a class="font-label-nav text-label-nav text-[#595959] font-medium hover:text-[#000000] tracking-wider transition-colors pb-1" data-path="ve-chung-toi" href="/ve-chung-toi/">VỀ CHÚNG TÔI</a>
+<a class="font-label-nav text-label-nav text-[#595959] font-medium hover:text-[#000000] tracking-wider transition-colors pb-1" data-path="tin-tuc" href="/tin-tuc/">TIN TỨC</a>
+</nav>
+<div class="flex items-center gap-4 lg:gap-6">
+<button aria-label="Search" class="text-on-surface hover:text-primary flex items-center justify-center p-1.5 transition-all duration-300 hover:scale-110"><span class="material-symbols-outlined">search</span></button>
+<a class="hidden sm:inline-flex items-center justify-center bg-primary text-on-primary font-label-uppercase text-label-uppercase tracking-wider px-6 py-3.5 hover:bg-white hover:text-primary border border-primary transition-all duration-300" href="https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1" target="_blank" rel="noopener noreferrer">MUA NGAY</a>
+<!-- Mobile menu trigger -->
+<button aria-label="Menu" id="mobile-menu-btn" class="xl:hidden text-on-surface hover:text-primary flex items-center justify-center p-1.5 transition-all duration-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile navigation sidebar -->
+<div id="mobile-menu" class="fixed inset-y-0 right-0 w-full max-w-sm bg-white z-[60] transform translate-x-full transition-transform duration-300 xl:hidden flex flex-col shadow-2xl">
+<div class="h-20 px-margin-mobile flex items-center justify-between border-b border-outline-variant">
+<span class="font-label-nav font-bold tracking-wider text-lg">MENU</span>
+<button aria-label="Close Menu" id="mobile-menu-close" class="text-on-surface hover:text-primary flex items-center justify-center p-1.5">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col p-6 gap-6 overflow-y-auto">
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/">TRANG CHỦ</a>
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/san-pham/">SẢN PHẨM</a>
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/bo-suu-tap/">BỘ SƯU TẬP</a>
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/ve-chung-toi/">VỀ CHÚNG TÔI</a>
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/tin-tuc/">TIN TỨC</a>
+<a class="mt-4 flex items-center justify-center bg-primary text-on-primary font-label-uppercase text-label-uppercase tracking-wider px-6 py-4" href="https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1" target="_blank" rel="noopener noreferrer">MUA NGAY</a>
+</nav>
+</div>
+<!-- Mobile menu overlay backdrop -->
+<div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/50 z-[50] hidden opacity-0 transition-opacity duration-300 xl:hidden backdrop-blur-sm"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+    
+    function openMenu() {
+      if(!mobileMenu) return;
+      mobileMenu.classList.remove('translate-x-full');
+      if(mobileMenuBackdrop) {
+        mobileMenuBackdrop.classList.remove('hidden');
+        setTimeout(() => mobileMenuBackdrop.classList.remove('opacity-0'), 10);
+      }
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMenu() {
+      if(!mobileMenu) return;
+      mobileMenu.classList.add('translate-x-full');
+      if(mobileMenuBackdrop) {
+        mobileMenuBackdrop.classList.add('opacity-0');
+        setTimeout(() => mobileMenuBackdrop.classList.add('hidden'), 300);
+      }
+      document.body.style.overflow = '';
+    }
+    
+    if(mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMenu);
+    if(mobileMenuClose) mobileMenuClose.addEventListener('click', closeMenu);
+    if(mobileMenuBackdrop) mobileMenuBackdrop.addEventListener('click', closeMenu);
+  });
+</script>
+</header>
+<main class="w-full pt-20 bg-surface"><div class="flex flex-col w-full">
+<!-- READING PROGRESS BAR -->
+<div class="fixed top-20 left-0 h-[2px] bg-primary z-50 transition-all duration-150 ease-out" id="reading-progress" style="width: 0%;"></div>
+<!-- ARTICLE HEADER SECTION -->
+<article class="w-full">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant transition-all duration-300" id="main-header">
+<div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between">
+<div class="flex items-center gap-3">
+<a href="/" class="flex items-center">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkdSwV0Rb7ogIHkVlnM531BoQDQtw_wjOUgUvb134gaJV2t1rhk2IkF0SCugjgLEwMQkCqxRQa-HboO9sWVMfnB8o3XXnz_etEOP8HYr8-f5pwi5Qs7rG5kI1AR29qeCoMAwlsPsYrUNhQai2DQWvFGPxM9XAeW5KkdXzCA8cXRUOpe6SUUd6xOZDY9W6AGqIraYolAlWVV8HHPHwlnAmZv4SJ7ENWdv3zV4fYLEP4zOTGeZ-WXlwFq91rwMHJJSsXvw" alt="EVODA SPORTSWEAR" class="w-[95px] sm:w-[110px] md:w-[125px] h-auto object-contain">
+</a>
+</div>
+<nav class="hidden xl:flex items-center gap-8">
+<a class="font-label-nav text-label-nav tracking-wider pb-1 hover:text-black transition-colors" data-path="trang-chu" href="/">TRANG CHỦ</a>
+<a class="font-label-nav text-label-nav text-[#595959] font-medium hover:text-[#000000] tracking-wider transition-colors pb-1" data-path="san-pham" href="/san-pham/">SẢN PHẨM</a>
+<a class="font-label-nav text-label-nav text-[#595959] font-medium hover:text-[#000000] tracking-wider transition-colors pb-1" data-path="bo-suu-tap" href="/bo-suu-tap/">BỘ SƯU TẬP</a>
+<a class="font-label-nav text-label-nav text-[#595959] font-medium hover:text-[#000000] tracking-wider transition-colors pb-1" data-path="ve-chung-toi" href="/ve-chung-toi/">VỀ CHÚNG TÔI</a>
+<a class="font-label-nav text-label-nav text-[#595959] font-medium hover:text-[#000000] tracking-wider transition-colors pb-1" data-path="tin-tuc" href="/tin-tuc/">TIN TỨC</a>
+</nav>
+<div class="flex items-center gap-4 lg:gap-6">
+<button aria-label="Search" class="text-on-surface hover:text-primary flex items-center justify-center p-1.5 transition-all duration-300 hover:scale-110"><span class="material-symbols-outlined">search</span></button>
+<a class="hidden sm:inline-flex items-center justify-center bg-primary text-on-primary font-label-uppercase text-label-uppercase tracking-wider px-6 py-3.5 hover:bg-white hover:text-primary border border-primary transition-all duration-300" href="https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1" target="_blank" rel="noopener noreferrer">MUA NGAY</a>
+<!-- Mobile menu trigger -->
+<button aria-label="Menu" id="mobile-menu-btn" class="xl:hidden text-on-surface hover:text-primary flex items-center justify-center p-1.5 transition-all duration-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile navigation sidebar -->
+<div id="mobile-menu" class="fixed inset-y-0 right-0 w-full max-w-sm bg-white z-[60] transform translate-x-full transition-transform duration-300 xl:hidden flex flex-col shadow-2xl">
+<div class="h-20 px-margin-mobile flex items-center justify-between border-b border-outline-variant">
+<span class="font-label-nav font-bold tracking-wider text-lg">MENU</span>
+<button aria-label="Close Menu" id="mobile-menu-close" class="text-on-surface hover:text-primary flex items-center justify-center p-1.5">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col p-6 gap-6 overflow-y-auto">
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/">TRANG CHỦ</a>
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/san-pham/">SẢN PHẨM</a>
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/bo-suu-tap/">BỘ SƯU TẬP</a>
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/ve-chung-toi/">VỀ CHÚNG TÔI</a>
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/tin-tuc/">TIN TỨC</a>
+<a class="mt-4 flex items-center justify-center bg-primary text-on-primary font-label-uppercase text-label-uppercase tracking-wider px-6 py-4" href="https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1" target="_blank" rel="noopener noreferrer">MUA NGAY</a>
+</nav>
+</div>
+<!-- Mobile menu overlay backdrop -->
+<div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/50 z-[50] hidden opacity-0 transition-opacity duration-300 xl:hidden backdrop-blur-sm"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+    
+    function openMenu() {
+      if(!mobileMenu) return;
+      mobileMenu.classList.remove('translate-x-full');
+      if(mobileMenuBackdrop) {
+        mobileMenuBackdrop.classList.remove('hidden');
+        setTimeout(() => mobileMenuBackdrop.classList.remove('opacity-0'), 10);
+      }
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMenu() {
+      if(!mobileMenu) return;
+      mobileMenu.classList.add('translate-x-full');
+      if(mobileMenuBackdrop) {
+        mobileMenuBackdrop.classList.add('opacity-0');
+        setTimeout(() => mobileMenuBackdrop.classList.add('hidden'), 300);
+      }
+      document.body.style.overflow = '';
+    }
+    
+    if(mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMenu);
+    if(mobileMenuClose) mobileMenuClose.addEventListener('click', closeMenu);
+    if(mobileMenuBackdrop) mobileMenuBackdrop.addEventListener('click', closeMenu);
+  });
+</script>
+</header>
 
-    <main class="section-padding">
-        <div class="container article-container" id="article-detail-container">
-            <p>Đang tải bài viết...</p>
+<!-- HERO IMAGE COMPONENT -->
+<div class="w-full px-margin-mobile lg:px-margin mb-12">
+<div class="max-w-5xl mx-auto">
+<div class="relative w-full aspect-[16/9] lg:aspect-[21/9] overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover transition-transform duration-1000 hover:scale-[1.02]" data-alt="Editorial photograph for luxury activewear journal. A poised East Asian contemporary dancer wearing a sculptural matte black full-body contour jumpsuit stands beside a polished wood ballet barre in an austere Parisian atelier. Soft diffuse natural morning light filters through large loft windows, cast against pale limestone walls and tall arched mirrors. Visual tone is quiet, high-fashion, and monochromatic, evocative of architectural minimalism and graceful tension." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDy5_fdzjdkAN40RVhdleAaD7-qzlZFs-0CPpA2gcjGrxexVNGg951xP77KlONlo9wgVlu8me3u-hZuGq2oeNgf-j_jOUWK_ctN9QA3B9FeLFKsqM4v7Xwng8M-hsdjo1XwjLOIGGkVd9vbabTId3e2tDrR3MrHMt8IZ8vAqo1bBd9GllAWtSIxCPvZ2Vng_Pa6F7UFkaKYfYr14ePLZ0d_jYfTXaGGf30l3hZx1tSMVmMZo2En4IGq">
+</div>
+<p class="font-caption text-caption text-secondary uppercase tracking-widest text-center mt-3">
+          FIG. 01 — PHOM DÁNG CONTOUR LIỀN MẠCH ĐƯỢC NGHIÊN CỨU DỰA TRÊN 500 BẢN ĐỒ NHÂN TRẮC HỌC PHỤ NỮ Á ĐÔNG. ATELIER SPRING/SUMMER 2025.
+        </p>
+</div>
+</div>
+<!-- MAIN EDITORIAL CONTENT -->
+<div class="max-w-3xl mx-auto px-margin-mobile lg:px-0 py-6">
+<!-- Section 1 -->
+<section class="mb-12">
+<h2 class="font-headline-md text-headline-md text-primary mt-6 mb-6 font-normal">
+          1. Vượt Thoát Khỏi Sự Gò Ép Của Activewear Truyền Thống
+        </h2>
+<div class="space-y-6 font-body-md text-body-md text-on-surface leading-[1.75]">
+<p class="">
+            Trong suốt hai thập kỷ qua, ngôn ngữ thiết kế của đồ thể thao định hình (shapewear &amp; activewear) gần như bị chi phối bởi một định kiến kỹ thuật đơn giản: tăng tối đa tỷ lệ sợi đàn hồi thô để ép chặt khối cơ. Kết quả là những sản phẩm mang tính chèn ép cơ học, để lại vết lằn sâu trên da, cản trở tuần hoàn vi mạch tự nhiên và biến trải nghiệm vận động thành một cuộc đối kháng giữa cơ thể và lớp vải bọc.
+          </p>
+<p class="">
+            Tại EVODA Atelier, sự chuyển dịch bắt đầu từ việc từ bỏ khái niệm “nén cưỡng bức”. Đường cong của phụ nữ không phải là một khiếm khuyết hình học cần phải ép phẳng, mà là một chuỗi nhịp điệu động học mềm mại. Thông qua dữ liệu nhân trắc học từ hơn 500 cá thể phụ nữ Á Đông, chúng tôi nhận thấy tỷ lệ eo - hông và mật độ phân bổ mô mềm đòi hỏi một hệ tọa độ nâng đỡ hoàn toàn khác biệt: nâng đỡ dựa trên vector chuyển động thay vì lực nén hướng tâm.
+          </p>
+</div>
+</section>
+<!-- Section 2 -->
+<section class="mb-12">
+<h2 class="font-headline-md text-headline-md text-primary mt-12 mb-6 font-normal">
+          2. Cấu Trúc Dệt Vi Mô 320GSM: Điểm Cân Bằng Giữa Nâng Đỡ &amp; Tự Do
+        </h2>
+<div class="space-y-6 font-body-md text-body-md text-on-surface leading-[1.75]">
+<p class="">
+            Trọng lượng vải 320GSM (Grams per Square Meter) không phải là một con số ngẫu nhiên. Trong kỹ nghệ dệt thoi và dệt kim tròn chuyên biệt của EVODA, đây là “điểm vàng” vật lý học: đủ dày dặn để xóa bỏ hoàn toàn hiện tượng trong suốt (sheerness) khi gập căng tối đa, nhưng đủ vi mô để duy trì độ thoáng khí đa chiều ở cấp độ tế bào sợi.
+          </p>
+<p class="">
+            Sợi Microfiber tổng hợp thế hệ mới được dệt liên kết ma trận 4 chiều (4-way interlock matrix). Thay vì sử dụng các đường chỉ may gồ ghề dễ gây cọ xát, toàn bộ hệ viền biên đều được gia công bằng công nghệ ép nhiệt nhiệt dẻo phẳng (flatlock ultrasonic bonding), tạo nên cảm giác tiếp xúc nhẵn mịn tựa như một lớp biểu bì thứ hai thuần khiết.
+          </p>
+</div>
+</section>
+<!-- STANDOUT EDITORIAL PULL QUOTE -->
+<figure class="my-14 p-8 lg:p-12 bg-tertiary-fixed text-on-tertiary-fixed relative overflow-hidden">
+<div class="absolute top-4 left-6 text-on-tertiary-fixed-variant opacity-20 font-headline-lg text-display-hero select-none leading-none">“</div>
+<blockquote class="relative z-10 font-editorial-quote text-editorial-quote italic text-on-tertiary-fixed mb-6 leading-relaxed">
+          “Trang phục không sinh ra để gò ép cơ thể vào một khuôn mẫu cứng nhắc; nó phải là một lớp da thứ hai biết thở, di chuyển đồng điệu với từng nhịp thở của người phụ nữ.”
+        </blockquote>
+<figcaption class="relative z-10 font-label-uppercase text-label-uppercase tracking-widest text-on-tertiary-fixed-variant font-medium">
+          — GIÁM ĐỐC SÁNG TẠO EVODA ATELIER
+        </figcaption>
+</figure>
+<!-- MID-ARTICLE INSET IMAGES / VISUAL SPREAD -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter my-14">
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.03]" data-alt="Ultra close-up macro studio photography of fine 320GSM high-density microfiber activewear textile. Intricate warp and weft geometric weave pattern in rich charcoal black under sharp angled studio spotlight. Flatlock thermo-bonded bonded edge seamless finishing visible, communicating luxury tactile precision and technical superiority." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDvfqaHaYEKd03z2hSSg85PSuk_g8BlB6qYBjYkbwnUTPUTaA46spdxjF1vxsNCDowx_2RIX4GL2solrIaWVn3Q_-tUthWbsDqfYSiCEFmLjDNYCNpD9TA2nAJFmcHganmpCJuDfArbyJtzsLtNuZIMvbvPJEeoJ8-DCj3iK5zqX3ixFN8Ty0nWqkx1c-FEfXOwXgVcl5wSBPzDAAak9Y-mca8YtXaACaIwpmm9QEODSrrrMQpYM6ct">
+</div>
+<span class="font-caption text-caption text-secondary uppercase tracking-widest mt-3">
+            FIG. 02 — CẬN CẢNH MẬT ĐỘ DỆT 320GSM &amp; MỐI NỐI NHIỆT BONDING
+          </span>
+</div>
+<div class="flex flex-col">
+<div class="aspect-[4/5] bg-surface-container overflow-hidden">
+<img class="w-full h-full object-cover transition-transform duration-700 hover:scale-[1.03]" data-alt="Editorial high-fashion movement portrait. A graceful model performing an extension stretch on a minimalist wooden Reformer Pilates carriage. Natural light reflects off soft skin and matte black aerodynamic workout attire. Clean architectural studio environment with neutral plaster tones, serene composure, and pure bodily poise." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD794fEYt8Bhq48qWqF6b6YJsh-XRIfenCGrrd7Akue0nRTztNnqJq1mKTzW0F8a371pQho3Grrw-Pi-5LZT6C4WcUpL46csfzE1dBs7kv_JXDsAqSQEQJVnVOM6V4M2J5zjA1DecTkolxSi2Cs1ZYkZN52IuXzRjf-iVlSdF72plIRAJclP_vjw0ECzvrT6A9W3eYAFa8A2RTNGz_6Xx4ad9Qsh9cosWsrNdg6u1JiJUP_jH7AyFyL">
+</div>
+<span class="font-caption text-caption text-secondary uppercase tracking-widest mt-3">
+            FIG. 03 — THỬ NGHIỆM BIÊN ĐỘ CO GIÃN ĐA CHIỀU TRÊN REFORMER PILATES
+          </span>
+</div>
+</div>
+<!-- Section 3 -->
+<section class="mb-12">
+<h2 class="font-headline-md text-headline-md text-primary mt-12 mb-6 font-normal">
+          3. Thẩm Mỹ Cắt May Đo (Haute-Couture Meets Athleisure)
+        </h2>
+<div class="space-y-6 font-body-md text-body-md text-on-surface leading-[1.75]">
+<p class="">
+            Điểm độc đáo tạo nên bản sắc của EVODA là khả năng hòa nhập hoàn hảo vào phục trang thường nhật. Chúng tôi không định vị các thiết kế của mình dừng lại ở ngưỡng cửa phòng tập Pilates hay Yoga Shala. Từng đường bổ cúp được tính toán chuẩn xác như một chiếc áo corset may đo cao cấp tại Savile Row, nhưng lại mang đến sự mềm mại tuyệt đối.
+          </p>
+<p class="">
+            Chỉ với một chiếc áo khoác blazer may đo phom hộp phóng khoáng khoác bên ngoài chiếc bra thể thao cổ thuyền cổ điển, người phụ nữ hiện đại có thể tự tin bước vào một buổi đàm phán quan trọng, dạo bước qua sảnh triển lãm nghệ thuật, hay tận hưởng một buổi tối lắng đọng tại góc cà phê trung tâm mà không cần phải thay đổi trang phục. Đó chính là sự thanh lịch không gắng gượng (effortless elegance) mà chủ nghĩa tối giản luôn hướng đến.
+          </p>
+</div>
+</section>
+<!-- ARTICLE FOOTER: TAGS & SOCIAL SHARE -->
+<div class="mt-16 pt-8 bg-surface-container-low p-6 lg:p-8">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-6">
+<!-- Article Tags -->
+<div class="flex flex-wrap items-center gap-2">
+<span class="font-label-uppercase text-caption text-secondary uppercase mr-2">CHỦ ĐỀ:</span>
+<a class="font-label-uppercase text-caption text-on-surface hover:text-primary bg-surface-container px-2.5 py-1 transition-colors" data-path="tin-tuc" href="#">#TRIETLYTHIETKE</a>
+<a class="font-label-uppercase text-caption text-on-surface hover:text-primary bg-surface-container px-2.5 py-1 transition-colors" data-path="tin-tuc" href="#">#MICROFIBER320GSM</a>
+<a class="font-label-uppercase text-caption text-on-surface hover:text-primary bg-surface-container px-2.5 py-1 transition-colors" data-path="tin-tuc" href="#">#EVODAJOURNAL</a>
+<a class="font-label-uppercase text-caption text-on-surface hover:text-primary bg-surface-container px-2.5 py-1 transition-colors" data-path="tin-tuc" href="#">#ACTIVEWEAR</a>
+</div>
+<!-- Share Actions -->
+<div class="flex items-center gap-4 text-secondary"><span class="font-label-uppercase text-caption uppercase tracking-wider text-on-surface-variant mr-1">CHIA SẺ:</span><button aria-label="Chia sẻ lên Facebook" class="w-8 h-8 rounded-full border border-outline-variant hover:border-primary text-primary hover:text-secondary flex items-center justify-center transition-all" type="button"><svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"></path></svg></button><button aria-label="Chia sẻ lên TikTok" class="w-8 h-8 rounded-full border border-outline-variant hover:border-primary text-primary hover:text-secondary flex items-center justify-center transition-all" type="button"><svg class="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.85.12V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.47 6.29 6.29 0 0 0 1.96-4.57V8.78a8.28 8.28 0 0 0 4.81 1.52V6.85a4.85 4.85 0 0 1-1-.16z"></path></svg></button><button aria-label="Sao chép liên kết" class="w-8 h-8 rounded-full border border-outline-variant hover:border-primary text-primary hover:text-secondary flex items-center justify-center transition-all" id="copy-link-btn" title="Sao chép liên kết" type="button"><svg class="w-4 h-4 fill-none stroke-current" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg></button></div>
+</div>
+<div class="hidden font-caption text-caption text-primary mt-3 text-right" id="copy-notification">
+          ✓ Đã sao chép liên kết bài viết vào khay nhớ tạm
         </div>
-    </main>
-
-    <div id="footer-placeholder"></div>
-    <div id="floating-buttons-placeholder"></div>
-
-    <script src="../js/components.js"></script>
-    <script>
-        async function loadArticle() {
-            const urlParams = new URLSearchParams(window.location.search);
-            const slug = urlParams.get('slug');
-            
-            if (!slug) {
-                document.getElementById('article-detail-container').innerHTML = '<p>Không tìm thấy bài viết.</p>';
-                return;
-            }
-
-            try {
-                const response = await fetch('../data/news.json');
-                const newsList = await response.json();
-                const article = newsList.find(n => n.slug === slug);
-
-                if (!article) {
-                    document.getElementById('article-detail-container').innerHTML = '<p>Không tìm thấy bài viết.</p>';
-                    return;
-                }
-
-                document.title = `${article.title} | Evoda Sportswear`;
-
-                const container = document.getElementById('article-detail-container');
-                container.innerHTML = `
-                    <div class="fade-in">
-                        <div class="article-header">
-                            <span class="label-small">${article.date}</span>
-                            <h1 style="font-size: 2.5rem; margin-top: 1rem;">${article.title}</h1>
-                        </div>
-                        <img src="${article.image}" alt="${article.title}" class="article-image">
-                        <div class="article-content">
-                            <p style="font-style: italic; color: var(--text-secondary); font-size: 1.1rem; border-left: 3px solid var(--accent); padding-left: 1rem;">${article.excerpt}</p>
-                            ${article.content}
-                        </div>
-                    </div>
-                `;
-            } catch (error) {
-                console.error('Lỗi:', error);
-            }
+</div>
+</div>
+</article>
+<!-- NEWSLETTER CALLOUT BOX -->
+<section class="w-full bg-surface-container my-16 py-16 px-margin-mobile lg:px-margin">
+<div class="max-w-2xl mx-auto text-center">
+<span class="font-label-uppercase text-caption tracking-widest text-secondary uppercase block mb-3">
+        ẤN BẢN ĐỊNH KỲ
+      </span>
+<h3 class="font-headline-md text-headline-md text-primary font-normal mb-4">
+        Gia Nhập Bản Tin EVODA Journal
+      </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 leading-relaxed">
+        Nhận những bài luận chuyên sâu về phong cách sống, kỹ thuật may đo tối giản và đặc quyền tiếp cận sớm các bộ sưu tập giới hạn trước khi mở bán công khai.
+      </p>
+<form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto" id="article-newsletter-form">
+<input class="flex-1 bg-surface-container-lowest px-4 py-3.5 font-body-sm text-body-sm text-on-surface placeholder:text-secondary focus:outline-none transition-colors" placeholder="Địa chỉ email của bạn" required="" type="email">
+<button class="bg-primary text-on-primary font-label-uppercase text-label-uppercase px-8 py-3.5 hover:bg-inverse-surface transition-all whitespace-nowrap" type="submit">
+          ĐĂNG KÝ
+        </button>
+</form>
+<p class="hidden font-caption text-caption text-primary mt-3" id="article-newsletter-msg">
+        Cảm ơn bạn đã đồng hành cùng EVODA Journal.
+      </p>
+</div>
+</section>
+<!-- RELATED ARTICLES (BÀI VIẾT LIÊN QUAN) -->
+<section class="w-full max-w-7xl mx-auto px-margin-mobile lg:px-margin mb-24">
+<!-- Header -->
+<div class="text-center mb-12">
+<span class="font-label-uppercase text-caption tracking-widest text-secondary uppercase block mb-2">
+        EDITORIAL COMPENDIUM
+      </span>
+<h2 class="font-headline-md text-headline-md text-primary font-normal">
+        BÀI VIẾT LIÊN QUAN
+      </h2>
+</div>
+<!-- 3 Article Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Card 1 -->
+<article class="flex flex-col group bg-surface">
+<a class="block aspect-[3/4] overflow-hidden bg-surface-container mb-5 relative" data-path="tin-tuc" href="#">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="Minimalist fine-art lifestyle photography. Woman in slate gray yoga top practicing mindful stretching on natural woven tatami mat in a quiet, sun-drenched sunroom surrounded by indoor bonsai and organic ceramics. Peaceful, grounded atmosphere reflecting mind-body harmony." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3hO6UUeasZzVxiTr_CrbxCxCY67DP3UJBYEdwgI03zuqoHOSuIzpmB0mc0OiuKrYLZiUgk-bBILpGHrNwzsLna1jk_OT0lUeeL1lxFx-fQ7FhhgSvzB6Mpl9862uKxhmu5liWZFKAuopa7pks8pkdu3zHUbNV9BZLNnLfMicqvH-gpZe5fRWXYKH_cWqroQXzIcJ69p4WsrxKn5Rbeo2hVVtAmX1G5P0i1AWAhT_rAwMC1YbjE96_">
+</a>
+<div class="flex items-center justify-between font-label-uppercase text-caption text-secondary uppercase mb-2">
+<span class="">PHONG CÁCH SỐNG</span>
+<span class="">10.03.2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-normal leading-snug mb-3 group-hover:text-secondary transition-colors">
+<a data-path="tin-tuc" href="#" class="">
+            Pilates &amp; Chuyển Động Tĩnh Lặng: Tìm Lại Sự Kết Nối Thân - Tâm
+          </a>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 leading-relaxed mb-4">
+          Khám phá cách những bài tập chậm rãi và trang phục định hình giúp phụ nữ hiện đại tái tạo năng lượng từ sâu bên trong.
+        </p>
+<div class="mt-auto pt-2">
+<a class="inline-flex items-center font-label-uppercase text-label-uppercase text-primary hover:text-secondary transition-colors" data-path="tin-tuc" href="#">
+            ĐỌC THÊM →
+          </a>
+</div>
+</article>
+<!-- Card 2 -->
+<article class="flex flex-col group bg-surface">
+<a class="block aspect-[3/4] overflow-hidden bg-surface-container mb-5 relative" data-path="tin-tuc" href="#">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="Textile studio design laboratory photograph. Studio table with neatly cut geometric fabric swatches in charcoal, nude sand, and deep espresso. Tailoring shears, measuring tape, and high-tech textile yarn reels arranged in artistic stillness under diffuse neutral light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_oO7ssPQKmjat7gqi75qb8hrNXgWOMJxGfgfJQUKSRNds1P79zL6iIaOdOqVngmCWaSDjgXGhFQh53ezaqCkZzCRPOqfPmQxQ39-85w-wirM7vgzTMWi_ubxbJ7T0S2BBCgvYILOTK7kS-ai8LGuDMGVsi5MIILVRt65bn5dKJJ4pLZZS9Jr8kwiExCI3sJ1LCbVeUpDxr0qKRXm5pUCXXJqbN8so0tCXQvIny0LPXmRiH53KzQ-v">
+</a>
+<div class="flex items-center justify-between font-label-uppercase text-caption text-secondary uppercase mb-2">
+<span class="">CÔNG NGHỆ DỆT &amp; VẬT LIỆU</span>
+<span class="">04.03.2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-normal leading-snug mb-3 group-hover:text-secondary transition-colors">
+<a data-path="tin-tuc" href="#" class="">
+            Giải Mã Cấu Trúc Microfiber 320GSM: Mật Độ Hoàn Hảo Cho Vóc Dáng Á Đông
+          </a>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 leading-relaxed mb-4">
+          Tìm hiểu bí quyết kỹ nghệ đằng sau chất liệu vải nén 4 chiều, kiểm soát mồ hôi và nâng đỡ cơ bắp chuẩn xác từng milimet.
+        </p>
+<div class="mt-auto pt-2">
+<a class="inline-flex items-center font-label-uppercase text-label-uppercase text-primary hover:text-secondary transition-colors" data-path="tin-tuc" href="#">
+            ĐỌC THÊM →
+          </a>
+</div>
+</article>
+<!-- Card 3 -->
+<article class="flex flex-col group bg-surface">
+<a class="block aspect-[3/4] overflow-hidden bg-surface-container mb-5 relative" data-path="tin-tuc" href="#">
+<img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]" data-alt="Urban high-fashion lookbook capture. Stylish woman walking through brutalist modern concrete architecture wearing an oversized tailored wool blazer open over a minimalist black sports bra and high-waisted seamless leggings. Elegant leather clutch, architectural backdrop, crisp daytime shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDAV2xJFk4Sit9nDB63Z5znVbwIbCwq1682NY6_4u0FxPH36h8hh_Z3NMu1pzHecx49Ie_K8rBasGyLHEMA3OKVW16hydU7WG0epUfcsU9umSb_BbnMhP5kQdbWNvso4rwGn20s-Fo6SoAdGNqy0HNFq1GdpqysgPMRqaIMleiTKAH5SIsC5TdZyHHr1zBSr_7NRR6nnXpRykZpNKE6jqyvUc3KkcbGzMr8V4KZb0ZpMKfTCKFwoC6Y">
+</a>
+<div class="flex items-center justify-between font-label-uppercase text-caption text-secondary uppercase mb-2">
+<span class="">TRIẾT LÝ THIẾT KẾ</span>
+<span class="">28.02.2025</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-primary font-normal leading-snug mb-3 group-hover:text-secondary transition-colors">
+<a data-path="tin-tuc" href="#" class="">
+            From Studio To Street: Định Nghĩa Lại Khái Niệm Athleisure Đương Đại
+          </a>
+</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2 leading-relaxed mb-4">
+          Cách kết hợp chiếc bra thể thao tối giản cùng áo khoác blazer thanh lịch cho nhịp sống đô thị năng động mà không đánh mất phong thái.
+        </p>
+<div class="mt-auto pt-2">
+<a class="inline-flex items-center font-label-uppercase text-label-uppercase text-primary hover:text-secondary transition-colors" data-path="tin-tuc" href="#">
+            ĐỌC THÊM →
+          </a>
+</div>
+</article>
+</div>
+</section>
+<!-- CLIENT-SIDE INTERACTIVITY SCRIPT -->
+<script>
+    (function() {
+      // 1. Reading Progress Bar
+      const progressBar = document.getElementById('reading-progress');
+      window.addEventListener('scroll', () => {
+        const totalHeight = document.documentElement.scrollHeight - window.innerHeight;
+        if (totalHeight > 0) {
+          const progress = (window.scrollY / totalHeight) * 100;
+          progressBar.style.width = Math.min(100, Math.max(0, progress)) + '%';
         }
-        document.addEventListener('DOMContentLoaded', loadArticle);
-    </script>
-</body>
-</html>
+      }, { passive: true });
+
+      // 2. Copy Link Interaction
+      const copyBtn = document.getElementById('copy-link-btn');
+      const copyNotice = document.getElementById('copy-notification');
+      if (copyBtn && copyNotice) {
+        copyBtn.addEventListener('click', () => {
+          if (navigator.clipboard) {
+            navigator.clipboard.writeText(window.location.href).then(() => {
+              copyNotice.classList.remove('hidden');
+              setTimeout(() => {
+                copyNotice.classList.add('hidden');
+              }, 3000);
+            }).catch(() => {
+              copyNotice.classList.remove('hidden');
+              setTimeout(() => copyNotice.classList.add('hidden'), 3000);
+            });
+          } else {
+            copyNotice.classList.remove('hidden');
+            setTimeout(() => copyNotice.classList.add('hidden'), 3000);
+          }
+        });
+      }
+
+      // 3. In-article Newsletter Form Handling
+      const newsForm = document.getElementById('article-newsletter-form');
+      const newsMsg = document.getElementById('article-newsletter-msg');
+      if (newsForm && newsMsg) {
+        newsForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          newsForm.reset();
+          newsMsg.classList.remove('hidden');
+          setTimeout(() => {
+            newsMsg.classList.add('hidden');
+          }, 4000);
+        });
+      }
+
+      // 4. Ensure header "TIN TỨC" active style matches requirements
+      const navLinks = document.querySelectorAll('header nav a[data-path="tin-tuc"]');
+      navLinks.forEach(link => {
+        link.classList.remove('text-on-surface-variant');
+        link.classList.add('text-primary', 'font-semibold', 'border-b', 'border-primary');
+      });
+    })();
+  </script>
+</div></main><div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3 items-end"><a aria-label="Facebook Messenger" class="w-12 h-12 rounded-full bg-surface-container-lowest text-primary border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:bg-surface-container-high transition-all flex items-center justify-center" data-path="ho-tro" href="#"><svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.477 2 2 6.145 2 11.258c0 2.91 1.455 5.517 3.736 7.208V22l3.39-1.86c.917.254 1.884.39 2.874.39 5.523 0 10-4.145 10-9.258C22 6.145 17.523 2 12 2zm1.042 12.443l-2.583-2.756-5.044 2.756 5.548-5.89 2.646 2.756 4.981-2.756-5.548 5.89z"></path></svg></a><a aria-label="TikTok Shop" class="w-12 h-12 rounded-full bg-primary text-on-primary shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:bg-inverse-surface transition-all flex items-center justify-center" data-path="san-pham" href="#"><svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64c.29 0 .58.04.85.12V9.4a6.33 6.33 0 0 0-1-.08A6.34 6.34 0 0 0 3 15.66a6.34 6.34 0 0 0 10.82 4.47 6.29 6.29 0 0 0 1.96-4.57V8.78a8.28 8.28 0 0 0 4.81 1.52V6.85a4.85 4.85 0 0 1-1-.16z"></path></svg></a></div><footer class="w-full bg-surface-container-lowest border-t border-outline-variant"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-gutter"><div><h4 class="font-label-uppercase text-label-uppercase text-primary mb-5">VỀ THƯƠNG HIỆU</h4><ul class="space-y-3"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="cau-chuyen-thuong-hieu" href="#" class="">Câu chuyện thương hiệu</a></li></ul></div><div><h4 class="font-label-uppercase text-label-uppercase text-primary mb-5">HỖ TRỢ</h4><ul class="space-y-3"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="huong-dan-chon-size" href="#" class="">Hướng dẫn chọn size</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="chinh-sach-doi-tra" href="#" class="">Chính sách đổi trả</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="qa" href="#" class="">Q&amp;A</a></li></ul></div><div><h4 class="font-label-uppercase text-label-uppercase text-primary mb-5">LIÊN HỆ</h4><ul class="space-y-3"><li class="font-body-sm text-body-sm text-on-surface-variant">Hotline: [hotline do Evoda cung cấp]</li><li class="font-body-sm text-body-sm text-on-surface-variant">Email: [email do Evoda cung cấp]</li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="messenger" href="#" class="">Messenger</a></li></ul></div><div><h4 class="font-label-uppercase text-label-uppercase text-primary mb-5">MẠNG XÃ HỘI</h4><ul class="space-y-3"><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="tiktok" href="#" class="">TikTok</a></li><li class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors"><a data-path="facebook" href="#" class="">Facebook</a></li></ul></div><div><h4 class="font-label-uppercase text-label-uppercase text-primary mb-5">ĐĂNG KÝ NHẬN TIN</h4><p class="font-body-sm text-body-sm text-on-surface-variant mb-4 leading-relaxed">Nhận thông tin các chương trình mới nhất của Evoda Sportswear</p><form class="flex flex-col gap-2.5"><input class="w-full bg-surface-container-lowest border border-outline-variant px-3.5 py-2.5 font-body-sm text-body-sm text-on-surface placeholder:text-secondary focus:outline-none focus:border-primary transition-colors" placeholder="Email của bạn" type="email"><button class="w-full bg-primary text-on-primary font-label-uppercase text-label-uppercase py-2.5 hover:bg-inverse-surface transition-colors" type="submit">ĐĂNG KÝ</button></form></div></div><div class="mt-space-lg pt-6 border-t border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-caption text-caption text-secondary">Copyright © EVODA SPORTSWEAR. All rights reserved.</p></div></div></footer>
+
+</body></html>
