@@ -1,4 +1,4 @@
-﻿<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant transition-all duration-300" id="main-header">
+<header class="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md border-b border-outline-variant transition-all duration-300" id="main-header">
 <div class="h-20 max-w-7xl mx-auto px-margin-mobile lg:px-margin flex items-center justify-between">
 <div class="flex items-center gap-3">
 <a href="/" class="flex items-center">
@@ -15,6 +15,61 @@
 <div class="flex items-center gap-4 lg:gap-6">
 <button aria-label="Search" class="text-on-surface hover:text-primary flex items-center justify-center p-1.5 transition-all duration-300 hover:scale-110"><span class="material-symbols-outlined">search</span></button>
 <a class="hidden sm:inline-flex items-center justify-center bg-primary text-on-primary font-label-uppercase text-label-uppercase tracking-wider px-6 py-3.5 hover:bg-white hover:text-primary border border-primary transition-all duration-300" href="https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1" target="_blank" rel="noopener noreferrer">MUA NGAY</a>
+<!-- Mobile menu trigger -->
+<button aria-label="Menu" id="mobile-menu-btn" class="xl:hidden text-on-surface hover:text-primary flex items-center justify-center p-1.5 transition-all duration-300">
+<span class="material-symbols-outlined">menu</span>
+</button>
 </div>
 </div>
+<!-- Mobile navigation sidebar -->
+<div id="mobile-menu" class="fixed inset-y-0 right-0 w-full max-w-sm bg-white z-[60] transform translate-x-full transition-transform duration-300 xl:hidden flex flex-col shadow-2xl">
+<div class="h-20 px-margin-mobile flex items-center justify-between border-b border-outline-variant">
+<span class="font-label-nav font-bold tracking-wider text-lg">MENU</span>
+<button aria-label="Close Menu" id="mobile-menu-close" class="text-on-surface hover:text-primary flex items-center justify-center p-1.5">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+<nav class="flex flex-col p-6 gap-6 overflow-y-auto">
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/">TRANG CHỦ</a>
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/san-pham/">SẢN PHẨM</a>
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/bo-suu-tap/">BỘ SƯU TẬP</a>
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/ve-chung-toi/">VỀ CHÚNG TÔI</a>
+<a class="font-label-nav text-lg tracking-wider text-[#595959] hover:text-black transition-colors" href="/tin-tuc/">TIN TỨC</a>
+<a class="mt-4 flex items-center justify-center bg-primary text-on-primary font-label-uppercase text-label-uppercase tracking-wider px-6 py-4" href="https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1" target="_blank" rel="noopener noreferrer">MUA NGAY</a>
+</nav>
+</div>
+<!-- Mobile menu overlay backdrop -->
+<div id="mobile-menu-backdrop" class="fixed inset-0 bg-black/50 z-[50] hidden opacity-0 transition-opacity duration-300 xl:hidden backdrop-blur-sm"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenuClose = document.getElementById('mobile-menu-close');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+    
+    function openMenu() {
+      if(!mobileMenu) return;
+      mobileMenu.classList.remove('translate-x-full');
+      if(mobileMenuBackdrop) {
+        mobileMenuBackdrop.classList.remove('hidden');
+        setTimeout(() => mobileMenuBackdrop.classList.remove('opacity-0'), 10);
+      }
+      document.body.style.overflow = 'hidden';
+    }
+    
+    function closeMenu() {
+      if(!mobileMenu) return;
+      mobileMenu.classList.add('translate-x-full');
+      if(mobileMenuBackdrop) {
+        mobileMenuBackdrop.classList.add('opacity-0');
+        setTimeout(() => mobileMenuBackdrop.classList.add('hidden'), 300);
+      }
+      document.body.style.overflow = '';
+    }
+    
+    if(mobileMenuBtn) mobileMenuBtn.addEventListener('click', openMenu);
+    if(mobileMenuClose) mobileMenuClose.addEventListener('click', closeMenu);
+    if(mobileMenuBackdrop) mobileMenuBackdrop.addEventListener('click', closeMenu);
+  });
+</script>
 </header>
