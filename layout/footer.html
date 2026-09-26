@@ -14,16 +14,99 @@
 <div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin pt-space-xl pb-space-lg">
 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-gutter">
 <div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">VỀ THƯƠNG HIỆU</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="/ve-chung-toi/">Câu chuyện thương hiệu</a></li></ul></div>
-<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">HỖ TRỢ</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="/san-pham/chi-tiet.html#size-guide">Hướng dẫn chọn size</a></li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="#">Chính sách đổi trả</a></li></ul></div>
+<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">HỖ TRỢ</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="/huong-dan-chon-size/">Hướng dẫn chọn size</a></li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="/chinh-sach-doi-tra/">Chính sách đổi trả</a></li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="/qa/">Câu hỏi thường gặp (Q&amp;A)</a></li></ul></div>
 <div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">LIÊN HỆ</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant">Hotline: 094 808 85 95</li><li class="font-body-sm text-on-surface-variant">Email: evoda.sportwear@gmail.com</li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="https://www.facebook.com/profile.php?id=61574619090811" target="_blank" target="_blank" rel="noopener noreferrer">Messenger</a></li></ul></div>
 <div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">MẠNG XÃ HỘI</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1" target="_blank" target="_blank" rel="noopener noreferrer">TikTok</a></li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="https://www.facebook.com/profile.php?id=61574619090811" target="_blank" target="_blank" rel="noopener noreferrer">Facebook</a></li></ul></div>
-<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">ĐĂNG KÝ NHẬN TIN</h4><form class="flex flex-col gap-2.5"><input class="w-full bg-surface-container-lowest border border-outline-variant px-3.5 py-2.5 font-body-sm" placeholder="Email của bạn" type="email"><button class="w-full bg-primary text-on-primary font-label-uppercase py-2.5 border border-primary" type="submit">ĐĂNG KÝ</button></form></div>
+<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">ĐĂNG KÝ NHẬN TIN</h4><form id="evoda-newsletter-form" class="flex flex-col gap-2.5"><input required class="w-full bg-surface-container-lowest border border-outline-variant px-3.5 py-2.5 font-body-sm" placeholder="Email của bạn" type="email"><button class="w-full bg-primary text-on-primary font-label-uppercase py-2.5 border border-primary" type="submit">ĐĂNG KÝ</button></form><p id="evoda-newsletter-success" class="hidden font-body-sm text-on-surface-variant">Cảm ơn bạn đã đăng ký! Evoda sẽ sớm gửi những ưu đãi mới nhất tới email của bạn.</p></div>
 </div>
 <div class="mt-space-lg pt-6 border-t border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-caption text-secondary">Copyright © EVODA SPORTSWEAR. All rights reserved.</p></div>
 </div>
 </footer>
+<!-- Size Guide Modal -->
+<div id="size-guide-modal" class="fixed inset-0 z-[100] hidden items-center justify-center bg-black/50 backdrop-blur-sm p-4">
+    <div class="bg-white max-w-2xl w-full p-8 relative max-h-[90vh] overflow-y-auto">
+        <button id="close-size-guide" class="absolute top-4 right-4 text-secondary hover:text-primary"><span class="material-symbols-outlined">close</span></button>
+        <h3 class="text-2xl font-['EB_Garamond'] mb-6 text-center">HƯỚNG DẪN CHỌN SIZE</h3>
+        <div class="overflow-x-auto">
+            <table class="w-full text-sm text-left border-collapse mb-6">
+                <thead>
+                    <tr class="bg-surface-container-low">
+                        <th class="p-3 border">Size</th>
+                        <th class="p-3 border">Dài áo (cm)</th>
+                        <th class="p-3 border">Vòng ngực (cm)</th>
+                        <th class="p-3 border">Rộng vai (cm)</th>
+                        <th class="p-3 border">Dài tay áo (cm)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="p-3 border font-semibold">S</td><td class="p-3 border">43</td><td class="p-3 border">96</td><td class="p-3 border">48</td><td class="p-3 border">14,5</td></tr>
+                    <tr><td class="p-3 border font-semibold">M</td><td class="p-3 border">44,5</td><td class="p-3 border">100</td><td class="p-3 border">49,5</td><td class="p-3 border">15</td></tr>
+                    <tr><td class="p-3 border font-semibold">L</td><td class="p-3 border">46</td><td class="p-3 border">104</td><td class="p-3 border">51</td><td class="p-3 border">15,5</td></tr>
+                    <tr><td class="p-3 border font-semibold">XL</td><td class="p-3 border">47,5</td><td class="p-3 border">108</td><td class="p-3 border">52,5</td><td class="p-3 border">16</td></tr>
+                </tbody>
+            </table>
+            <table class="w-full text-sm text-left border-collapse">
+                <thead>
+                    <tr class="bg-surface-container-low">
+                        <th class="p-3 border">Chiều cao \ Cân nặng</th>
+                        <th class="p-3 border">40–45kg</th>
+                        <th class="p-3 border">45–50kg</th>
+                        <th class="p-3 border">50–55kg</th>
+                        <th class="p-3 border">55–60kg</th>
+                        <th class="p-3 border">60–65kg</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td class="p-3 border font-semibold">150–155 cm</td><td class="p-3 border">S</td><td class="p-3 border">S</td><td class="p-3 border">S</td><td class="p-3 border">M</td><td class="p-3 border">L</td></tr>
+                    <tr><td class="p-3 border font-semibold">155–160 cm</td><td class="p-3 border">S</td><td class="p-3 border">S</td><td class="p-3 border">M</td><td class="p-3 border">L</td><td class="p-3 border">L</td></tr>
+                    <tr><td class="p-3 border font-semibold">160–165 cm</td><td class="p-3 border">S</td><td class="p-3 border">M</td><td class="p-3 border">M</td><td class="p-3 border">L</td><td class="p-3 border">XL</td></tr>
+                    <tr><td class="p-3 border font-semibold">165–170 cm</td><td class="p-3 border">M</td><td class="p-3 border">M</td><td class="p-3 border">L</td><td class="p-3 border">L</td><td class="p-3 border">XL</td></tr>
+                    <tr><td class="p-3 border font-semibold">170–175 cm</td><td class="p-3 border">L</td><td class="p-3 border">L</td><td class="p-3 border">L</td><td class="p-3 border">XL</td><td class="p-3 border">XL</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="mt-6 text-center">
+            <a href="https://www.facebook.com/profile.php?id=61574619090811" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center bg-primary text-white px-6 py-3 text-sm font-semibold tracking-wider hover:bg-inverse-surface transition-colors">NHẮN TIN TƯ VẤN NGAY</a>
+        </div>
+    </div>
+</div>
 <script>
   (function() {
+    const form = document.getElementById('evoda-newsletter-form');
+    const success = document.getElementById('evoda-newsletter-success');
+    if (form && success) {
+      form.addEventListener('submit', function(e) {
+        e.preventDefault();
+        form.classList.add('hidden');
+        success.classList.remove('hidden');
+      });
+    }
+
+    const sizeGuideBtns = document.querySelectorAll('a[href="/huong-dan-chon-size/"]');
+    const sizeModal = document.getElementById('size-guide-modal');
+    const closeSizeModal = document.getElementById('close-size-guide');
+    if (sizeGuideBtns.length > 0 && sizeModal) {
+      sizeGuideBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+          e.preventDefault();
+          sizeModal.classList.remove('hidden');
+          sizeModal.classList.add('flex');
+        });
+      });
+    }
+    if (closeSizeModal && sizeModal) {
+      closeSizeModal.addEventListener('click', () => {
+        sizeModal.classList.add('hidden');
+        sizeModal.classList.remove('flex');
+      });
+      sizeModal.addEventListener('click', (e) => {
+        if (e.target === sizeModal) {
+          sizeModal.classList.add('hidden');
+          sizeModal.classList.remove('flex');
+        }
+      });
+    }
+
     const reveals = document.querySelectorAll('.reveal-on-scroll');
     if ('IntersectionObserver' in window) {
       const revealObserver = new IntersectionObserver((entries, observer) => {

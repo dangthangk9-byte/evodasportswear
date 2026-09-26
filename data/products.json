@@ -1,86 +1,429 @@
 [
   {
     "id": "EV01",
-    "name": "Evoda Summer Crop",
-    "slug": "summer-crop",
-    "collection": "Summer Set",
-    "price": 450000,
-    "shortDescription": "Áo croptop thể thao cổ vuông, tôn vòng 1 tinh tế.",
-    "detailDescription": "Áo tập chất liệu thoáng mát, đệm mút ngực đúc nguyên khối có thể tháo rời. Dây vai bản to không gây hằn.",
-    "specs": "Size: S, M, L, XL\nMàu: Trắng, Kem, Xanh Bơ",
-    "image": "assets/images/san-pham/sp1.jpg",
-    "tiktokLink": "https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1",
-    "isFeatured": true,
-    "label": "NEW"
+    "slug": "ev01-summer-set",
+    "name": "Set bộ EVODA SUMMER Áo ngắn tay dây rút và chân váy chữ A 2 tầng cao cấp",
+    "shortName": "EVODA Summer Set",
+    "collection": "Evoda Summer set",
+    "collectionSlug": "summer-set",
+    "price": 900000,
+    "colors": [
+      "Vàng",
+      "Xanh Mint",
+      "Hồng",
+      "Đen",
+      "Trắng"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "label": "NEW",
+    "isNew": false,
+    "isBestseller": false,
+    "images": [
+      "/assets/images/san-pham/ev01-summer-set/01.jpg",
+      "/assets/images/san-pham/ev01-summer-set/02.jpg",
+      "/assets/images/san-pham/ev01-summer-set/03.jpg",
+      "/assets/images/san-pham/ev01-summer-set/04.jpg",
+      "/assets/images/san-pham/ev01-summer-set/05.jpg"
+    ],
+    "description": "Evoda Summer Set mang đến sự kết hợp hài hòa giữa thiết kế nữ tính, tinh thần năng động và cảm giác thoải mái. Set đồ gồm áo dây rút và chân váy chữ A 2 tầng, tạo nên tổng thể trẻ trung, hiện đại nhưng vẫn giữ được nét duyên dáng riêng.",
+    "features": [
+      "Áo dây rút dễ điều chỉnh độ ôm, mang lại sự thoải mái và vừa vặn.",
+      "Chân váy form chữ A kết hợp thiết kế 2 tầng tôn dáng, trẻ trung và nữ tính.",
+      "Thiết kế đa dụng, phù hợp dạo phố, cà phê và các hoạt động thể thao.",
+      "Thời trang và tiện dụng, thoải mái và tự tin trong mọi hoạt động."
+    ],
+    "material": "75% Nylon | 25% Spandex. Sự kết hợp giữa Nylon và Spandex mang đến chất liệu nhẹ, mềm, có độ co giãn tốt và thoáng mát, hỗ trợ cơ thể chuyển động linh hoạt mà vẫn duy trì cảm giác dễ chịu khi mặc.",
+    "style": "Nữ tính · Năng động · Thoải mái · Hiện đại. Evoda Summer Set là lựa chọn dành cho những cô nàng yêu thích một phong cách đẹp tự nhiên, thoải mái và luôn sẵn sàng chuyển động.",
+    "suitableFor": [],
+    "tiktokLink": "https://vt.tiktok.com/ZS9AABEVFfKv1-5T3Y4/"
   },
   {
     "id": "EV02",
-    "name": "Evoda Summer Skirt",
-    "slug": "summer-skirt",
-    "collection": "Summer Set",
-    "price": 550000,
-    "shortDescription": "Chân váy thể thao chữ A, lót quần bảo hộ chống lộ.",
-    "detailDescription": "Chân váy cạp cao gen bụng nhẹ, xòe chữ A tự nhiên giúp hack dáng, che khuyết điểm hông. Có túi ẩn tiện lợi.",
-    "specs": "Size: S, M, L, XL\nMàu: Trắng, Đen",
-    "image": "assets/images/san-pham/sp2.jpg",
-    "tiktokLink": "https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1",
-    "isFeatured": true,
-    "label": "BESTSELLER"
+    "slug": "ev02-polo-set",
+    "name": "Set bộ EVODA POLO Áo polo và chân váy xẻ tà in logo cao cấp",
+    "shortName": "EVODA Polo Set",
+    "collection": "Evoda Polo set",
+    "collectionSlug": "polo-set",
+    "price": 450000,
+    "colors": [
+      "Trắng",
+      "Hồng",
+      "Xanh"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "label": "BESTSELLER",
+    "isNew": false,
+    "isBestseller": true,
+    "images": [
+      "/assets/images/san-pham/ev02-polo-set/01.jpg",
+      "/assets/images/san-pham/ev02-polo-set/02.jpg",
+      "/assets/images/san-pham/ev02-polo-set/03.jpg",
+      "/assets/images/san-pham/ev02-polo-set/04.jpg",
+      "/assets/images/san-pham/ev02-polo-set/05.jpg",
+      "/assets/images/san-pham/ev02-polo-set/06.jpg",
+      "/assets/images/san-pham/ev02-polo-set/07.jpg",
+      "/assets/images/san-pham/ev02-polo-set/08.jpg",
+      "/assets/images/san-pham/ev02-polo-set/09.jpg",
+      "/assets/images/san-pham/ev02-polo-set/10.jpg"
+    ],
+    "description": "Evoda Polo Set kết hợp áo polo năng động cùng chân váy dập ly xẻ tà, mang đến diện mạo trẻ trung, nữ tính và hiện đại. Thiết kế phù hợp cho các hoạt động thể thao như pickleball, tennis, cầu lông và gym.",
+    "features": [
+      "Áo polo năng động, thiết kế thanh lịch, thoải mái khi vận động.",
+      "Chân váy xếp ly xẻ tà trẻ trung, linh hoạt.",
+      "Quần bảo hộ bên trong giúp tự tin khi vận động thể thao.",
+      "Thiết kế đa dụng phù hợp tập luyện và mặc hằng ngày."
+    ],
+    "material": "Chất liệu thể thao cao cấp mang lại cảm giác nhẹ nhàng, thoải mái và linh hoạt, hỗ trợ chuyển động trong quá trình tập luyện và vận động.",
+    "style": "Nữ tính • Thể thao • Thanh lịch • Năng động. Evoda Polo Set – sẵn sàng cho mọi chuyển động, nổi bật với phong cách riêng.",
+    "suitableFor": [
+      "Pickleball",
+      "Tennis",
+      "Cầu lông",
+      "Gym",
+      "Dạo phố",
+      "Café",
+      "Hoạt động thường ngày"
+    ],
+    "tiktokLink": "https://vt.tiktok.com/ZS9AmHPktsRvQ-XjNyr/"
   },
   {
     "id": "EV03",
-    "name": "Classic Polo Top",
-    "slug": "classic-polo-top",
-    "collection": "Polo Set",
-    "price": 490000,
-    "shortDescription": "Áo polo thể thao tay ngắn, cổ đức thanh lịch.",
-    "detailDescription": "Áo polo có độ co giãn tốt, form ôm vừa vặn, phù hợp mặc đánh golf, tennis hoặc đi dạo.",
-    "specs": "Size: S, M, L\nMàu: Trắng, Xám Nhạt",
-    "image": "assets/images/san-pham/sp3.jpg",
-    "tiktokLink": "https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1",
-    "isFeatured": true,
-    "label": "SIGNATURE"
+    "slug": "ev03-bloom-set",
+    "name": "Set váy EVODA BLOOM Váy liền polo dài tay cao cấp chuyên thể thao",
+    "shortName": "EVODA Bloom Set",
+    "collection": "Evoda Bloom set",
+    "collectionSlug": "bloom-set",
+    "price": 749000,
+    "colors": [
+      "Đỏ"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "label": "BESTSELLER",
+    "isNew": false,
+    "isBestseller": true,
+    "images": [
+      "/assets/images/san-pham/ev03-bloom-set/01.jpg",
+      "/assets/images/san-pham/ev03-bloom-set/02.jpg",
+      "/assets/images/san-pham/ev03-bloom-set/03.jpg",
+      "/assets/images/san-pham/ev03-bloom-set/04.jpg",
+      "/assets/images/san-pham/ev03-bloom-set/05.jpg",
+      "/assets/images/san-pham/ev03-bloom-set/06.jpg"
+    ],
+    "description": "Evoda Bloom Set là thiết kế váy liền polo dài tay dành cho những cô nàng yêu thích phong cách thể thao, trẻ trung và thanh lịch. Kiểu dáng liền thân gọn gàng, mang đến sự tiện lợi và thoải mái trong quá trình vận động.",
+    "features": [
+      "Thiết kế váy liền polo tạo vẻ ngoài trẻ trung, gọn gàng và hiện đại.",
+      "Tay dài phù hợp cho các hoạt động thể thao và vận động ngoài trời.",
+      "Kiểu dáng chuyên thể thao hỗ trợ chuyển động linh hoạt, mang lại cảm giác thoải mái khi mặc.",
+      "Thiết kế đa dụng phù hợp cho tennis, pickleball, cầu lông, gym và các hoạt động thường ngày."
+    ],
+    "material": "Chất liệu thể thao có độ co giãn tốt, nhẹ và thoải mái, dễ dàng chuyển động trong suốt quá trình vận động.",
+    "style": "Nữ tính • Thể thao • Thanh lịch • Năng động. Evoda Bloom Set là lựa chọn lý tưởng cho những cô nàng muốn kết hợp vẻ nữ tính với tinh thần thể thao hiện đại.",
+    "suitableFor": [],
+    "tiktokLink": "https://vt.tiktok.com/ZS9AmqWYhLRHA-HLt1L/"
   },
   {
     "id": "EV04",
-    "name": "Bloom Leggings",
-    "slug": "bloom-leggings",
-    "collection": "Bloom Set",
-    "price": 650000,
-    "shortDescription": "Quần legging cạp cao nâng mông, không đường may.",
-    "detailDescription": "Legging chất liệu Cloud Silk, nâng mông tự nhiên (peach butt), cạp chữ V phía sau tạo cảm giác eo thon.",
-    "specs": "Size: S, M, L\nMàu: Đen, Tím Than, Xám",
-    "image": "assets/images/san-pham/sp4.jpg",
-    "tiktokLink": "https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1",
-    "isFeatured": true,
-    "label": "HOT"
+    "slug": "ev04-cler-set",
+    "name": "Set váy EVODA CLER Váy liền dập ly cách điệu 2 bên dành cho thể thao",
+    "shortName": "EVODA Cler Set",
+    "collection": "Evoda Cler set",
+    "collectionSlug": "cler-set",
+    "price": 750000,
+    "colors": [
+      "Đen",
+      "Be"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "label": "",
+    "isNew": false,
+    "isBestseller": false,
+    "images": [
+      "/assets/images/san-pham/ev04-cler-set/01.jpg",
+      "/assets/images/san-pham/ev04-cler-set/02.jpg",
+      "/assets/images/san-pham/ev04-cler-set/03.jpg",
+      "/assets/images/san-pham/ev04-cler-set/04.jpg",
+      "/assets/images/san-pham/ev04-cler-set/05.jpg"
+    ],
+    "description": "Evoda Cler Set là thiết kế váy liền dập ly cách điệu, kết hợp vẻ ngoài nữ tính cùng tinh thần thể thao năng động. Kiểu dáng hiện đại với chi tiết dập ly hai bên tạo điểm nhấn nổi bật, phù hợp cho các hoạt động pickleball, tennis và cầu lông.",
+    "features": [
+      "Thiết kế váy liền dập ly tạo hiệu ứng chuyển động mềm mại và vẻ ngoài trẻ trung.",
+      "Chi tiết dập ly hai bên mang đến điểm nhấn cách điệu, tăng tính thời trang cho trang phục.",
+      "Kiểu dáng chuyên thể thao hỗ trợ chuyển động linh hoạt và thoải mái.",
+      "Thiết kế đa dụng phù hợp cho pickleball, tennis, cầu lông và các hoạt động vận động thể thao khác."
+    ],
+    "material": "Chất liệu thể thao mềm mại và co giãn, thoải mái và linh hoạt, giúp bạn dễ dàng vận động mà vẫn duy trì vẻ ngoài chỉn chu, thời trang.",
+    "style": "Nữ tính • Thể thao • Hiện đại • Cá tính. Evoda Cler Set là lựa chọn dành cho những cô nàng yêu thích phong cách thể thao thời thượng nhưng vẫn muốn giữ nét nữ tính riêng.",
+    "suitableFor": [],
+    "tiktokLink": "https://vt.tiktok.com/ZS9Ambbh3C6jn-3XAHh/"
   },
   {
     "id": "EV05",
-    "name": "Cler Bra",
-    "slug": "cler-bra",
-    "collection": "Cler Set",
-    "price": 420000,
-    "shortDescription": "Bra thể thao dây chéo cách điệu, hỗ trợ vòng 1 tối đa.",
-    "detailDescription": "Bra tập gym/yoga mút dày vừa, dây đan chéo sau lưng tôn phần xương quai xanh và lưng quyến rũ.",
-    "specs": "Size: S, M, L\nMàu: Đen, Nâu Tây",
-    "image": "assets/images/san-pham/sp5.jpg",
-    "tiktokLink": "https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1",
-    "isFeatured": false,
-    "label": ""
+    "slug": "ev05-sporty-set",
+    "name": "Set bộ EVODA SPORTY Áo cổ V và chân váy thể thao",
+    "shortName": "EVODA Sporty Set",
+    "collection": "Evoda Sporty set",
+    "collectionSlug": "sporty-set",
+    "price": 750000,
+    "colors": [
+      "Đỏ",
+      "Xanh Than"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "label": "BESTSELLER",
+    "isNew": false,
+    "isBestseller": true,
+    "images": [
+      "/assets/images/san-pham/ev05-sporty-set/01.jpg",
+      "/assets/images/san-pham/ev05-sporty-set/02.jpg",
+      "/assets/images/san-pham/ev05-sporty-set/03.webp",
+      "/assets/images/san-pham/ev05-sporty-set/04.webp",
+      "/assets/images/san-pham/ev05-sporty-set/05.jpg"
+    ],
+    "description": "Evoda Sporty Set kết hợp áo croptop cổ polo cùng chân váy xếp ly dáng chữ A, mang đến vẻ ngoài trẻ trung, nữ tính và hiện đại. Thiết kế lấy cảm hứng từ phong cách tennis và pickleball, phù hợp cả khi vận động lẫn dạo phố, cà phê hay chụp ảnh.",
+    "features": [
+      "Áo croptop cổ polo form ôm nhẹ, tôn dáng với hàng cúc phía trước thanh lịch.",
+      "Chân váy xếp ly dáng chữ A tạo hiệu ứng chân dài và chuyển động mềm mại.",
+      "Cạp chun thiết kế nổi bật kết hợp phối màu navy và hồng nhạt, tăng điểm nhấn thời trang.",
+      "Quần bảo hộ bên trong giúp thoải mái và tự tin khi vận động.",
+      "Logo Evoda tinh tế tạo dấu ấn thương hiệu.",
+      "Dễ dàng kết hợp cùng sneaker, mũ hoặc túi thể thao."
+    ],
+    "material": "Vải thể thao cao cấp co giãn 4 chiều, thoáng mát và hỗ trợ thấm hút mồ hôi, mang lại cảm giác dễ chịu khi vận động. Vải giữ form tốt, hạn chế nhăn và giúp trang phục luôn chỉn chu.",
+    "style": "Evoda Sporty Set là lựa chọn lý tưởng cho cô nàng yêu thích phong cách thể thao thanh lịch, nữ tính và linh hoạt từ sân tập đến đời thường.",
+    "suitableFor": [
+      "Pickleball",
+      "Tennis",
+      "Cầu lông",
+      "Gym",
+      "Dạo phố",
+      "Cà phê"
+    ],
+    "tiktokLink": "https://vt.tiktok.com/ZS9Amg9GVRATR-kpxsx/"
   },
   {
     "id": "EV06",
-    "name": "Pickleball Pleated Dress",
-    "slug": "pickleball-dress",
-    "collection": "Pickleball Set",
-    "price": 790000,
-    "shortDescription": "Váy liền thể thao xếp ly, kèm quần đùi rời.",
-    "detailDescription": "Váy liền thân cổ V, dáng xòe đuôi cá xếp ly 1 bên tạo điểm nhấn. Phù hợp cho các môn thể thao sân cỏ/sân cứng.",
-    "specs": "Size: S, M, L\nMàu: Trắng, Xanh Navy",
-    "image": "assets/images/san-pham/sp6.jpg",
-    "tiktokLink": "https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1",
-    "isFeatured": true,
-    "label": "NEW"
+    "slug": "ev06-wint-set",
+    "name": "Set Váy EVODA WINT Áo cổ zip Thu Đông kèm áo trong và chân váy",
+    "shortName": "EVODA Wint Set",
+    "collection": "Evoda Wint set",
+    "collectionSlug": "wint-set",
+    "price": 780000,
+    "colors": [
+      "Đen",
+      "Trắng"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "label": "NEW",
+    "isNew": true,
+    "isBestseller": false,
+    "images": [
+      "/assets/images/san-pham/ev06-wint-set/01.jpg",
+      "/assets/images/san-pham/ev06-wint-set/02.jpg",
+      "/assets/images/san-pham/ev06-wint-set/03.jpg",
+      "/assets/images/san-pham/ev06-wint-set/04.jpg",
+      "/assets/images/san-pham/ev06-wint-set/05.jpg"
+    ],
+    "description": "Evoda Wint Set được thiết kế dành cho Pickleball và Tennis, kết hợp giữa tính năng vận động, sự thoải mái và phong cách thể thao hiện đại. Set gồm áo cổ zip phối chân váy đồng bộ, mang đến diện mạo năng động và chuyên nghiệp trên sân.",
+    "features": [
+      "Áo cổ cao khóa kéo giúp dễ dàng điều chỉnh.",
+      "Tay dài bo chun mang lại cảm giác gọn gàng, thoải mái khi vận động.",
+      "Gấu áo có dây rút linh hoạt điều chỉnh form theo sở thích.",
+      "Chân váy cạp chun co giãn hỗ trợ chuyển động linh hoạt khi vận động.",
+      "Thiết kế đồng bộ, dễ phối cùng giày và phụ kiện thể thao."
+    ],
+    "material": "Chất liệu thể thao co giãn mang lại cảm giác thoải mái, linh hoạt và dễ chịu, phù hợp cho các hoạt động vận động ngoài trời.",
+    "style": "Evoda Wint Set là lựa chọn dành cho những cô nàng yêu thích phong cách thể thao hiện đại, thanh lịch và tự tin trên mọi sân đấu.",
+    "suitableFor": [
+      "Pickleball",
+      "Tennis",
+      "Cầu lông",
+      "Luyện tập",
+      "Thi đấu",
+      "Thể thao ngoài trời"
+    ],
+    "tiktokLink": "https://vt.tiktok.com/ZS9AmpSYFmoBt-vxZYj/"
+  },
+  {
+    "id": "EV07",
+    "slug": "ev07-signature-sport-dress",
+    "name": "Váy thể thao EVODA SIGNATURE SPORT DRESS thắt lưng tôn dáng",
+    "shortName": "EVODA Signature Sport Dress",
+    "collection": "Evoda Signature",
+    "collectionSlug": null,
+    "price": 800000,
+    "colors": [
+      "Ivory White",
+      "Midnight Navy",
+      "Espresso Brown"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L"
+    ],
+    "label": "SIGNATURE",
+    "isNew": false,
+    "isBestseller": false,
+    "images": [
+      "/assets/images/san-pham/ev07-signature-sport-dress/01.jpg",
+      "/assets/images/san-pham/ev07-signature-sport-dress/02.jpg",
+      "/assets/images/san-pham/ev07-signature-sport-dress/03.jpg",
+      "/assets/images/san-pham/ev07-signature-sport-dress/04.jpg"
+    ],
+    "description": "Thiết kế váy thể thao cao cấp dành cho những cô gái yêu sự năng động nhưng vẫn muốn giữ nét nữ tính và sang trọng. Form dáng được tính toán để tôn đường cong tự nhiên, kết hợp chân váy chữ A xòe nhẹ giúp mỗi chuyển động trở nên mềm mại và cuốn hút.",
+    "features": [
+      "Form 3D Sculpt Fit tôn đường cong và tạo hiệu ứng vóc dáng cân đối.",
+      "Cổ bẻ polo mang tinh thần tennis và golf cao cấp.",
+      "Thiết kế sát nách thoáng mát, linh hoạt khi vận động.",
+      "Đường cắt princess line tạo hiệu ứng cơ thể thon gọn, cao hơn.",
+      "Dây thắt eo bản lớn tạo điểm nhấn sang trọng.",
+      "Chân váy chữ A xòe nhẹ nữ tính nhưng vẫn linh hoạt.",
+      "Quần bảo hộ rời đồng màu, tăng sự tự tin khi vận động."
+    ],
+    "material": "Sport Premium Stretch. Chất liệu co giãn 4 chiều, mềm mịn và thoáng khí, hỗ trợ thấm hút mồ hôi nhanh và khô nhanh. Vải ít nhăn, không xù lông và giữ form tốt sau nhiều lần giặt.",
+    "style": "Luxury Sportswear • Feminine • Elegant • Performance",
+    "suitableFor": [
+      "Tennis",
+      "Pickleball",
+      "Golf",
+      "Cầu lông",
+      "Café",
+      "Du lịch",
+      "Daily Luxury Wear"
+    ],
+    "tiktokLink": "https://vt.tiktok.com/ZS9AuHRATjGNf-4aOGS/"
+  },
+  {
+    "id": "EV08",
+    "slug": "ev08-ao-polo-croptop-summer",
+    "name": "Áo polo croptop thể thao nữ EVODA SUMMER có dây rút",
+    "shortName": "EVODA Croptop Polo",
+    "collection": "Evoda Summer set",
+    "collectionSlug": "summer-set",
+    "price": 400000,
+    "colors": [
+      "Vàng",
+      "Xanh Mint",
+      "Hồng",
+      "Đen",
+      "Trắng"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "label": "NEW",
+    "isNew": true,
+    "isBestseller": false,
+    "images": [
+      "/assets/images/san-pham/ev08-ao-polo-croptop-summer/01.webp",
+      "/assets/images/san-pham/ev08-ao-polo-croptop-summer/02.jpg",
+      "/assets/images/san-pham/ev08-ao-polo-croptop-summer/03.jpg",
+      "/assets/images/san-pham/ev08-ao-polo-croptop-summer/04.jpg",
+      "/assets/images/san-pham/ev08-ao-polo-croptop-summer/05.jpg",
+      "/assets/images/san-pham/ev08-ao-polo-croptop-summer/06.jpg"
+    ],
+    "description": "Thiết kế croptop polo mang tinh thần thể thao thanh lịch và hiện đại, kết hợp form dáng trẻ trung cùng khả năng điều chỉnh linh hoạt. Kiểu dáng không ôm sát giúp dễ dàng vận động mà vẫn giữ được vẻ ngoài chỉn chu.",
+    "features": [
+      "Form croptop suông nhẹ, dài ngang eo tạo diện mạo trẻ trung, năng động.",
+      "Cổ polo chữ V không cài khuy, thanh lịch và dễ mặc.",
+      "Tay ngắn rộng vừa phải, mang lại sự thoải mái khi vận động.",
+      "Gấu áo dây rút hai bên, có thể mặc buông hoặc điều chỉnh để tạo hiệu ứng bo eo.",
+      "Đường may tối giản, không logo lớn, phù hợp phong cách thời trang cao cấp."
+    ],
+    "material": "Chất liệu co giãn 4 chiều, mềm mại và thoáng, hỗ trợ thấm hút mồ hôi tốt. Độ dày vừa phải, ít nhăn và không xuyên thấu, phù hợp cho cả vận động và mặc hàng ngày.",
+    "style": "",
+    "suitableFor": [
+      "Pickleball",
+      "Tennis",
+      "Golf",
+      "Cầu lông",
+      "Dạo phố",
+      "Café"
+    ],
+    "tiktokLink": "https://vt.tiktok.com/ZS9Au9K6PqtXA-xwDvb/"
+  },
+  {
+    "id": "EV09",
+    "slug": "ev09-chan-vay-summer",
+    "name": "Chân váy thể thao nữ EVODA SUMMER kết hợp quần bảo hộ có túi",
+    "shortName": "EVODA Summer Sport Skirt",
+    "collection": "Evoda Summer set",
+    "collectionSlug": "summer-set",
+    "price": 450000,
+    "colors": [
+      "Vàng",
+      "Xanh Mint",
+      "Hồng",
+      "Đen",
+      "Trắng"
+    ],
+    "sizes": [
+      "S",
+      "M",
+      "L",
+      "XL"
+    ],
+    "label": "NEW",
+    "isNew": true,
+    "isBestseller": false,
+    "images": [
+      "/assets/images/san-pham/ev09-chan-vay-summer/01.webp",
+      "/assets/images/san-pham/ev09-chan-vay-summer/02.jpg",
+      "/assets/images/san-pham/ev09-chan-vay-summer/03.jpg",
+      "/assets/images/san-pham/ev09-chan-vay-summer/04.jpg",
+      "/assets/images/san-pham/ev09-chan-vay-summer/05.jpg",
+      "/assets/images/san-pham/ev09-chan-vay-summer/06.jpg",
+      "/assets/images/san-pham/ev09-chan-vay-summer/07.jpg"
+    ],
+    "description": "Evoda Summer Sport Skirt mang phong cách tennis hiện đại với form chữ A tôn dáng và thiết kế tầng lệch bất đối xứng, tạo chuyển động mềm mại khi vận động. Kiểu dáng trẻ trung, dễ dàng kết hợp cùng áo polo, croptop hoặc áo thun thể thao.",
+    "features": [
+      "Dáng chữ A giúp tôn dáng và tạo cảm giác chân dài hơn.",
+      "Cạp lưng bản lớn co giãn ôm gọn vòng eo, mang lại sự thoải mái khi vận động.",
+      "Thiết kế tầng lệch bất đối xứng tạo hiệu ứng bay nhẹ và nữ tính.",
+      "Quần bảo hộ liền bên trong giúp tự tin khi di chuyển và vận động.",
+      "Túi bên trong quần bảo hộ tiện lợi để đựng điện thoại hoặc bóng thể thao tùy phiên bản.",
+      "Đường may được xử lý gọn gàng, hạn chế cọ xát trong quá trình vận động."
+    ],
+    "material": "Chất liệu co giãn 4 chiều, thoáng khí và thấm hút mồ hôi tốt, mang lại cảm giác nhẹ nhàng, dễ chịu khi vận động. Vải có độ bền tốt, hạn chế bai dão và giữ form sau nhiều lần giặt.",
+    "style": "Evoda Summer Sport Skirt là lựa chọn lý tưởng cho những cô nàng yêu thích phong cách thể thao nữ tính, năng động và linh hoạt.",
+    "suitableFor": [
+      "Pickleball",
+      "Tennis",
+      "Chạy bộ",
+      "Cầu lông",
+      "Gym",
+      "Hoạt động thường ngày"
+    ],
+    "tiktokLink": "https://vt.tiktok.com/ZS9AuC1y8co3S-XXLxn/"
   }
 ]
