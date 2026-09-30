@@ -38,7 +38,7 @@
 .animate-pulse-subtle { animation: pulseSubtle 3.5s ease-in-out infinite; }
 .reveal-on-scroll { opacity: 0; transform: translateY(24px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; }
 .reveal-on-scroll.is-revealed { opacity: 1; transform: translateY(0); }
-img { image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; }</style>
+img { image-rendering: auto; }</style>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-low":"#f3f3f4","on-secondary-fixed":"#1b1c1c","on-background":"#1a1c1c","surface-container":"#eeeeee","on-tertiary":"#ffffff","primary-container":"#1b1b1b","surface-variant":"#e2e2e2","surface-container-highest":"#e2e2e2","surface-container-high":"#e8e8e8","primary":"#000000","surface-dim":"#dadada","surface-bright":"#f9f9f9","on-secondary":"#ffffff","secondary":"#5e5e5e","background":"#f9f9f9","outline-variant":"#cfc4c5","on-surface":"#1a1c1c","on-primary":"#ffffff","surface":"#f9f9f9","surface-container-lowest":"#ffffff","outline":"#7e7576"},"spacing":{"gutter":"1.5rem","margin-mobile":"1.25rem","space-xl":"4rem","margin":"4rem","space-lg":"2rem","space-2xl":"6rem"},"fontFamily":{"display-hero":["EB Garamond"],"editorial-quote":["EB Garamond"],"label-nav":["Manrope"],"label-uppercase":["Manrope"],"headline-lg":["EB Garamond"],"headline-sm":["EB Garamond"],"body-md":["Manrope"],"caption":["Manrope"],"body-sm":["Manrope"]}}}}</script>
 
@@ -138,6 +138,9 @@ img { image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; 
     const mobileMenuClose = document.getElementById('mobile-menu-close');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+    // Move overlay out of <header>: backdrop-filter on the header traps position:fixed children (menu got clipped to 80px)
+    if (mobileMenuBackdrop) document.body.appendChild(mobileMenuBackdrop);
+    if (mobileMenu) document.body.appendChild(mobileMenu);
     
     function openMenu() {
       if(!mobileMenu) return;
@@ -221,6 +224,9 @@ img { image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; 
 .article-content ul { list-style: disc; }
 .article-content ol { list-style: decimal; }
 .article-content li { margin-bottom: 0.4rem; }
+.article-content figure { margin: 2rem 0; }
+.article-content figure img { width: 100%; max-height: 520px; object-fit: cover; object-position: center top; border: 1px solid #E5E0DA; display: block; }
+.article-content figcaption { margin-top: 0.5rem; font-family: 'Manrope', sans-serif; font-size: 12px; color: #5e5e5e; text-align: center; }
 </style>
 </main>
 ﻿<!-- FLOATING SOCIAL BUTTONS -->

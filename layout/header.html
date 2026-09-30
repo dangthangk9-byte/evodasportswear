@@ -88,6 +88,9 @@
     const mobileMenuClose = document.getElementById('mobile-menu-close');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+    // Move overlay out of <header>: backdrop-filter on the header traps position:fixed children (menu got clipped to 80px)
+    if (mobileMenuBackdrop) document.body.appendChild(mobileMenuBackdrop);
+    if (mobileMenu) document.body.appendChild(mobileMenu);
     
     function openMenu() {
       if(!mobileMenu) return;

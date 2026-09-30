@@ -38,7 +38,7 @@
 .animate-pulse-subtle { animation: pulseSubtle 3.5s ease-in-out infinite; }
 .reveal-on-scroll { opacity: 0; transform: translateY(24px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); will-change: opacity, transform; }
 .reveal-on-scroll.is-revealed { opacity: 1; transform: translateY(0); }
-img { image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; }</style>
+img { image-rendering: auto; }</style>
 <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
 <script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"surface-container-low":"#f3f3f4","on-secondary-fixed":"#1b1c1c","on-background":"#1a1c1c","surface-container":"#eeeeee","on-tertiary":"#ffffff","primary-container":"#1b1b1b","surface-variant":"#e2e2e2","surface-container-highest":"#e2e2e2","surface-container-high":"#e8e8e8","primary":"#000000","surface-dim":"#dadada","surface-bright":"#f9f9f9","on-secondary":"#ffffff","secondary":"#5e5e5e","background":"#f9f9f9","outline-variant":"#cfc4c5","on-surface":"#1a1c1c","on-primary":"#ffffff","surface":"#f9f9f9","surface-container-lowest":"#ffffff","outline":"#7e7576"},"spacing":{"gutter":"1.5rem","margin-mobile":"1.25rem","space-xl":"4rem","margin":"4rem","space-lg":"2rem","space-2xl":"6rem"},"fontFamily":{"display-hero":["EB Garamond"],"editorial-quote":["EB Garamond"],"label-nav":["Manrope"],"label-uppercase":["Manrope"],"headline-lg":["EB Garamond"],"headline-sm":["EB Garamond"],"body-md":["Manrope"],"caption":["Manrope"],"body-sm":["Manrope"]}}}}</script>
 
@@ -138,6 +138,9 @@ img { image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; 
     const mobileMenuClose = document.getElementById('mobile-menu-close');
     const mobileMenu = document.getElementById('mobile-menu');
     const mobileMenuBackdrop = document.getElementById('mobile-menu-backdrop');
+    // Move overlay out of <header>: backdrop-filter on the header traps position:fixed children (menu got clipped to 80px)
+    if (mobileMenuBackdrop) document.body.appendChild(mobileMenuBackdrop);
+    if (mobileMenu) document.body.appendChild(mobileMenu);
     
     function openMenu() {
       if(!mobileMenu) return;
@@ -191,22 +194,52 @@ img { image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; 
     var metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute('content', c.shortDescription.slice(0,155));
 
-    var pieces = c.pieces.map(function(p) {
-      var feats = p.features.map(function(f){ return '<li class="flex gap-2"><span class="text-primary">&bull;</span><span>' + esc(f) + '</span></li>'; }).join('');
-      var link = p.productSlug ? '<a href="/san-pham/chi-tiet.html?slug=' + p.productSlug + '" class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-primary hover:text-secondary mt-3">XEM SẢN PHẨM <span class="material-symbols-outlined text-sm">arrow_forward</span></a>' : '';
-      return '<div class="border border-[#E5E0DA] p-6 bg-surface-container-lowest"><h3 class="font-headline-sm text-[20px] text-primary mb-2">' + esc(p.name) + '</h3>' +
-        '<p class="font-body-sm text-secondary mb-3 leading-relaxed">' + esc(p.desc) + '</p>' +
-        '<ul class="font-body-sm text-secondary space-y-1.5">' + feats + '</ul>' + link + '</div>';
+    var SW = {'Vàng':'#F3D46B','Xanh Mint':'#A8E6CF','Hồng':'#F4B6C8','Đen':'#111111','Trắng':'#FFFFFF','Xanh':'#6FA8DC','Đỏ':'#C62828','Be':'#E8D9C0','Xanh Than':'#1F2A44'};
+    function byslug(sl) { return products.find(function(x){ return x.slug === sl; }); }
+    function heading(num, title) {
+      return '<div class="flex items-baseline gap-4 border-t border-[#E5E0DA] pt-8 mb-8"><span class="font-caption text-caption text-secondary tracking-widest">' + num + '</span>'
+        + '<h2 class="font-headline-lg text-[26px] lg:text-[30px] text-primary font-normal">' + title + '</h2></div>';
+    }
+
+    // --- Chất liệu: tách đoạn văn dài thành ý ngắn ---
+    var sentences = (c.material || '').split(/\.\s+/).map(function(t){ return t.replace(/\.$/, '').trim(); }).filter(Boolean);
+    var comp = '', lead = '', bullets = [];
+    sentences.forEach(function(t, i) {
+      if (/^Thành phần/i.test(t)) { comp = t.replace(/^Thành phần( chất liệu)?:?\s*/i, ''); }
+      else if (i === 0 && sentences.length > 2) { lead = t; }
+      else { bullets.push(t); }
+    });
+    var materialHtml = (lead ? '<p class="font-body-md text-primary leading-relaxed mb-6">' + esc(lead) + '.</p>' : '')
+      + '<ul class="space-y-3">' + bullets.map(function(t){ return '<li class="flex gap-3 font-body-md text-secondary"><span class="material-symbols-outlined text-[18px] text-primary mt-0.5">check</span><span>' + esc(t) + '</span></li>'; }).join('') + '</ul>'
+      + (comp ? '<div class="mt-6 inline-flex items-center gap-3 border border-[#E5E0DA] bg-surface-container-lowest px-4 py-3"><span class="font-caption text-caption tracking-widest uppercase text-secondary">Thành phần</span><span class="font-body-md text-primary font-medium">' + esc(comp) + '</span></div>' : '');
+
+    // --- Thiết kế nổi bật ---
+    var pieces = c.pieces.map(function(p, i) {
+      var prod = p.productSlug ? byslug(p.productSlug) : null;
+      var img = prod ? '<a href="/san-pham/chi-tiet.html?slug=' + prod.slug + '" class="block w-full sm:w-44 shrink-0 aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA]"><img src="' + prod.images[0] + '" alt="' + esc(p.name) + '" class="w-full h-full object-cover" loading="lazy"></a>' : '';
+      var feats = p.features.map(function(f){ return '<li class="flex gap-3"><span class="mt-2 w-1 h-1 rounded-full bg-primary shrink-0"></span><span>' + esc(f) + '</span></li>'; }).join('');
+      var link = p.productSlug ? '<a href="/san-pham/chi-tiet.html?slug=' + p.productSlug + '" class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-primary hover:text-secondary mt-5">XEM SẢN PHẨM <span class="material-symbols-outlined text-sm">arrow_forward</span></a>' : '';
+      return '<article class="flex flex-col sm:flex-row gap-6 border border-[#E5E0DA] p-6 bg-surface-container-lowest">' + img
+        + '<div class="flex flex-col"><span class="font-caption text-caption text-secondary tracking-widest mb-2">' + ('0' + (i + 1)) + '</span>'
+        + '<h3 class="font-headline-sm text-[20px] text-primary mb-3">' + esc(p.name) + '</h3>'
+        + '<p class="font-body-sm text-secondary leading-relaxed mb-4">' + esc(p.desc) + '</p>'
+        + '<ul class="font-body-sm text-secondary space-y-2">' + feats + '</ul>' + link + '</div></article>';
     }).join('');
 
-    var colors = c.colors.map(function(col) { return '<div class="flex flex-col gap-1"><span class="font-label-uppercase text-sm text-primary">' + esc(col.name) + '</span><span class="font-body-sm text-secondary">' + esc(col.desc) + '</span></div>'; }).join('');
-    var suitable = c.suitableFor.map(esc).join(' &bull; ');
+    // --- Màu sắc ---
+    var colors = c.colors.map(function(col) {
+      var hex = SW[col.name] || '#CFC4C5';
+      return '<div class="flex items-start gap-4 border border-[#E5E0DA] bg-surface-container-lowest p-4"><span class="w-9 h-9 rounded-full border border-[#CFC4C5] shrink-0" style="background:' + hex + '"></span>'
+        + '<div class="flex flex-col"><span class="font-label-uppercase text-sm text-primary mb-1">' + esc(col.name) + '</span><span class="font-body-sm text-secondary leading-relaxed">' + esc(col.desc) + '</span></div></div>';
+    }).join('');
+
+    var suitable = c.suitableFor.map(function(t){ return '<span class="border border-[#E5E0DA] bg-surface-container-lowest px-4 py-2 font-body-sm text-primary">' + esc(t) + '</span>'; }).join('');
 
     var moreProducts = products.filter(function(p){ return c.productSlugs.indexOf(p.slug) !== -1; }).map(function(p) {
       return '<a href="/san-pham/chi-tiet.html?slug=' + p.slug + '" class="group flex flex-col">' +
-        '<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-4"><img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="' + p.images[0] + '" alt="' + esc(p.shortName) + '"></div>' +
+        '<div class="relative aspect-[3/4] overflow-hidden bg-surface-container-low border border-[#E5E0DA] mb-4"><img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" src="' + p.images[0] + '" alt="' + esc(p.shortName) + '" loading="lazy"></div>' +
         '<span class="font-headline-sm text-[16px] text-primary group-hover:text-secondary">' + esc(p.shortName) + '</span>' +
-        '<span class="font-body-sm text-primary font-medium">' + p.price.toLocaleString('vi-VN') + '\u0111</span></a>';
+        '<span class="font-body-sm text-primary font-medium">' + p.price.toLocaleString('vi-VN') + 'đ</span></a>';
     }).join('');
 
     var html = ''
@@ -216,15 +249,13 @@ img { image-rendering: -webkit-optimize-contrast; image-rendering: crisp-edges; 
       + '<span class="font-caption text-caption text-white/80 uppercase tracking-widest block mb-2">' + esc(c.code) + '</span>'
       + '<h1 class="font-headline-lg text-[32px] lg:text-[44px] text-white font-normal">' + esc(c.name) + '</h1>'
       + '</div></div></section>'
-      + '<section class="w-full bg-surface py-space-xl"><div class="max-w-7xl mx-auto px-margin-mobile lg:px-margin">'
-      + '<p class="font-body-lg text-[18px] text-primary leading-relaxed max-w-3xl mb-12">' + esc(c.intro) + '</p>'
-      + '<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-16">' + pieces + '</div>'
-      + '<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter mb-16">'
-      + '<div><h3 class="font-label-uppercase text-sm tracking-wider text-primary mb-3">CHẤT LIỆU</h3><p class="font-body-md text-secondary leading-relaxed">' + esc(c.material) + '</p></div>'
-      + '<div><h3 class="font-label-uppercase text-sm tracking-wider text-primary mb-3">MÀU SẮC</h3><div class="grid grid-cols-2 gap-4">' + colors + '</div></div>'
-      + '</div>'
-      + '<div class="mb-16"><h3 class="font-label-uppercase text-sm tracking-wider text-primary mb-3">PHÙ HỢP CHO</h3><p class="font-body-md text-secondary">' + suitable + '</p></div>'
-      + '<div class="border-t border-[#E5E0DA] pt-12"><h3 class="font-headline-sm text-[22px] text-primary mb-6">SẢN PHẨM TRONG BỘ SƯU TẬP</h3><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">' + moreProducts + '</div></div>'
+      + '<section class="w-full bg-surface py-space-xl"><div class="max-w-6xl mx-auto px-margin-mobile lg:px-margin flex flex-col gap-16">'
+      + '<div><p class="font-body-lg text-[18px] text-primary leading-relaxed max-w-3xl">' + esc(c.intro) + '</p></div>'
+      + '<div>' + heading('01', 'Thiết kế trong bộ sưu tập') + '<div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">' + pieces + '</div></div>'
+      + '<div>' + heading('02', 'Chất liệu') + '<div class="max-w-3xl">' + materialHtml + '</div></div>'
+      + '<div>' + heading('03', 'Màu sắc') + '<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">' + colors + '</div></div>'
+      + '<div>' + heading('04', 'Phù hợp cho') + '<div class="flex flex-wrap gap-3">' + suitable + '</div></div>'
+      + '<div>' + heading('05', 'Sản phẩm trong bộ sưu tập') + '<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-gutter">' + moreProducts + '</div></div>'
       + '</div></section>';
 
     document.getElementById('collection-detail-root').innerHTML = html;
