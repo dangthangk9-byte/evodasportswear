@@ -184,8 +184,8 @@ img { image-rendering: auto; }</style>
   var slug = params.get('slug');
 
   Promise.all([
-    fetch('/data/collections.json').then(function(r){return r.json();}),
-    fetch('/data/products.json').then(function(r){return r.json();})
+    fetch('/data/collections.json').then(function(r){return r.json().then(function(d){ return Array.isArray(d) ? d : d.collections; });}),
+    fetch('/data/products.json').then(function(r){return r.json().then(function(d){ return Array.isArray(d) ? d : d.products; });})
   ]).then(function(results) {
     var collections = results[0], products = results[1];
     var c = collections.find(function(x){ return x.slug === slug; }) || collections[0];

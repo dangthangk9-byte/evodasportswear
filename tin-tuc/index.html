@@ -201,7 +201,7 @@ img { image-rendering: auto; }</style>
       '<p class="font-body-sm text-secondary leading-relaxed mb-4">' + esc(n.excerpt) + '</p>' +
       '<span class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-primary mt-auto">ĐỌC TIẾP <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1.5">arrow_forward</span></span></div></a>';
   }
-  fetch('/data/news.json').then(function(r) { return r.json(); }).then(function(news) {
+  fetch('/data/news.json').then(function(r) { return r.json().then(function(d){ return Array.isArray(d) ? d : d.news; }); }).then(function(news) {
     document.getElementById('news-grid').innerHTML = news.map(card).join('');
   }).catch(function(err) {
     document.getElementById('news-grid').innerHTML = '<p class="col-span-full text-center text-secondary py-20">Không thể tải bài viết.</p>';

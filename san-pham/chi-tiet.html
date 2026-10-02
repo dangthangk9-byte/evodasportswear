@@ -186,9 +186,10 @@ img { image-rendering: auto; }</style>
   var params = new URLSearchParams(window.location.search);
   var slug = params.get('slug');
 
-  fetch('/data/products.json').then(function(r) { return r.json(); }).then(function(products) {
+  fetch('/data/products.json').then(function(r) { return r.json().then(function(d){ return Array.isArray(d) ? d : d.products; }); }).then(function(products) {
     var product = products.find(function(p) { return p.slug === slug; }) || products[0];
     if (!product) { return; }
+    if (Array.isArray(product.colorImages)) { var cm = {}; product.colorImages.forEach(function(x){ cm[x.color] = x.images || []; }); product.colorImages = cm; }
     document.title = product.shortName + ' | EVODA SPORTSWEAR';
     var metaDesc = document.querySelector('meta[name="description"]');
     if (metaDesc) metaDesc.setAttribute('content', product.description.slice(0, 155));

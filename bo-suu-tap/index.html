@@ -200,7 +200,7 @@ img { image-rendering: auto; }</style>
       '<h3 class="font-headline-sm text-[18px] text-primary mb-3 font-medium transition-colors duration-300 group-hover:text-black">' + c.name + '</h3>' +
       '<span class="inline-flex items-center gap-2 font-label-uppercase text-label-uppercase text-primary group-hover:text-secondary transition-colors">KHÁM PHÁ <span class="material-symbols-outlined text-sm transition-transform duration-300 group-hover:translate-x-1.5">arrow_forward</span></span></a>';
   }
-  fetch('/data/collections.json').then(function(r) { return r.json(); }).then(function(collections) {
+  fetch('/data/collections.json').then(function(r) { return r.json().then(function(d){ return Array.isArray(d) ? d : d.collections; }); }).then(function(collections) {
     document.getElementById('collection-grid').innerHTML = collections.map(card).join('');
   }).catch(function(err) {
     document.getElementById('collection-grid').innerHTML = '<p class="col-span-full text-center text-secondary py-20">Không thể tải bộ sưu tập.</p>';

@@ -183,7 +183,7 @@ img { image-rendering: auto; }</style>
   var params = new URLSearchParams(window.location.search);
   var slug = params.get('slug');
 
-  fetch('/data/news.json').then(function(r) { return r.json(); }).then(function(news) {
+  fetch('/data/news.json').then(function(r) { return r.json().then(function(d){ return Array.isArray(d) ? d : d.news; }); }).then(function(news) {
     var article = news.find(function(n){ return n.slug === slug; }) || news[0];
     if (!article) return;
     document.title = article.title + ' | EVODA SPORTSWEAR';

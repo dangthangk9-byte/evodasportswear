@@ -218,7 +218,7 @@ img { image-rendering: auto; }</style>
       '<a class="font-headline-sm text-[18px] text-primary transition-colors duration-300 hover:text-secondary mb-1.5" href="/san-pham/chi-tiet.html?slug=' + p.slug + '">' + p.shortName + '</a>' +
       '<span class="font-body-md text-[15px] text-primary font-medium">' + vnd(p.price) + '</span></div></div>';
   }
-  fetch('/data/products.json').then(function(r) { return r.json(); }).then(function(products) {
+  fetch('/data/products.json').then(function(r) { return r.json().then(function(d){ return Array.isArray(d) ? d : d.products; }); }).then(function(products) {
     var grid = document.getElementById('product-grid');
     grid.innerHTML = products.map(card).join('');
     var buttons = document.querySelectorAll('.filter-btn');
