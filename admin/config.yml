@@ -141,4 +141,4 @@ collections:
               - { label: Ngày hiển thị (dd/mm/yyyy), name: displayDate, widget: string }
               - { label: Ảnh đại diện, name: image, widget: image }
               - { label: Mô tả ngắn, name: excerpt, widget: text }
-              - { label: Nội dung (HTML), name: content, widget: text }
+              - { label: Nội dung bài viết (soạn như Word – dùng nút trên thanh công cụ), name: body, widget: markdown, buttons: [bold, italic, link, heading-two, heading-three, quote, bulleted-list, numbered-list], editor_components: [image] }

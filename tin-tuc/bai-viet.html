@@ -173,6 +173,7 @@ img { image-rendering: auto; }</style>
 
 
 
+<script src="https://cdn.jsdelivr.net/npm/marked@12/marked.min.js"></script>
 <main class="w-full pt-20 bg-surface">
 <div id="article-root" class="flex flex-col w-full">
 <div class="max-w-3xl mx-auto px-margin-mobile lg:px-margin py-20 text-center"><p class="text-secondary">Đang tải bài viết...</p></div>
@@ -204,12 +205,19 @@ img { image-rendering: auto; }</style>
       + '<h1 class="font-headline-lg text-[26px] lg:text-[36px] text-white font-normal leading-snug">' + esc(article.title) + '</h1>'
       + '</div></div></section>'
       + '<section class="w-full bg-surface py-space-xl"><div class="max-w-3xl mx-auto px-margin-mobile lg:px-margin">'
-      + '<div class="font-body-md text-[16px] text-on-surface leading-relaxed article-content">' + article.content + '</div>'
+      + '<div class="font-body-md text-[16px] text-on-surface leading-relaxed article-content">' + (article.body ? marked.parse(article.body) : (article.content || '')) + '</div>'
       + '<div class="mt-12 pt-8 border-t border-[#E5E0DA] flex justify-center"><a href="/san-pham/" class="inline-flex items-center justify-center bg-primary text-on-primary font-label-uppercase text-label-uppercase px-8 py-3.5 tracking-wider border border-primary hover:bg-white hover:text-primary transition-all duration-300">KHÁM PHÁ SẢN PHẨM EVODA</a></div>'
       + (others ? '<div class="mt-16 pt-8 border-t border-[#E5E0DA]"><h3 class="font-headline-sm text-[20px] text-primary mb-6">BÀI VIẾT KHÁC</h3><div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter">' + others + '</div></div>' : '')
       + '</div></section>';
 
     document.getElementById('article-root').innerHTML = html;
+    document.querySelectorAll('.article-content img').forEach(function(img) {
+      if (img.closest('figure')) return;
+      var fig = document.createElement('figure');
+      img.parentNode.insertBefore(fig, img); fig.appendChild(img);
+      if (img.alt) { var cap = document.createElement('figcaption'); cap.textContent = img.alt; fig.appendChild(cap); }
+      if (fig.parentNode.tagName === 'P') { fig.parentNode.replaceWith(fig); }
+    });
   }).catch(function(err) {
     document.getElementById('article-root').innerHTML = '<div class="max-w-3xl mx-auto px-margin-mobile lg:px-margin py-20 text-center"><p class="text-secondary">Không tìm thấy bài viết.</p></div>';
     console.error(err);
