@@ -42,7 +42,7 @@
       "name": "EVODA SUMMER SET",
       "slug": "summer-set",
       "intro": "EVODA SUMMER SET là bộ sưu tập thời trang thể thao lấy cảm hứng từ tinh thần mùa hè trẻ trung và năng động. Thiết kế kết hợp giữa phong cách sporty hiện đại và nét nữ tính, thanh lịch, phù hợp để mặc khi chơi thể thao, dạo phố, đi café hoặc sử dụng hằng ngày.",
-      "banner": "/assets/images/khac/bannersummerset.png",
+      "banner": "/assets/images/khac/bannersummerset.jpg",
       "poster": "/assets/images/bo-suu-tap/summer-set/poster.jpg",
       "code": "BST01 - EV01",
       "colors": [
@@ -113,7 +113,7 @@
       "name": "EVODA POLO SET",
       "slug": "polo-set",
       "intro": "EVODA POLO SET là set thời trang thể thao kết hợp áo polo hiện đại cùng chân váy dập ly xẻ tà, mang đến diện mạo thanh lịch, nữ tính nhưng vẫn năng động và linh hoạt. Thiết kế phù hợp cho các hoạt động thể thao cũng như phong cách thường ngày.",
-      "banner": "/assets/images/bo-suu-tap/polo-set/banner.jpg",
+      "banner": "/assets/images/khac/bannerpoloset.png",
       "poster": "/assets/images/bo-suu-tap/polo-set/poster.jpg",
       "code": "BST02 - EV02",
       "colors": [
