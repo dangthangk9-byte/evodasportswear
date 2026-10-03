@@ -167,6 +167,68 @@ img { image-rendering: auto; }</style>
     if(mobileMenuBackdrop) mobileMenuBackdrop.addEventListener('click', closeMenu);
   });
 </script>
+<script>
+(function () {
+  var btn = document.querySelector('button[aria-label="Search"]');
+  if (!btn || window.__evodaSearch) return;
+  window.__evodaSearch = true;
+  var items = null, ov = null, input = null, list = null;
+  function norm(s) { return (s || '').toString().toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/đ/g, 'd'); }
+  function pick(d, k) { return Array.isArray(d) ? d : (d && d[k]) || []; }
+  function money(n) { return n.toLocaleString('vi-VN') + 'đ'; }
+  function load() {
+    if (items) return Promise.resolve(items);
+    function get(u, k) { return fetch(u).then(function (r) { return r.json(); }).then(function (d) { return pick(d, k); }).catch(function () { return []; }); }
+    return Promise.all([get('/data/products.json', 'products'), get('/data/collections.json', 'collections'), get('/data/news.json', 'news')]).then(function (r) {
+      items = [];
+      r[0].forEach(function (p) { items.push({ type: 'Sản phẩm', title: p.shortName || p.name, sub: money(p.price) + ' · ' + (p.collection || ''), url: '/san-pham/chi-tiet.html?slug=' + p.slug, img: (p.images || [])[0], key: norm([p.shortName, p.name, p.collection, (p.colors || []).join(' '), p.description].join(' ')) }); });
+      r[1].forEach(function (c) { items.push({ type: 'Bộ sưu tập', title: c.name, sub: c.code || '', url: '/bo-suu-tap/chi-tiet.html?slug=' + c.slug, img: c.poster, key: norm([c.name, c.code, c.shortDescription].join(' ')) }); });
+      r[2].forEach(function (n) { items.push({ type: 'Tin tức', title: n.title, sub: n.displayDate || '', url: '/tin-tuc/bai-viet.html?slug=' + n.slug, img: n.image, key: norm([n.title, n.excerpt].join(' ')) }); });
+      return items;
+    });
+  }
+  function esc(s) { var d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; }
+  function render(q) {
+    var nq = norm(q).trim();
+    if (!nq) { list.innerHTML = '<p style="padding:24px 0;color:#5e5e5e;font-size:14px">Nhập tên sản phẩm, bộ sưu tập hoặc bài viết (ví dụ: polo, váy, bloom, 20/10).</p>'; return; }
+    var words = nq.split(/\s+/);
+    var res = items.filter(function (it) { return words.every(function (w) { return it.key.indexOf(w) !== -1; }); }).slice(0, 8);
+    if (!res.length) { list.innerHTML = '<p style="padding:24px 0;color:#5e5e5e;font-size:14px">Không tìm thấy kết quả cho "' + esc(q) + '".</p>'; return; }
+    list.innerHTML = res.map(function (it) {
+      return '<a href="' + it.url + '" style="display:flex;gap:16px;align-items:center;padding:12px 0;border-bottom:1px solid #E5E0DA;text-decoration:none;color:#000">'
+        + '<span style="width:56px;height:72px;flex:none;background:#f3f3f4;overflow:hidden;display:block">' + (it.img ? '<img src="' + it.img + '" alt="" style="width:100%;height:100%;object-fit:cover">' : '') + '</span>'
+        + '<span style="display:flex;flex-direction:column;gap:2px;min-width:0"><span style="font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:#5e5e5e">' + it.type + '</span>'
+        + '<span style="font-size:16px;line-height:1.35">' + esc(it.title) + '</span><span style="font-size:13px;color:#5e5e5e">' + esc(it.sub) + '</span></span></a>';
+    }).join('');
+  }
+  function build() {
+    ov = document.createElement('div');
+    ov.id = 'search-overlay';
+    ov.style.cssText = 'position:fixed;inset:0;z-index:90;background:rgba(0,0,0,.5);display:none;align-items:flex-start;justify-content:center;padding:0';
+    ov.innerHTML = '<div style="background:#fff;width:100%;max-width:720px;margin-top:0;max-height:100vh;overflow-y:auto;padding:20px 20px 12px;box-shadow:0 12px 40px rgba(0,0,0,.15)">'
+      + '<div style="display:flex;align-items:center;gap:12px;border-bottom:2px solid #000;padding-bottom:10px">'
+      + '<span class="material-symbols-outlined" style="font-size:24px">search</span>'
+      + '<input id="search-input" type="search" autocomplete="off" placeholder="Tìm sản phẩm, bộ sưu tập, bài viết..." style="flex:1;border:0;outline:0;font-size:18px;background:transparent;min-width:0">'
+      + '<button id="search-close" aria-label="Đóng" style="border:0;background:transparent;cursor:pointer;padding:4px"><span class="material-symbols-outlined">close</span></button></div>'
+      + '<div id="search-results"></div></div>';
+    document.body.appendChild(ov);
+    input = ov.querySelector('#search-input'); list = ov.querySelector('#search-results');
+    ov.addEventListener('click', function (e) { if (e.target === ov) close(); });
+    ov.querySelector('#search-close').addEventListener('click', close);
+    input.addEventListener('input', function () { render(input.value); });
+    input.addEventListener('keydown', function (e) { if (e.key === 'Enter') { var a = list.querySelector('a'); if (a) window.location.href = a.getAttribute('href'); } });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && ov.style.display === 'flex') close(); });
+  }
+  function open() {
+    if (!ov) build();
+    ov.style.display = 'flex'; document.body.style.overflow = 'hidden';
+    load().then(function () { render(input.value); });
+    setTimeout(function () { input.focus(); }, 30);
+  }
+  function close() { ov.style.display = 'none'; document.body.style.overflow = ''; }
+  btn.addEventListener('click', open);
+})();
+</script>
 </header>
 
 
@@ -287,7 +349,7 @@ img { image-rendering: auto; }</style>
 </div>
 </main>
 ﻿<!-- FLOATING SOCIAL BUTTONS -->
-<div class="fixed bottom-6 right-6 z-40 flex flex-col gap-3 items-end">
+<div class="fixed bottom-24 right-6 z-40 flex flex-col gap-3 items-end">
 <a aria-label="Messenger" class="w-12 h-12 rounded-full bg-surface-container-lowest text-primary border border-outline-variant shadow-[0_4px_20px_rgba(0,0,0,0.08)] hover:bg-surface-container-high transition-all flex items-center justify-center animate-pulse-subtle" href="https://www.facebook.com/profile.php?id=61574619090811" target="_blank" rel="noopener noreferrer">
 <svg class="w-6 h-6 fill-current" viewBox="0 0 24 24"><path d="M12 2C6.36 2 2 6.13 2 11.7c0 2.91 1.19 5.43 3.14 7.15.16.15.27.35.29.57l.17 1.78c.05.51.52.88 1.02.8l1.73-.29c.19-.03.39 0 .56.09 1 .53 2.13.83 3.09.83 5.64 0 10-4.13 10-9.7S17.64 2 12 2zm1.22 13.06-2.7-2.88-5.26 2.88 5.79-6.14 2.77 2.88 5.18-2.88-5.78 6.14z"></path></svg>
 </a>
