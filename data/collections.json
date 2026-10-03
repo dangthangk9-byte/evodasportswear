@@ -1,13 +1,17 @@
 {
   "collections": [
     {
-      "slug": "summer-set",
-      "code": "BST01 - EV01",
-      "name": "EVODA SUMMER SET",
-      "poster": "/assets/images/bo-suu-tap/summer-set/poster.jpg",
-      "banner": "/assets/images/bo-suu-tap/summer-set/banner.jpg",
       "shortDescription": "Lấy cảm hứng từ tinh thần mùa hè năng động, EVODA SUMMER SET mang đến những thiết kế trẻ trung, thoải mái và đầy sức sống. Sự kết hợp giữa nét nữ tính và phong cách thể thao hiện đại tạo nên những outfit linh hoạt cho mọi khoảnh khắc.",
-      "intro": "EVODA SUMMER SET là bộ sưu tập thời trang thể thao lấy cảm hứng từ tinh thần mùa hè trẻ trung và năng động. Thiết kế kết hợp giữa phong cách sporty hiện đại và nét nữ tính, thanh lịch, phù hợp để mặc khi chơi thể thao, dạo phố, đi café hoặc sử dụng hằng ngày.",
+      "suitableFor": [
+        "Pickleball",
+        "Tennis",
+        "Golf",
+        "Cầu lông",
+        "Gym",
+        "Chạy bộ",
+        "Dạo phố",
+        "Café"
+      ],
       "pieces": [
         {
           "name": "EVODA CROPTOP POLO",
@@ -35,6 +39,12 @@
         }
       ],
       "material": "EVODA SUMMER SET sử dụng chất liệu co giãn 4 chiều, mềm mại và thoáng khí, hỗ trợ thấm hút mồ hôi tốt trong quá trình vận động. Co giãn 4 chiều, hỗ trợ vận động linh hoạt. Mềm mại, thoáng khí và dễ chịu khi mặc. Độ dày vừa phải, hạn chế nhăn và xuyên thấu. Độ bền tốt, hạn chế bai dão và hỗ trợ giữ form sau nhiều lần giặt. Thành phần chất liệu: 75% Nylon – 25% Spandex.",
+      "name": "EVODA SUMMER SET",
+      "slug": "summer-set",
+      "intro": "EVODA SUMMER SET là bộ sưu tập thời trang thể thao lấy cảm hứng từ tinh thần mùa hè trẻ trung và năng động. Thiết kế kết hợp giữa phong cách sporty hiện đại và nét nữ tính, thanh lịch, phù hợp để mặc khi chơi thể thao, dạo phố, đi café hoặc sử dụng hằng ngày.",
+      "banner": "/assets/images/khac/bannersummerset.png",
+      "poster": "/assets/images/bo-suu-tap/summer-set/poster.jpg",
+      "code": "BST01 - EV01",
       "colors": [
         {
           "name": "Vàng",
@@ -57,16 +67,6 @@
           "desc": "Tối giản, tinh tế và thời thượng."
         }
       ],
-      "suitableFor": [
-        "Pickleball",
-        "Tennis",
-        "Golf",
-        "Cầu lông",
-        "Gym",
-        "Chạy bộ",
-        "Dạo phố",
-        "Café"
-      ],
       "productSlugs": [
         "ev01-summer-set",
         "ev08-ao-polo-croptop-summer",
@@ -74,13 +74,16 @@
       ]
     },
     {
-      "slug": "polo-set",
-      "code": "BST02 - EV02",
-      "name": "EVODA POLO SET",
-      "poster": "/assets/images/bo-suu-tap/polo-set/poster.jpg",
-      "banner": "/assets/images/bo-suu-tap/polo-set/banner.jpg",
       "shortDescription": "EVODA POLO SET là sự hòa quyện giữa vẻ thanh lịch của phong cách polo và tinh thần thể thao năng động. Thiết kế mang đến diện mạo nữ tính, hiện đại và tự tin, phù hợp với những cô nàng yêu thích phong cách sporty chic.",
-      "intro": "EVODA POLO SET là set thời trang thể thao kết hợp áo polo hiện đại cùng chân váy dập ly xẻ tà, mang đến diện mạo thanh lịch, nữ tính nhưng vẫn năng động và linh hoạt. Thiết kế phù hợp cho các hoạt động thể thao cũng như phong cách thường ngày.",
+      "suitableFor": [
+        "Pickleball",
+        "Tennis",
+        "Cầu lông",
+        "Gym",
+        "Dạo phố",
+        "Café",
+        "Hoạt động thường ngày"
+      ],
       "pieces": [
         {
           "name": "EVODA POLO SPORT TOP",
@@ -107,6 +110,12 @@
         }
       ],
       "material": "Chất liệu được lựa chọn theo định hướng thoải mái, linh hoạt và phù hợp với vận động. Mềm mại và dễ chịu khi mặc. Có độ co giãn hỗ trợ chuyển động. Thoáng mát và phù hợp với các hoạt động thể thao.",
+      "name": "EVODA POLO SET",
+      "slug": "polo-set",
+      "intro": "EVODA POLO SET là set thời trang thể thao kết hợp áo polo hiện đại cùng chân váy dập ly xẻ tà, mang đến diện mạo thanh lịch, nữ tính nhưng vẫn năng động và linh hoạt. Thiết kế phù hợp cho các hoạt động thể thao cũng như phong cách thường ngày.",
+      "banner": "/assets/images/bo-suu-tap/polo-set/banner.jpg",
+      "poster": "/assets/images/bo-suu-tap/polo-set/poster.jpg",
+      "code": "BST02 - EV02",
       "colors": [
         {
           "name": "Xanh",
@@ -121,27 +130,22 @@
           "desc": "Nữ tính, trẻ trung và tạo điểm nhấn nổi bật cho trang phục."
         }
       ],
-      "suitableFor": [
-        "Pickleball",
-        "Tennis",
-        "Cầu lông",
-        "Gym",
-        "Dạo phố",
-        "Café",
-        "Hoạt động thường ngày"
-      ],
       "productSlugs": [
         "ev02-polo-set"
       ]
     },
     {
-      "slug": "bloom-set",
-      "code": "BST03 - EV03",
-      "name": "EVODA BLOOM SET",
-      "poster": "/assets/images/bo-suu-tap/bloom-set/poster.jpg",
-      "banner": "/assets/images/bo-suu-tap/bloom-set/banner.jpg",
       "shortDescription": "EVODA BLOOM SET mang tinh thần trẻ trung, nữ tính và hiện đại, dành cho những cô nàng yêu thích phong cách thể thao thời thượng. Thiết kế tạo nên sự cân bằng giữa nét thanh lịch và năng lượng năng động, phù hợp với phong cách sống hiện đại.",
-      "intro": "EVODA BLOOM SET là thiết kế váy liền polo dài tay mang tinh thần thể thao hiện đại, kết hợp vẻ nữ tính của form váy với sự năng động và tiện dụng của trang phục thể thao. Thiết kế liền mạch tạo cảm giác gọn gàng, thanh thoát và giúp bạn dễ dàng vận động trong nhiều hoạt động.",
+      "suitableFor": [
+        "Tennis",
+        "Pickleball",
+        "Cầu lông",
+        "Golf",
+        "Gym",
+        "Dạo phố",
+        "Café",
+        "Hoạt động ngoài trời"
+      ],
       "pieces": [
         {
           "name": "EVODA BLOOM SET",
@@ -157,34 +161,33 @@
         }
       ],
       "material": "Chất liệu được lựa chọn theo định hướng thời trang thể thao, mang lại cảm giác thoải mái và hỗ trợ chuyển động. Mềm mại và dễ chịu khi mặc. Có độ co giãn hỗ trợ vận động. Thoáng mát và phù hợp với các hoạt động thể thao.",
+      "name": "EVODA BLOOM SET",
+      "slug": "bloom-set",
+      "intro": "EVODA BLOOM SET là thiết kế váy liền polo dài tay mang tinh thần thể thao hiện đại, kết hợp vẻ nữ tính của form váy với sự năng động và tiện dụng của trang phục thể thao. Thiết kế liền mạch tạo cảm giác gọn gàng, thanh thoát và giúp bạn dễ dàng vận động trong nhiều hoạt động.",
+      "banner": "/assets/images/bo-suu-tap/bloom-set/banner.jpg",
+      "poster": "/assets/images/bo-suu-tap/bloom-set/poster.jpg",
+      "code": "BST03 - EV03",
       "colors": [
         {
           "name": "Đỏ",
           "desc": "Nổi bật, tạo điểm nhấn mạnh mẽ và tràn đầy năng lượng."
         }
       ],
-      "suitableFor": [
-        "Tennis",
-        "Pickleball",
-        "Cầu lông",
-        "Golf",
-        "Gym",
-        "Dạo phố",
-        "Café",
-        "Hoạt động ngoài trời"
-      ],
       "productSlugs": [
         "ev03-bloom-set"
       ]
     },
     {
-      "slug": "cler-set",
-      "code": "BST04 - EV04",
-      "name": "EVODA CLER SET",
-      "poster": "/assets/images/bo-suu-tap/cler-set/poster.jpg",
-      "banner": "/assets/images/bo-suu-tap/cler-set/banner.jpg",
       "shortDescription": "EVODA CLER SET nổi bật với tinh thần nữ tính pha chút cá tính trong thiết kế váy liền thể thao hiện đại. Một lựa chọn dành cho những cô nàng yêu thích vẻ ngoài thời trang, năng động nhưng vẫn muốn giữ nét duyên dáng riêng.",
-      "intro": "EVODA CLER SET là thiết kế váy liền thể thao dập ly cách điệu, kết hợp hài hòa giữa vẻ nữ tính và tinh thần năng động hiện đại. Kiểu dáng trẻ trung cùng những đường dập ly hai bên tạo hiệu ứng chuyển động mềm mại, giúp trang phục nổi bật cả khi vận động lẫn trong những khoảnh khắc đời thường.",
+      "suitableFor": [
+        "Pickleball",
+        "Tennis",
+        "Cầu lông",
+        "Dạo phố",
+        "Café",
+        "Chụp ảnh",
+        "Hoạt động thường ngày"
+      ],
       "pieces": [
         {
           "name": "EVODA CLER SET",
@@ -200,6 +203,12 @@
         }
       ],
       "material": "Chất liệu thể thao mềm mại và co giãn, mang đến cảm giác thoải mái và linh hoạt trong từng chuyển động. Mềm mại và dễ chịu khi mặc. Co giãn tốt, hỗ trợ vận động linh hoạt. Giữ form tốt, giúp trang phục luôn chỉn chu.",
+      "name": "EVODA CLER SET",
+      "slug": "cler-set",
+      "intro": "EVODA CLER SET là thiết kế váy liền thể thao dập ly cách điệu, kết hợp hài hòa giữa vẻ nữ tính và tinh thần năng động hiện đại. Kiểu dáng trẻ trung cùng những đường dập ly hai bên tạo hiệu ứng chuyển động mềm mại, giúp trang phục nổi bật cả khi vận động lẫn trong những khoảnh khắc đời thường.",
+      "banner": "/assets/images/bo-suu-tap/cler-set/banner.jpg",
+      "poster": "/assets/images/bo-suu-tap/cler-set/poster.jpg",
+      "code": "BST04 - EV04",
       "colors": [
         {
           "name": "Đen",
@@ -210,27 +219,21 @@
           "desc": "Nhẹ nhàng, tinh tế và thanh thoát, tạo cảm giác nữ tính và thời thượng."
         }
       ],
-      "suitableFor": [
-        "Pickleball",
-        "Tennis",
-        "Cầu lông",
-        "Dạo phố",
-        "Café",
-        "Chụp ảnh",
-        "Hoạt động thường ngày"
-      ],
       "productSlugs": [
         "ev04-cler-set"
       ]
     },
     {
-      "slug": "sporty-set",
-      "code": "BST05 - EV05",
-      "name": "EVODA SPORTY SET",
-      "poster": "/assets/images/bo-suu-tap/sporty-set/poster.jpg",
-      "banner": "/assets/images/bo-suu-tap/sporty-set/banner.jpg",
       "shortDescription": "EVODA SPORTY SET mang tinh thần trẻ trung và tràn đầy năng lượng, lấy cảm hứng từ phong cách tennis và pickleball. Những đường nét khỏe khoắn kết hợp cùng vẻ nữ tính tạo nên phong cách thể thao thời thượng, dễ dàng đồng hành từ sân tập đến đời thường.",
-      "intro": "EVODA SPORTY SET kết hợp áo croptop cổ polo cùng chân váy xếp ly dáng chữ A, mang đến diện mạo trẻ trung, nữ tính và hiện đại. Lấy cảm hứng từ phong cách tennis và pickleball, thiết kế phù hợp cho cả những buổi vận động năng động lẫn dạo phố, café hay chụp ảnh.",
+      "suitableFor": [
+        "Pickleball",
+        "Tennis",
+        "Cầu lông",
+        "Gym",
+        "Dạo phố",
+        "Cà phê",
+        "Chụp ảnh"
+      ],
       "pieces": [
         {
           "name": "EVODA CROPTOP POLO",
@@ -258,6 +261,12 @@
         }
       ],
       "material": "Sử dụng chất liệu thể thao cao cấp với khả năng co giãn 4 chiều, mang lại sự thoải mái và linh hoạt trong từng chuyển động. Thoáng mát và hỗ trợ thấm hút mồ hôi. Mềm mại, dễ chịu khi mặc. Giữ form tốt và hạn chế nhăn.",
+      "name": "EVODA SPORTY SET",
+      "slug": "sporty-set",
+      "intro": "EVODA SPORTY SET kết hợp áo croptop cổ polo cùng chân váy xếp ly dáng chữ A, mang đến diện mạo trẻ trung, nữ tính và hiện đại. Lấy cảm hứng từ phong cách tennis và pickleball, thiết kế phù hợp cho cả những buổi vận động năng động lẫn dạo phố, café hay chụp ảnh.",
+      "banner": "/assets/images/bo-suu-tap/sporty-set/banner.jpg",
+      "poster": "/assets/images/bo-suu-tap/sporty-set/poster.jpg",
+      "code": "BST05 - EV05",
       "colors": [
         {
           "name": "Đỏ",
@@ -268,27 +277,20 @@
           "desc": "Thanh lịch, hiện đại và dễ phối đồ, mang đến vẻ ngoài thể thao nhưng vẫn tinh tế."
         }
       ],
-      "suitableFor": [
-        "Pickleball",
-        "Tennis",
-        "Cầu lông",
-        "Gym",
-        "Dạo phố",
-        "Cà phê",
-        "Chụp ảnh"
-      ],
       "productSlugs": [
         "ev05-sporty-set"
       ]
     },
     {
-      "slug": "wint-set",
-      "code": "BST06 - EV06",
-      "name": "EVODA WINT SET",
-      "poster": "/assets/images/bo-suu-tap/wint-set/poster.jpg",
-      "banner": "/assets/images/bo-suu-tap/wint-set/banner.jpg",
       "shortDescription": "EVODA WINT SET lấy cảm hứng trực tiếp từ Pickleball và Tennis, mang tinh thần thể thao năng động, thanh lịch và hiện đại. Thiết kế hướng đến hình ảnh cô nàng tự tin trên sân với diện mạo gọn gàng, chuyên nghiệp nhưng vẫn giữ nét nữ tính và thời trang.",
-      "intro": "EVODA WINT SET là bộ sưu tập thời trang thể thao dành cho những cô nàng yêu thích Pickleball và Tennis, kết hợp giữa thiết kế hiện đại, sự thoải mái và tính ứng dụng cao. Set được thiết kế đồng bộ gồm áo cổ zip phối cùng chân váy thể thao, mang đến diện mạo năng động, gọn gàng và chuyên nghiệp trên sân.",
+      "suitableFor": [
+        "Pickleball",
+        "Tennis",
+        "Cầu lông",
+        "Luyện tập",
+        "Thi đấu",
+        "Thể thao ngoài trời"
+      ],
       "pieces": [
         {
           "name": "EVODA WINT ZIP TOP",
@@ -314,6 +316,12 @@
         }
       ],
       "material": "EVODA WINT SET sử dụng chất liệu thể thao co giãn, mang lại cảm giác mềm mại, thoải mái và linh hoạt trong quá trình vận động. Co giãn tốt, hỗ trợ chuyển động. Thoải mái khi mặc trong thời gian dài. Phù hợp với các hoạt động thể thao ngoài trời.",
+      "name": "EVODA WINT SET",
+      "slug": "wint-set",
+      "intro": "EVODA WINT SET là bộ sưu tập thời trang thể thao dành cho những cô nàng yêu thích Pickleball và Tennis, kết hợp giữa thiết kế hiện đại, sự thoải mái và tính ứng dụng cao. Set được thiết kế đồng bộ gồm áo cổ zip phối cùng chân váy thể thao, mang đến diện mạo năng động, gọn gàng và chuyên nghiệp trên sân.",
+      "banner": "/assets/images/bo-suu-tap/wint-set/banner.jpg",
+      "poster": "/assets/images/bo-suu-tap/wint-set/poster.jpg",
+      "code": "BST06 - EV06",
       "colors": [
         {
           "name": "Đen",
@@ -323,14 +331,6 @@
           "name": "Trắng",
           "desc": "Tinh tế, trẻ trung và hiện đại, tạo diện mạo nổi bật, sạch sẽ trên sân."
         }
-      ],
-      "suitableFor": [
-        "Pickleball",
-        "Tennis",
-        "Cầu lông",
-        "Luyện tập",
-        "Thi đấu",
-        "Thể thao ngoài trời"
       ],
       "productSlugs": [
         "ev06-wint-set"
