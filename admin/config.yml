@@ -3,13 +3,13 @@ backend:
   name: github
   repo: dangthangk9-byte/evodasportswear
   branch: main
-  base_url: https://api.netlify.com
-  auth_endpoint: auth
+  base_url: https://evodasportswear.pages.dev
+  auth_endpoint: oauth/auth
 
 locale: vi
 media_folder: assets/images/khac        # nơi lưu ảnh upload mới
 public_folder: /assets/images/khac      # đường dẫn ghi vào JSON
-site_url: https://evodasports.netlify.app
+site_url: https://evodasportswear.pages.dev
 
 collections:
   - name: products
