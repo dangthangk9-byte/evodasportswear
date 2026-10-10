@@ -418,7 +418,6 @@
       (u.login ? '<div class="side-user">' + (u.avatar_url ? '<img src="' + esc(u.avatar_url) + '" alt="">' : '') + '<span>' + esc(u.name || u.login) + '</span></div>' : '') +
       '<a href="/" target="_blank" rel="noopener">' + icon('ext') + 'Xem website</a>' +
       '<a href="https://analytics.google.com/" target="_blank" rel="noopener">' + icon('chart') + 'Google Analytics</a>' +
-      '<a href="/admin/" target="_blank" rel="noopener">' + icon('old') + 'Trang quản trị cũ</a>' +
       '<button type="button" class="logout" data-a="logout">' + icon('out') + 'Đăng xuất</button>' +
       '</div></nav>';
   }
