@@ -270,6 +270,7 @@ img { image-rendering: auto; }</style>
 (function() {
   function vnd(n) { return n.toLocaleString('vi-VN') + '\u0111'; }
   function productType(p) {
+    if (p.type === 'set' || p.type === 'ao' || p.type === 'vay') return p.type;
     if (p.slug === 'ev09-chan-vay-summer') return 'vay';
     if (p.slug === 'ev08-ao-polo-croptop-summer') return 'ao';
     return 'set';
