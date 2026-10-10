@@ -299,7 +299,7 @@ img { image-rendering: auto; }</style>
 <div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">HỖ TRỢ</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="/huong-dan-chon-size/">Hướng dẫn chọn size</a></li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="/chinh-sach-doi-tra/">Chính sách đổi trả</a></li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="/qa/">Câu hỏi thường gặp (Q&amp;A)</a></li></ul></div>
 <div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">LIÊN HỆ</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant">Hotline: 094 808 85 95</li><li class="font-body-sm text-on-surface-variant">Email: evoda.sportwear@gmail.com</li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="https://www.facebook.com/profile.php?id=61574619090811" target="_blank" target="_blank" rel="noopener noreferrer">Messenger</a></li></ul></div>
 <div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">MẠNG XÃ HỘI</h4><ul class="space-y-3"><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="https://www.tiktok.com/@evoda.sportwear?_r=1&_t=ZS-99v8i0FZNG1" target="_blank" target="_blank" rel="noopener noreferrer">TikTok</a></li><li class="font-body-sm text-on-surface-variant hover:text-primary"><a href="https://www.facebook.com/profile.php?id=61574619090811" target="_blank" target="_blank" rel="noopener noreferrer">Facebook</a></li></ul></div>
-<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">ĐĂNG KÝ NHẬN TIN</h4><form id="evoda-newsletter-form" class="flex flex-col gap-2.5"><input required class="w-full bg-surface-container-lowest border border-outline-variant px-3.5 py-2.5 font-body-sm" placeholder="Email của bạn" type="email"><button class="w-full bg-primary text-on-primary font-label-uppercase py-2.5 border border-primary" type="submit">ĐĂNG KÝ</button></form><p id="evoda-newsletter-success" class="hidden font-body-sm text-on-surface-variant">Cảm ơn bạn đã đăng ký! Evoda sẽ sớm gửi những ưu đãi mới nhất tới email của bạn.</p></div>
+<div><h4 class="font-label-uppercase text-sm font-semibold tracking-wider text-primary mb-5">ĐĂNG KÝ NHẬN TIN</h4><form id="evoda-newsletter-form" class="flex flex-col gap-2.5"><input required name="email" autocomplete="email" aria-label="Email của bạn" class="w-full bg-surface-container-lowest border border-outline-variant px-3.5 py-2.5 font-body-sm" placeholder="Email của bạn" type="email"><input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0"><button class="w-full bg-primary text-on-primary font-label-uppercase py-2.5 border border-primary" type="submit">ĐĂNG KÝ</button></form><p id="evoda-newsletter-success" class="hidden font-body-sm text-on-surface-variant">Cảm ơn bạn đã đăng ký! Evoda sẽ sớm gửi những ưu đãi mới nhất tới email của bạn.</p></div>
 </div>
 <div class="mt-space-lg pt-6 border-t border-outline-variant flex flex-col sm:flex-row items-center justify-between gap-4"><p class="font-caption text-secondary">Copyright © EVODA SPORTSWEAR. All rights reserved.</p></div>
 </div>
@@ -357,10 +357,28 @@ img { image-rendering: auto; }</style>
     const form = document.getElementById('evoda-newsletter-form');
     const success = document.getElementById('evoda-newsletter-success');
     if (form && success) {
+      // Gửi email đăng ký vào Google Sheet "EVODA - Dang ky nhan tin"
+      const NEWSLETTER_URL = 'https://script.google.com/macros/s/AKfycbwQ1sR6K1Y2bf0bIg43FIqjqpZF5KQ9eNHt9jdCg3UBvz81d6SFszSBqUXkv4mkw-S5/exec';
       form.addEventListener('submit', function(e) {
         e.preventDefault();
-        form.classList.add('hidden');
-        success.classList.remove('hidden');
+        const input = form.querySelector('input[name="email"]');
+        const trap = form.querySelector('input[name="website"]');
+        const btn = form.querySelector('button[type="submit"]');
+        const email = (input && input.value || '').trim();
+        if (!email) return;
+        const label = btn ? btn.textContent : '';
+        if (btn) { btn.disabled = true; btn.textContent = 'ĐANG GỬI...'; }
+        const body = new URLSearchParams({ email: email, page: location.pathname, website: trap ? trap.value : '' });
+        fetch(NEWSLETTER_URL, { method: 'POST', mode: 'no-cors', body: body })
+          .then(function() {
+            form.classList.add('hidden');
+            success.classList.remove('hidden');
+            if (typeof gtag === 'function') gtag('event', 'sign_up', { method: 'newsletter' });
+          })
+          .catch(function() {
+            if (btn) { btn.disabled = false; btn.textContent = label; }
+            alert('Chưa gửi được, bạn vui lòng thử lại sau ít phút.');
+          });
       });
     }
 
