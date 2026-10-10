@@ -240,6 +240,7 @@
       else if (seen[p.slug]) errs.push(n + ': đường dẫn "' + p.slug + '" bị trùng'); else seen[p.slug] = 1;
       if (!(typeof p.price === 'number' && p.price > 0)) errs.push(n + ': chưa nhập giá bán');
       if (p.tiktokLink && !/^https?:\/\//i.test(p.tiktokLink)) errs.push(n + ': link TikTok phải bắt đầu bằng https://');
+      else if (p.tiktokLink && /tiktok\.com\/@/i.test(p.tiktokLink)) errs.push(n + ': link TikTok đang là trang shop, hãy dán link của đúng sản phẩm (shop.tiktok.com/vn/pdp/…)');
       if (!(p.images || []).length) errs.push(n + ': cần ít nhất 1 ảnh');
     });
     seen = {};
@@ -699,7 +700,7 @@
         ] },
         { card: 'Nhãn & bán hàng', fields: [
           { k: 'label', t: 'select', x: 'label', label: 'Nhãn hiển thị trên ảnh', options: function () { return [['', 'Không có nhãn'], ['NEW', 'NEW – Hàng mới'], ['BESTSELLER', 'BESTSELLER – Bán chạy'], ['SIGNATURE', 'SIGNATURE']]; } },
-          { k: 'tiktokLink', t: 'url', label: 'Link sản phẩm trên TikTok Shop', ph: 'https://shop.tiktok.com/vn/pdp/…', hint: 'Nút "Mua ngay" trên web mở link này.' },
+          { k: 'tiktokLink', t: 'url', label: 'Link sản phẩm trên TikTok Shop', ph: 'https://shop.tiktok.com/vn/pdp/…', hint: 'Dán link của đúng sản phẩm này (dạng shop.tiktok.com/vn/pdp/…), không dán link trang shop. Mọi nút "Mua" trên trang sản phẩm sẽ mở link này, web tự gắn mã UTM để đo lượt bấm.' },
           { k: 'suitableFor', t: 'chips', label: 'Phù hợp cho', ph: 'VD: Tennis' },
           { k: 'slug', t: 'text', label: 'Đường dẫn (slug)', ro: true, hint: 'Tự tạo, không đổi được để giữ link cũ hoạt động.' }
         ] }

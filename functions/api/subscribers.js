@@ -33,13 +33,28 @@ export async function onRequestGet({ request, env }) {
   const url = new URL(env.SHEET_API_URL || DEFAULT_SHEET_URL);
   url.searchParams.set('action', 'list');
   url.searchParams.set('key', env.SHEET_API_KEY);
-  let data;
+  // Apps Script trả về qua 1 lần chuyển hướng sang script.googleusercontent.com:
+  // tự đi theo chuyển hướng (tối đa 4 lần) để chắc chắn lấy được nội dung JSON.
+  let data, status = 0, snippet = '';
   try {
-    const r = await fetch(url.toString(), { redirect: 'follow' });
-    data = JSON.parse(await r.text());
+    let target = url.toString();
+    for (let hop = 0; hop < 5; hop++) {
+      const r = await fetch(target, {
+        redirect: 'manual',
+        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; EvodaAdmin/1.0)', Accept: 'application/json' },
+      });
+      status = r.status;
+      const loc = r.headers.get('Location');
+      if (status >= 300 && status < 400 && loc) { target = new URL(loc, target).toString(); continue; }
+      const text = await r.text();
+      snippet = text.slice(0, 160).replace(/\s+/g, ' ');
+      data = JSON.parse(text);
+      break;
+    }
   } catch (e) {
-    return json({ ok: false, error: 'sheet_unreachable' }, 502);
+    return json({ ok: false, error: 'sheet_unreachable (HTTP ' + status + ') ' + snippet }, 502);
   }
+  if (!data) return json({ ok: false, error: 'sheet_unreachable (quá nhiều chuyển hướng)' }, 502);
   if (!data || !data.ok) return json({ ok: false, error: (data && data.error) || 'sheet_error' }, 502);
   return json({ ok: true, rows: Array.isArray(data.rows) ? data.rows : [], sheetUrl: data.sheetUrl || '' });
 }

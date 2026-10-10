@@ -278,6 +278,23 @@ img { image-rendering: auto; }</style>
   function typeLabel(t) {
     return t === 'vay' ? 'CHÂN VÁY' : (t === 'ao' ? 'ÁO' : 'SET ĐỒ LIỀN');
   }
+  // Link TikTok Shop của từng sản phẩm + mã UTM + đếm lượt bấm trong Google Analytics
+  var TT_PROFILE = 'https://www.tiktok.com/@evoda.sportwear';
+  function ttUrl(link, slug, place) {
+    if (!link) return TT_PROFILE;
+    try {
+      var u = new URL(link);
+      u.searchParams.set('utm_source', 'evoda_website');
+      u.searchParams.set('utm_medium', 'referral');
+      u.searchParams.set('utm_campaign', slug);
+      u.searchParams.set('utm_content', place);
+      return u.toString();
+    } catch (e) { return link; }
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-tt-product]');
+    if (a && typeof gtag === 'function') gtag('event', 'mua_tiktok', { product: a.getAttribute('data-tt-product'), vi_tri: a.getAttribute('data-tt-place') });
+  });
   function card(p) {
     var type = productType(p);
     var badge = p.label ? '<span class="absolute top-3 left-3 z-10 bg-primary text-on-primary font-caption text-[10px] tracking-widest uppercase px-2.5 py-1">' + p.label + '</span>' : '';
@@ -287,7 +304,9 @@ img { image-rendering: auto; }</style>
       '<img class="w-full h-full object-cover object-center transition-transform duration-700 ease-out group-hover:scale-105" src="' + p.images[0] + '" alt="' + p.shortName + '" loading="lazy" onerror="this.onerror=null;this.src=\'/assets/images/khac/banner.jpg\'"></a></div>' +
       '<div class="flex flex-col"><span class="font-caption text-caption text-secondary tracking-wider uppercase mb-1">' + typeLabel(type) + ' &middot; ' + p.collection + '</span>' +
       '<a class="font-headline-sm text-[18px] text-primary transition-colors duration-300 hover:text-secondary mb-1.5" href="/san-pham/chi-tiet.html?slug=' + p.slug + '">' + p.shortName + '</a>' +
-      '<span class="font-body-md text-[15px] text-primary font-medium">' + vnd(p.price) + '</span></div></div>';
+      '<span class="font-body-md text-[15px] text-primary font-medium">' + vnd(p.price) + '</span>' +
+      (p.tiktokLink ? '<a class="mt-3 inline-flex items-center justify-center gap-2 self-start border border-primary px-4 py-2 font-label-uppercase text-[11px] tracking-widest uppercase text-primary hover:bg-primary hover:text-on-primary transition-colors duration-300" href="' + ttUrl(p.tiktokLink, p.slug, 'the_san_pham') + '" data-tt-product="' + p.slug + '" data-tt-place="the_san_pham" target="_blank" rel="noopener noreferrer">Mua trên TikTok</a>' : '') +
+      '</div></div>';
   }
   fetch('/data/products.json').then(function(r) { return r.json().then(function(d){ return Array.isArray(d) ? d : d.products; }); }).then(function(products) {
     var grid = document.getElementById('product-grid');

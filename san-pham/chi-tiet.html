@@ -253,6 +253,23 @@ img { image-rendering: auto; }</style>
 (function() {
   function vnd(n) { return n.toLocaleString('vi-VN') + '\u0111'; }
   function esc(s) { var d = document.createElement('div'); d.textContent = s || ''; return d.innerHTML; }
+  // Link TikTok Shop của từng sản phẩm + mã UTM + đếm lượt bấm trong Google Analytics
+  var TT_PROFILE = 'https://www.tiktok.com/@evoda.sportwear';
+  function ttUrl(link, slug, place) {
+    if (!link) return TT_PROFILE;
+    try {
+      var u = new URL(link);
+      u.searchParams.set('utm_source', 'evoda_website');
+      u.searchParams.set('utm_medium', 'referral');
+      u.searchParams.set('utm_campaign', slug);
+      u.searchParams.set('utm_content', place);
+      return u.toString();
+    } catch (e) { return link; }
+  }
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[data-tt-product]');
+    if (a && typeof gtag === 'function') gtag('event', 'mua_tiktok', { product: a.getAttribute('data-tt-product'), vi_tri: a.getAttribute('data-tt-place') });
+  });
   var params = new URLSearchParams(window.location.search);
   var slug = params.get('slug');
 
@@ -296,7 +313,7 @@ img { image-rendering: auto; }</style>
       + '<div class="mb-6"><h3 class="font-label-uppercase text-sm tracking-wider text-primary mb-2">MÀU SẮC</h3><div class="flex flex-wrap gap-2">' + colors + '</div></div>'
       + '<div class="mb-6"><h3 class="font-label-uppercase text-sm tracking-wider text-primary mb-2">KÍCH CỠ</h3><div class="flex flex-wrap gap-2">' + sizes + '</div>'
       + '<button id="open-size-guide-detail" class="mt-3 font-caption text-caption underline underline-offset-4 text-secondary hover:text-primary">Xem hướng dẫn chọn size</button></div>'
-      + '<a href="' + product.tiktokLink + '" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-primary text-on-primary font-label-uppercase text-label-uppercase px-8 py-4 tracking-wider border border-primary hover:bg-white hover:text-primary transition-all duration-300 mb-8 w-full sm:w-auto">MUA TRÊN TIKTOK SHOP</a>'
+      + '<a href="' + esc(ttUrl(product.tiktokLink, product.slug, 'nut_chinh')) + '" data-tt-product="' + esc(product.slug) + '" data-tt-place="nut_chinh" target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center gap-3 bg-primary text-on-primary font-label-uppercase text-label-uppercase px-8 py-4 tracking-wider border border-primary hover:bg-white hover:text-primary transition-all duration-300 mb-8 w-full sm:w-auto">MUA TRÊN TIKTOK SHOP</a>'
       + '<div class="border-t border-outline-variant pt-6"><h3 class="font-label-uppercase text-sm tracking-wider text-primary mb-2">MÔ TẢ SẢN PHẨM</h3><p class="font-body-md text-secondary leading-relaxed">' + esc(product.description) + '</p></div>'
       + '<div class="border-t border-outline-variant pt-6 mt-6"><h3 class="font-label-uppercase text-sm tracking-wider text-primary mb-2">ĐẶC ĐIỂM NỔI BẬT</h3><ul class="font-body-sm text-secondary space-y-2">' + features + '</ul></div>'
       + '<div class="border-t border-outline-variant pt-6 mt-6"><h3 class="font-label-uppercase text-sm tracking-wider text-primary mb-2">CHẤT LIỆU</h3><p class="font-body-sm text-secondary leading-relaxed">' + esc(product.material) + '</p></div>'
@@ -304,6 +321,18 @@ img { image-rendering: auto; }</style>
       + '</div></div></section>';
 
     document.getElementById('product-detail-root').innerHTML = html;
+
+    // Các nút "MUA NGAY" ở thanh trên, menu điện thoại và nút giỏ hàng nổi: dẫn thẳng tới sản phẩm này
+    if (product.tiktokLink) {
+      document.querySelectorAll('a[href*="tiktok.com/@evoda"]').forEach(function (a) {
+        var floating = a.getAttribute('aria-label') === 'TikTok Shop';
+        if (!floating && !/MUA/i.test(a.textContent || '')) return;
+        var place = floating ? 'nut_noi' : (a.closest('#mobile-menu') ? 'menu_dien_thoai' : 'menu_tren');
+        a.href = ttUrl(product.tiktokLink, product.slug, place);
+        a.setAttribute('data-tt-product', product.slug);
+        a.setAttribute('data-tt-place', place);
+      });
+    }
 
     var mainImg = document.getElementById('main-product-image');
     var zoomWrap = document.getElementById('main-image-zoom-wrap');
